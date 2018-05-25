@@ -16,37 +16,44 @@ protected:
     list<T *> _list;
 public :
     T *get(int index);
-    T *add(T *);
+
+    void *add(T *);
+
     void remove(int index);
+
     void remove(T *pItem);
+
     int getSize();
 };
 
 template<typename T>
 T *Collection<T>::get(int index) {
-    return nullptr;
+    typename list<T *>::iterator iter = _list.begin();
+    for (int i = 0; i < index; i++) {
+        iter++;
+    }
+    return *iter;
 }
 
 template<typename T>
-T *Collection<T>::add(T *) {
-    return nullptr;
+void *Collection<T>::add(T *item) {
+    this->_list.push_back(item);
 }
 
 template<typename T>
 void Collection<T>::remove(int index) {
-
+    // TODO: 
 }
 
 template<typename T>
 void Collection<T>::remove(T *pItem) {
-
+    // TODO:
 }
 
 template<typename T>
 int Collection<T>::getSize() {
-    return 0;
+    return this->_list.size();
 }
-
 
 
 #endif //SW_ENGINEERING_HW3_COLLECTION_H

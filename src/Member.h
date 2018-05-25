@@ -11,7 +11,9 @@ using namespace std;
 
 class Member {
 public:
+    string name;
     Member();
+    Member(string name);
 };
 
 

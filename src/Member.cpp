@@ -7,3 +7,7 @@
 Member::Member() {
 
 }
+
+Member::Member(string name) {
+    this->name = name;
+}
