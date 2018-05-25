@@ -12,12 +12,6 @@
 using namespace std;
 
 class MemberCollection : public Collection<Member> {
-public :
-    Member *get(int index);
-    Member *add(Member *);
-    void remove(int index);
-    void remove(Member *pItem);
-    int getSize();
 };
 
 

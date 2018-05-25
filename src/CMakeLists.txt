@@ -3,4 +3,4 @@ project(sw_engineering_hw3)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(sw_engineering_hw3 main.cpp Member.h Member.cpp Accommodation.h Collection.h Collection.cpp MemberCollection.h)
+add_executable(sw_engineering_hw3 main.cpp Member.h Member.cpp Accommodation.h Collection.h MemberCollection.h)

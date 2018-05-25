@@ -1,15 +1,16 @@
 //
-// Created by kimch on 2018-05-24.
+// Created by kimch on 5/25/2018.
 //
 
 #ifndef SW_ENGINEERING_HW3_COLLECTION_H
 #define SW_ENGINEERING_HW3_COLLECTION_H
 
+
 #include <list>
 
 using namespace std;
 
-template<class T>
+template<typename T>
 class Collection {
 protected:
     list<T *> _list;
@@ -20,5 +21,32 @@ public :
     void remove(T *pItem);
     int getSize();
 };
+
+template<typename T>
+T *Collection<T>::get(int index) {
+    return nullptr;
+}
+
+template<typename T>
+T *Collection<T>::add(T *) {
+    return nullptr;
+}
+
+template<typename T>
+void Collection<T>::remove(int index) {
+
+}
+
+template<typename T>
+void Collection<T>::remove(T *pItem) {
+
+}
+
+template<typename T>
+int Collection<T>::getSize() {
+    return 0;
+}
+
+
 
 #endif //SW_ENGINEERING_HW3_COLLECTION_H
