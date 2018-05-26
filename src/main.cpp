@@ -7,6 +7,8 @@
 #include "OutputWriter.h"
 #include "controls/SessionControl.h"
 #include "Time.h"
+#include "boundaries/RegisterUI.h"
+#include "controls/RegisterControl.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -48,12 +50,86 @@ void doTask() {
         // 메뉴 구분 및 해당 연산 수행
         switch (menuLevel1) {
             case 1: {
-                //region 회원가입 & 탈퇴
+                //region TODO: 회원가입 & 탈퇴
                 switch (menuLevel2) {
-                    case 1:
+                    case 1: {
+                        outputWriter->writeLine("회원가입");
+                        RegisterUI *registerUI = RegisterControl::getInstance()->getRegisterUI();
                         break;
-                    case 2:
+                    }
+                    case 2: {
+                        outputWriter->writeLine("회원탈퇴");
                         break;
+                    }
+                }
+                break;
+                //endregion
+            }
+            case 2: {
+                //region TODO: 로그인 & 로그아웃
+                switch (menuLevel2) {
+                    case 1: {
+                        //region 로그인
+                        outputWriter->writeLine("로그인");
+                        break;
+                        //endregion
+                    }
+                    case 2: {
+                        //region 로그아웃
+                        outputWriter->writeLine("로그아웃");
+                        break;
+                        //endregion
+                    }
+                }
+                break;
+                //endregion
+            }
+            case 3: {
+                //region TODO: 숙소 등록 & 조회
+                switch (menuLevel2) {
+                    case 1: {
+                        //region 숙소 등록
+                        outputWriter->writeLine("숙소 등록");
+                        break;
+                        //endregion
+                    }
+                    case 2: {
+                        //region 등록 숙소 조회
+                        outputWriter->writeLine("등록 숙소 조회");
+                        break;
+                        //endregion
+                    }
+                }
+                break;
+                //endregion
+            }
+            case 4: {
+                //region TODO: 숙소 검색 & 예약 & Opaque & 예약 조회
+                switch (menuLevel2) {
+                    case 1: {
+                        //region 숙소 검색
+                        outputWriter->writeLine("숙소 검색");
+                        break;
+                        //endregion
+                    }
+                    case 2: {
+                        //region 숙소 예약
+                        outputWriter->writeLine("숙소 예약");
+                        break;
+                        //endregion
+                    }
+                    case 3: {
+                        //region Opaque inventory 예약
+                        outputWriter->writeLine("Opaque inventory 예약");
+                        break;
+                        //endregion
+                    }
+                    case 4: {
+                        //region 예약정보 조회
+                        outputWriter->writeLine("예약정보 조회");
+                        break;
+                        //endregion
+                    }
                 }
                 break;
                 //endregion
@@ -79,6 +155,7 @@ void doTask() {
                 switch (menuLevel2) {
                     case 1: {
                         //region Session 변경
+                        outputWriter->writeLine("Session 변경");
                         char id[STR_INPUT_BUF];
                         fscanf(inputFp, "%s\n", id);
                         boundary->onChangeSession(id);
@@ -87,6 +164,7 @@ void doTask() {
                     }
                     case 2: {
                         //region Guest session으로 변경
+                        outputWriter->writeLine("Guest session으로 변경");
                         boundary->onChangeGuestSession();
                         break;
                         //endregion
