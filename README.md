@@ -56,7 +56,7 @@ public:
 
 #### controls\SomethingControl.cpp
 ```
-#include "RegisterControl.h"
+#include "SomethingControl.h"
 
 GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SomethingControl,SomethingUI)
 GENERATE_SINGLETON_IMPLEMENT(SomethingControl)
