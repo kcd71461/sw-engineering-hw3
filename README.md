@@ -27,6 +27,7 @@ public:
 #### boundaries\SomethingUI.cpp
 ```
 #include "SomethingUI.h"
+#include "../controls/SomethingControl.h"
 
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SomethingUI,SomethingControl)
 // TODO: 필요한 Boundary 함수 구현
