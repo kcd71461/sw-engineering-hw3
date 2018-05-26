@@ -5,14 +5,12 @@
 #include "SessionCollection.h"
 #include "SingletonMacro.h"
 
-SessionCollection *SessionCollection::instance = NULL;
+GENERATE_SINGLETON_IMPLEMENT(SessionCollection)
 
 SessionCollection::SessionCollection() {
     // collection 첫번째는 GUEST 세션
     this->add(new Session());
 }
-
-GENERATE_SINGLETON_IMPLEMENT(SessionCollection)
 
 Session *SessionCollection::getGuestSession() {
     return this->get(0);

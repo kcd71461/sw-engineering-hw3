@@ -6,8 +6,6 @@
 #include "OutputWriter.h"
 #include "SingletonMacro.h"
 
-OutputWriter *OutputWriter::instance = NULL;
-
 GENERATE_SINGLETON_IMPLEMENT(OutputWriter);
 
 OutputWriter::OutputWriter() {}

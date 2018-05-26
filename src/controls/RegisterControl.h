@@ -5,11 +5,16 @@
 #ifndef SW_ENGINEERING_HW3_REGISTERCONTROL_H
 #define SW_ENGINEERING_HW3_REGISTERCONTROL_H
 
-
 #include "../SingletonMacro.h"
+#include "../boundaries/RegisterUI.h"
+#include "AbstractControl.h"
 
-class RegisterControl {
-    GENERATE_SINGLETON_DECLARE(RegisterControl)
+class RegisterUI;
+
+class RegisterControl : public AbstractControl {
+GENERATE_SINGLETON_DECLARE(RegisterControl)
+
+GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(RegisterControl, RegisterUI)
 };
 
 

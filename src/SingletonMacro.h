@@ -8,7 +8,8 @@
 /**
  * singleton 구현부(.cpp) 코드 생성
  */
-#define GENERATE_SINGLETON_IMPLEMENT(CLASS_NAME) CLASS_NAME *CLASS_NAME::getInstance() {\
+#define GENERATE_SINGLETON_IMPLEMENT(CLASS_NAME) CLASS_NAME *CLASS_NAME::instance = NULL;\
+CLASS_NAME *CLASS_NAME::getInstance() {\
 if (instance == NULL) {instance = new CLASS_NAME();}\
 return instance;\
 }

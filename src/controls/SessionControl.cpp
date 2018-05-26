@@ -6,8 +6,6 @@
 #include "../SingletonMacro.h"
 #include "../SessionCollection.h"
 
-SessionControl *SessionControl::instance = NULL;
-
 void SessionControl::changeSession(string userID) {
 
     SessionCollection::getInstance()->changeCurrentSession(userID);
