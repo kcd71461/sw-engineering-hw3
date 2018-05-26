@@ -8,6 +8,7 @@
 
 #include "Collection.h"
 #include "Session.h"
+#include "SingletonMacro.h"
 
 using namespace std;
 
@@ -17,17 +18,9 @@ using namespace std;
  * collection내에 Guest 세션은 반드시 하나만 존재한다.
  */
 class SessionCollection : public Collection<Session> {
+    GENERATE_SINGLETON_DECLARE(SessionCollection)
 private:
-    static SessionCollection *instance;
-
     SessionCollection();
-
-    /**
-     * 현재 사용자의 session
-     */
-    Session *currentSession;
-public:
-    static SessionCollection *getInstance();
 
     /**
      * collection에서 guest session을 반환
@@ -35,6 +28,14 @@ public:
      */
     Session *getGuestSession();
 
+    /**
+     * 현재 사용자의 session
+     */
+    Session *currentSession;
+public:
+    Session *getCurrentSession() const;
+
+public:
     /**
      * 현재 세션을 변경한다.
      * @return 변경 성공 여부

@@ -25,9 +25,11 @@ bool SessionCollection::changeCurrentSession(Session *session) {
 }
 
 bool SessionCollection::changeCurrentSession(string userID) {
+
     for (int i = 0, length = this->getSize(); i < length; i++) {
-        if (this->get(i)->getMember()->getName().compare(userID)) {
-            return this->changeCurrentSession(this->get(i));
+        Session *session = this->get(i);
+        if (!session->isGuest() && session->getMember()->getID().compare(userID) == 0) {
+            return this->changeCurrentSession(session);
         }
     }
     return false;
@@ -35,4 +37,8 @@ bool SessionCollection::changeCurrentSession(string userID) {
 
 void SessionCollection::changeCurrentSessionToGuest() {
     this->currentSession = getGuestSession();
+}
+
+Session *SessionCollection::getCurrentSession() const {
+    return currentSession;
 }

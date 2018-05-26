@@ -9,6 +9,10 @@
 #include "Time.h"
 #include "boundaries/RegisterUI.h"
 #include "controls/RegisterControl.h"
+#include "boundaries/LoginUI.h"
+#include "controls/LoginControl.h"
+#include "boundaries/LogoutUI.h"
+#include "controls/LogoutControl.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -53,6 +57,7 @@ void doTask() {
                 //region TODO: 회원가입 & 탈퇴
                 switch (menuLevel2) {
                     case 1: {
+                        //region 회원가입
                         outputWriter->writeLine("회원가입");
                         RegisterUI *registerUI = RegisterControl::getInstance()->getRegisterUI();
                         char type[STR_INPUT_BUF],
@@ -68,10 +73,13 @@ void doTask() {
                         registerUI->onRegisterRequest(typeEnum, string(name), string(securityNumber), string(address),
                                                       string(id), string(password));
                         break;
+                        //endregion
                     }
                     case 2: {
+                        //region 회원탈퇴
                         outputWriter->writeLine("회원탈퇴");
                         break;
+                        //endregion
                     }
                 }
                 break;
@@ -83,12 +91,20 @@ void doTask() {
                     case 1: {
                         //region 로그인
                         outputWriter->writeLine("로그인");
+
+                        char id[STR_INPUT_BUF], password[STR_INPUT_BUF];
+                        fscanf(inputFp, "%s %s", id, password);
+
+                        LoginUI *loginUI = LoginControl::getInstance()->getLoginUI();
+                        loginUI->onRequestLogin(string(id), string(password));
                         break;
                         //endregion
                     }
                     case 2: {
                         //region 로그아웃
                         outputWriter->writeLine("로그아웃");
+                        LogoutUI *logoutUI = LogoutControl::getInstance()->getLogoutUI();
+                        logoutUI->onRequestLogout();
                         break;
                         //endregion
                     }

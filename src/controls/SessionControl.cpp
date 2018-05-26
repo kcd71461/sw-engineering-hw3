@@ -7,8 +7,12 @@
 #include "../SessionCollection.h"
 
 void SessionControl::changeSession(string userID) {
-    SessionCollection::getInstance()->changeCurrentSession(userID);
-    this->getSessionUI()->printLine("> %s", userID);
+    if (SessionCollection::getInstance()->changeCurrentSession(userID)) {
+        this->getSessionUI()->printLine("> %s",
+                                        SessionCollection::getInstance()->getCurrentSession()->getMember()->getID().c_str());
+    } else {
+        this->getSessionUI()->printLine("> session 변경 실패");
+    }
 }
 
 void SessionControl::changeSessionToGuest() {
