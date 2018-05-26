@@ -42,12 +42,12 @@ void *Collection<T>::add(T *item) {
 
 template<typename T>
 void Collection<T>::remove(int index) {
-    // TODO: 
+    this->_list.remove(this->get(index));
 }
 
 template<typename T>
 void Collection<T>::remove(T *pItem) {
-    // TODO:
+    this->_list.remove(pItem);
 }
 
 template<typename T>
