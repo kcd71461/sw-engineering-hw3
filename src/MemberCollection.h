@@ -5,7 +5,6 @@
 #ifndef SW_ENGINEERING_HW3_MEMBERCOLLECTION_H
 #define SW_ENGINEERING_HW3_MEMBERCOLLECTION_H
 
-#include <list>
 #include "Collection.h"
 #include "Member.h"
 
