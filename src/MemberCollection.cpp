@@ -3,14 +3,10 @@
 //
 
 #include "MemberCollection.h"
+#include "SingletonMacro.h"
 
 MemberCollection *MemberCollection::instance = NULL;
-MemberCollection *MemberCollection::getInstance() {
-    if (instance == NULL) {
-        instance = new MemberCollection();
-    }
-    return instance;
-}
+GENERATE_GET_INSTANCE_IMPLEMENT(MemberCollection)
 
 MemberCollection::MemberCollection() {
 }

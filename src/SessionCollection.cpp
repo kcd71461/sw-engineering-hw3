@@ -3,6 +3,7 @@
 //
 
 #include "SessionCollection.h"
+#include "SingletonMacro.h"
 
 SessionCollection *SessionCollection::instance = NULL;
 
@@ -11,12 +12,7 @@ SessionCollection::SessionCollection() {
     this->add(new Session());
 }
 
-SessionCollection *SessionCollection::getInstance() {
-    if (instance == NULL) {
-        instance = new SessionCollection();
-    }
-    return instance;
-}
+GENERATE_GET_INSTANCE_IMPLEMENT(SessionCollection)
 
 Session *SessionCollection::getGuestSession() {
     return this->get(0);
