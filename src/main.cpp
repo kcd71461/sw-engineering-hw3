@@ -55,6 +55,18 @@ void doTask() {
                     case 1: {
                         outputWriter->writeLine("회원가입");
                         RegisterUI *registerUI = RegisterControl::getInstance()->getRegisterUI();
+                        char type[STR_INPUT_BUF],
+                                name[STR_INPUT_BUF],
+                                securityNumber[STR_INPUT_BUF],
+                                address[STR_INPUT_BUF],
+                                id[STR_INPUT_BUF],
+                                password[STR_INPUT_BUF];
+
+                        fscanf(inputFp, "%s %s %s %s %s %s", type, name, securityNumber, address, id, password);
+                        MemberTypes typeEnum = (strcmp((const char *) type, "host") == 0 ? MemberTypes::Host
+                                                                                         : MemberTypes::Guest);
+                        registerUI->onRegisterRequest(typeEnum, string(name), string(securityNumber), string(address),
+                                                      string(id), string(password));
                         break;
                     }
                     case 2: {
@@ -150,7 +162,7 @@ void doTask() {
                 //endregion
             }
             case 6: {
-                //region 세션관련 명령
+                //region 세션 변경 관련
                 SessionUI *boundary = SessionControl::getInstance()->getSessionUI();
                 switch (menuLevel2) {
                     case 1: {

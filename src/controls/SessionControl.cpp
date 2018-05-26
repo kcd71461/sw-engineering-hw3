@@ -7,8 +7,8 @@
 #include "../SessionCollection.h"
 
 void SessionControl::changeSession(string userID) {
-
     SessionCollection::getInstance()->changeCurrentSession(userID);
+    this->getSessionUI()->printLine("> %s", userID);
 }
 
 void SessionControl::changeSessionToGuest() {
@@ -16,5 +16,5 @@ void SessionControl::changeSessionToGuest() {
 }
 
 
-GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SessionControl,SessionUI)
+GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SessionControl, SessionUI)
 GENERATE_SINGLETON_IMPLEMENT(SessionControl)

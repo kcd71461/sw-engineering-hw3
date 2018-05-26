@@ -6,10 +6,10 @@
 #include "../controls/SessionControl.h"
 #include "../SessionCollection.h"
 
-GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SessionUI,SessionControl)
+GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SessionUI, SessionControl)
 
-void SessionUI::onChangeSession(char *id) {
-    getSessionControl()->changeSession(string(id));
+void SessionUI::onChangeSession(char *userID) {
+    getSessionControl()->changeSession(string(userID));
 }
 
 void SessionUI::onChangeGuestSession() {

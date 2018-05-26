@@ -8,6 +8,8 @@
 #include "../SingletonMacro.h"
 #include "../boundaries/RegisterUI.h"
 #include "AbstractControl.h"
+#include "../Member.h"
+
 
 class RegisterUI;
 
@@ -15,6 +17,10 @@ class RegisterControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(RegisterControl)
 
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(RegisterControl, RegisterUI)
+
+public:
+    void registerMember(MemberTypes type, string name, string securityNumber, string address, string id,
+                        string password);
 };
 
 
