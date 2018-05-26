@@ -1,6 +1,7 @@
 # sw-engineering-hw3
 environment: Ubuntu (WSL), CLion, cmake(3.5.1), make, cc, c++, gdb
 
+
 ## Boundary, Control Class 구현
 ### SomethingUI 클래스와 SomethingControl 클래스 만들기
 #### boundaries\SomethingUI.h
@@ -62,4 +63,13 @@ public:
 GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SomethingControl,SomethingUI)
 GENERATE_SINGLETON_IMPLEMENT(SomethingControl)
 // TODO: 필요한 Control 함수 구현
+```
+
+
+
+## 현재 세션 회원 정보 가져오기
+```
+SessionCollection::getInstance()->getCurrentSession(); //현재 세션
+SessionCollection::getInstance()->getCurrentSession()->isGuest(); //현재 세션이 Guest세션인가?
+SessionCollection::getInstance()->getCurrentSession()->getMember(); //현재 로그인한 세션의 회원정보, Guest세션일 경우 NULL
 ```
