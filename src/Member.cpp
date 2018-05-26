@@ -4,10 +4,27 @@
 
 #include "Member.h"
 
-Member::Member() {
-
+Member::Member(MemberTypes type, string name, string securityNumber, string address, string id, string password) {
+    this->type = type;
+    this->name = name;
+    this->securityNumber = securityNumber;
+    this->address = address;
+    this->id = id;
+    this->password = password;
 }
 
-Member::Member(string name) {
-    this->name = name;
+string Member::getName() {
+    return this->name;
+}
+
+string Member::getAddress() {
+    return this->address;
+}
+
+string Member::getID() {
+    return this->id;
+}
+
+bool Member::equalsPassword(string password) {
+    return this->password.compare(password) == 0;
 }

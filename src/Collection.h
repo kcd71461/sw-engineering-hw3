@@ -15,15 +15,43 @@ class Collection {
 protected:
     list<T *> _list;
 public :
+    /**
+     * 해당 index의 item를 반환
+     * @param index
+     * @return item
+     */
     T *get(int index);
 
+    /**
+     * collection에 item을 추가
+     * @return
+     */
     void *add(T *);
 
+    /**
+     * 해당 index의 item을 collection에서 삭제
+     * @param index
+     */
     void remove(int index);
 
+    /**
+     * 해당 item을 collection에서 삭제
+     * @param pItem
+     */
     void remove(T *pItem);
 
+    /**
+     * collection의 item 갯수 반환
+     * @return item 갯수
+     */
     int getSize();
+
+    /**
+     * collection에 Item 포함 여부
+     * @param pItem
+     * @return 포함 여부
+     */
+    bool exists(T *pItem);
 };
 
 template<typename T>
@@ -53,6 +81,17 @@ void Collection<T>::remove(T *pItem) {
 template<typename T>
 int Collection<T>::getSize() {
     return this->_list.size();
+}
+
+template<typename T>
+bool Collection<T>::exists(T *pItem) {
+    int size = this->getSize();
+    for (int i = 0; i < size; i++) {
+        if (this->get(i) == pItem) {
+            return true;
+        }
+    }
+    return false;
 }
 
 

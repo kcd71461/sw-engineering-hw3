@@ -13,7 +13,9 @@ using namespace std;
 class MemberCollection : public Collection<Member> {
 private:
     static MemberCollection *instance;
+
     MemberCollection();
+
 public:
     static MemberCollection *getInstance();
 };

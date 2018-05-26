@@ -9,12 +9,40 @@
 
 using namespace std;
 
-class Member {
-public:
-    string name;
-    Member();
-    Member(string name);
+/**
+ * 회원 유형
+ */
+enum MemberTypes {
+    Host, Guest
 };
 
+/**
+ * 회원 정보에 관한 Class
+ */
+class Member {
+private:
+    MemberTypes type;
+    string name;
+    string securityNumber;
+    string address;
+    string id;
+    string password;
+public:
+
+    Member(MemberTypes type, string name, string securityNumber, string address, string id, string password);
+
+    string getName();
+
+    string getAddress();
+
+    string getID();
+
+    /**
+     * 패스워드 일치 여부 체크
+     * @param password
+     * @return 일치 여부
+     */
+    bool equalsPassword(string password);
+};
 
 #endif //SW_ENGINEERING_HW3_MEMBER_H
