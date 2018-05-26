@@ -6,7 +6,7 @@
 #include "SingletonMacro.h"
 
 MemberCollection *MemberCollection::instance = NULL;
-GENERATE_GET_INSTANCE_IMPLEMENT(MemberCollection)
+GENERATE_SINGLETON_IMPLEMENT(MemberCollection)
 
 MemberCollection::MemberCollection() {
 }

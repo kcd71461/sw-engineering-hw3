@@ -6,6 +6,7 @@
 #define SW_ENGINEERING_HW3_FILEWRITER_H
 
 #include <string>
+#include "SingletonMacro.h"
 
 using namespace std;
 
@@ -13,15 +14,14 @@ using namespace std;
  * File Writing 과 관련된 Class
  */
 class OutputWriter {
+GENERATE_SINGLETON_DECLARE(OutputWriter)
+
 private:
     FILE *filePointer = NULL;
-    static OutputWriter *instance;
 
     OutputWriter();
 
 public:
-    static OutputWriter *getInstance();
-
     void open(string fileName);
 
     void close();

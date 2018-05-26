@@ -59,6 +59,7 @@ void doTask() {
                 //endregion
             }
             case 5: {
+                //region 현재시간 설정
                 switch (menuLevel2) {
                     case 1: {
                         outputWriter->writeLine("현재시간 설정");
@@ -70,10 +71,11 @@ void doTask() {
                     }
                 }
                 break;
+                //endregion
             }
             case 6: {
                 //region 세션관련 명령
-                SessionBoundary *boundary = SessionControl::getInstance()->getSessionBoundary();
+                SessionUI *boundary = SessionControl::getInstance()->getSessionUI();
                 switch (menuLevel2) {
                     case 1: {
                         //region Session 변경

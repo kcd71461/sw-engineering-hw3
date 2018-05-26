@@ -7,20 +7,17 @@
 
 
 #include "AbstractControl.h"
-#include "../boundaries/SessionBoundary.h"
-class SessionBoundary;
-class SessionControl : public AbstractControl {
-private:
-    static SessionControl *instance;
+#include "../boundaries/SessionUI.h"
+#include "../SingletonMacro.h"
 
-    SessionControl();
+class SessionUI;
+
+class SessionControl : public AbstractControl {
+GENERATE_SINGLETON_DECLARE(SessionControl)
+GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SessionControl, SessionUI)
 
 public:
-    static SessionControl *getInstance();
-    SessionBoundary *getSessionBoundary();
-
-    void changeSession(string basic_string);
-
+    void changeSession(string userID);
     void changeSessionToGuest();
 };
 

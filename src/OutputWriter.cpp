@@ -8,7 +8,7 @@
 
 OutputWriter *OutputWriter::instance = NULL;
 
-GENERATE_GET_INSTANCE_IMPLEMENT(OutputWriter);
+GENERATE_SINGLETON_IMPLEMENT(OutputWriter);
 
 OutputWriter::OutputWriter() {}
 

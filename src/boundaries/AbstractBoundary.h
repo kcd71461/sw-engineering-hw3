@@ -4,7 +4,18 @@
 
 #ifndef SW_ENGINEERING_HW3_ABSTRACTBOUNDARY_H
 #define SW_ENGINEERING_HW3_ABSTRACTBOUNDARY_H
-#define GENERATE_GET_CONTROL(CLASS_NAME) public: CLASS_NAME* getCLASS_NAME() {return static_cast<CLASS_NAME *>(this->getControl());};
+
+/**
+ * get[ControlClassName] interface 선언부(.h) 코드 생성
+ */
+#define GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(CONTROL_CLASS_NAME) public: CONTROL_CLASS_NAME* get##CONTROL_CLASS_NAME();
+
+/**
+ * get[ControlClassName] interface 구현부(.cpp) 코드 생성
+ */
+#define GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(BOUNDARY_CLASS_NAME, CONTROL_CLASS_NAME) CONTROL_CLASS_NAME * BOUNDARY_CLASS_NAME::get##CONTROL_CLASS_NAME() {\
+return reinterpret_cast<CONTROL_CLASS_NAME *>(this->getControl());\
+}
 
 #include <string>
 #include "../controls/AbstractControl.h"

@@ -12,7 +12,7 @@ SessionCollection::SessionCollection() {
     this->add(new Session());
 }
 
-GENERATE_GET_INSTANCE_IMPLEMENT(SessionCollection)
+GENERATE_SINGLETON_IMPLEMENT(SessionCollection)
 
 Session *SessionCollection::getGuestSession() {
     return this->get(0);

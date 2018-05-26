@@ -9,13 +9,13 @@
 #include "AbstractBoundary.h"
 
 class SessionControl;
-class SessionBoundary : public AbstractBoundary {
+
+class SessionUI : public AbstractBoundary {
+GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SessionControl)
+
 public:
     void onChangeSession(char *);
-
     void onChangeGuestSession();
-
-    SessionControl* getSessionControl();
 };
 
 

@@ -8,19 +8,15 @@
 
 SessionControl *SessionControl::instance = NULL;
 
-SessionControl::SessionControl() : AbstractControl(new SessionBoundary) {}
+void SessionControl::changeSession(string userID) {
 
-SessionBoundary *SessionControl::getSessionBoundary() {
-    return static_cast<SessionBoundary *>(this->getBoundary());
-}
-
-void SessionControl::changeSession(string id) {
-
-    SessionCollection::getInstance()->changeCurrentSession(id);
+    SessionCollection::getInstance()->changeCurrentSession(userID);
 }
 
 void SessionControl::changeSessionToGuest() {
     SessionCollection::getInstance()->changeCurrentSessionToGuest();
 }
 
-GENERATE_GET_INSTANCE_IMPLEMENT(SessionControl)
+
+GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SessionControl,SessionUI)
+GENERATE_SINGLETON_IMPLEMENT(SessionControl)

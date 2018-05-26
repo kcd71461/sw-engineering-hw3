@@ -7,17 +7,14 @@
 
 #include "Collection.h"
 #include "Member.h"
+#include "SingletonMacro.h"
 
 using namespace std;
 
 class MemberCollection : public Collection<Member> {
+GENERATE_SINGLETON_DECLARE(MemberCollection)
 private:
-    static MemberCollection *instance;
-
     MemberCollection();
-
-public:
-    static MemberCollection *getInstance();
 };
 
 
