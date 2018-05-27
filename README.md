@@ -77,5 +77,5 @@ SessionCollection::getInstance()->getCurrentSession()->getMember(); //현재 로
 
 ## 3. 현재 시간 가져오기
 ```
-Time::getCurrentTime() // return type은 std::string
+std::string currentTime = Time::getCurrentTime();
 ```
