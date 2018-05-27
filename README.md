@@ -73,3 +73,9 @@ SessionCollection::getInstance()->getCurrentSession(); //현재 세션
 SessionCollection::getInstance()->getCurrentSession()->isGuest(); //현재 세션이 Guest세션인가?
 SessionCollection::getInstance()->getCurrentSession()->getMember(); //현재 로그인한 세션의 회원정보, Guest세션일 경우 NULL
 ```
+
+
+## 3. 현재 시간 가져오기
+```
+Time::getCurrentTime() // return type은 std::string
+```
