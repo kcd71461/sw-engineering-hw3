@@ -6,35 +6,35 @@ Reservation::Reservation(const string &hostid, const string &name, const string 
 
 }
 
-const std::__cxx11::basic_string<char> &Reservation::getHostid() const {
+const std::string &Reservation::getHostid() const {
     return hostid;
 }
 
-void Reservation::setHostid(const std::__cxx11::basic_string<char> &hostid) {
+void Reservation::setHostid(const std::string &hostid) {
     Reservation::hostid = hostid;
 }
 
-const std::__cxx11::basic_string<char> &Reservation::getName() const {
+const std::string &Reservation::getName() const {
     return name;
 }
 
-void Reservation::setName(const std::__cxx11::basic_string<char> &name) {
+void Reservation::setName(const std::string &name) {
     Reservation::name = name;
 }
 
-const std::__cxx11::basic_string<char> &Reservation::getAddress() const {
+const std::string &Reservation::getAddress() const {
     return address;
 }
 
-void Reservation::setAddress(const std::__cxx11::basic_string<char> &address) {
+void Reservation::setAddress(const std::string &address) {
     Reservation::address = address;
 }
 
-const std::__cxx11::basic_string<char> &Reservation::getDate() const {
+const std::string &Reservation::getDate() const {
     return date;
 }
 
-void Reservation::setDate(const std::__cxx11::basic_string<char> &date) {
+void Reservation::setDate(const std::string &date) {
     Reservation::date = date;
 }
 
