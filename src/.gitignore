@@ -71,9 +71,9 @@ modules.xml
 
 # End of https://www.gitignore.io/api/clion+all
 
-CMakeFiles/*
-MakeFile
-sw_engineering_hw3
-sw_engineering_hw3*
-output.txt
-CMakeCache.txt
+.CMakeFiles/*
+.MakeFile
+.sw_engineering_hw3
+.sw_engineering_hw3*
+.output.txt
+.CMakeCache.txt
