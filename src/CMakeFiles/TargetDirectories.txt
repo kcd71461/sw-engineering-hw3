@@ -1,3 +1,0 @@
-/home/simjae/sw-engineering-hw3/src/CMakeFiles/rebuild_cache.dir
-/home/simjae/sw-engineering-hw3/src/CMakeFiles/edit_cache.dir
-/home/simjae/sw-engineering-hw3/src/CMakeFiles/sw_engineering_hw3.dir
