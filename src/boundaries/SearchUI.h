@@ -17,6 +17,7 @@ public:
     // TODO: 필요한 Boundary 함수 선언
     string listSearchResult(string basic_string, string basicString);
     string onReservateButtonClick(string hostid,string accommoname);
+    string getAllAccommodations();
 };
 
 #endif //SW_ENGINEERING_HW3_SEARCHUI_H

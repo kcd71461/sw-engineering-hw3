@@ -148,6 +148,8 @@ void doTask() {
                     case 2: {
                         //region 등록 숙소 조회
                         outputWriter->writeLine("등록 숙소 조회");
+                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
+                        outputWriter->write(ui->getAllAccommodations());
                         break;
                         //endregion
                     }
@@ -207,7 +209,7 @@ void doTask() {
                         outputWriter->writeLine("현재시간 설정");
                         char currentTime[STR_INPUT_BUF];
                         fscanf(inputFp, "%s\n", currentTime);
-                        Time::setCurrentTime(currentTime);
+                        Time::setCurrentTime(string(currentTime));
                         outputWriter->writeLine("> %s", currentTime);
                         break;
                     }
