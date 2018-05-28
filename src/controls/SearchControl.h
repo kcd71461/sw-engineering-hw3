@@ -19,6 +19,7 @@ public:
     // TODO: 필요한 Control 함수 선언
     string searchAccommodations(string address, string date);
     string addReservation(string hostid,string accommoname);
+    string getAllAccommodations();
 };
 
 #endif //SW_ENGINEERING_HW3_SEARCHCONTROL_H

@@ -15,4 +15,12 @@ string SearchUI::listSearchResult(string address, string date) {
 string SearchUI::onReservateButtonClick(string hostid, string accommoname) {
     return SearchControl::getInstance()->addReservation(hostid,accommoname);
 }
+
+string SearchUI::getAllAccommodations() {
+
+
+    return SearchControl::getInstance()->getAllAccommodations();
+
+
+}
 // TODO: 필요한 Boundary 함수 구현
