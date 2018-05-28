@@ -13,6 +13,10 @@ Member::Member(MemberTypes type, string name, string securityNumber, string addr
     this->password = password;
 }
 
+MemberTypes Member::getType() {
+    return this->type;
+}
+
 string Member::getName() {
     return this->name;
 }

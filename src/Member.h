@@ -31,6 +31,8 @@ public:
 
     Member(MemberTypes type, string name, string securityNumber, string address, string id, string password);
 
+    MemberTypes getType();
+
     string getName();
 
     string getAddress();

@@ -6,7 +6,7 @@
 
 Guest::Guest(const string &name, const string &securityNumber, const string &address, const string &id, const string &password) : Member(MemberTypes::GuestMember, name, securityNumber, address, id, password) {}
 
-const string &Guest::getLastOpaqueTryTime() const {
+const string Guest::getLastOpaqueTryTime() const {
     return lastOpaqueTryTime;
 }
 

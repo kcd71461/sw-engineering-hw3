@@ -18,6 +18,7 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(OpaqueInventoryControl, OpaqueInvento
 public:
     // TODO: 필요한 Control 함수 선언
     void tryOpaqueInventoryReservation(string address, string date, int opaqueCost);
+    string addOpaqueReservation(string hostid, string accommodation);
 };
 
 
