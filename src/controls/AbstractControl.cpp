@@ -3,6 +3,7 @@
 //
 
 #include "AbstractControl.h"
+#include "../SessionCollection.h"
 
 AbstractControl::AbstractControl(AbstractBoundary *boundary) {
     this->boundary = boundary;
@@ -15,4 +16,8 @@ AbstractBoundary *AbstractControl::getBoundary() {
 
 AbstractControl::~AbstractControl() {
     delete (this->boundary);
+}
+
+Member *AbstractControl::getCurrentMember() {
+    return SessionCollection::getInstance()->getCurrentSession()->getMember();
 }

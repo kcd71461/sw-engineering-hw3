@@ -18,6 +18,7 @@ private: CONTROL_CLASS_NAME();
 BOUNDARY_CLASS_NAME *CONTROL_CLASS_NAME::get##BOUNDARY_CLASS_NAME() { return static_cast<BOUNDARY_CLASS_NAME *>(this->getBoundary());};
 
 #include "../boundaries/AbstractBoundary.h"
+#include "../Member.h"
 
 class AbstractBoundary;
 
@@ -31,6 +32,8 @@ protected:
 
 public:
     AbstractBoundary *getBoundary();
+
+    Member *getCurrentMember();
 };
 
 #endif //SW_ENGINEERING_HW3_BASECONTROL_H
