@@ -9,6 +9,8 @@
 #include "Time.h"
 #include "boundaries/RegisterUI.h"
 #include "controls/RegisterControl.h"
+#include "boundaries/OpaqueInventoryUI.h"
+#include "controls/OpaqueInventoryControl.h"
 #include "boundaries/LoginUI.h"
 #include "controls/LoginControl.h"
 #include "boundaries/LogoutUI.h"
@@ -122,18 +124,19 @@ void doTask() {
                     case 1: {
                         //region 숙소 등록
                         outputWriter->writeLine("숙소 등록");
-                        int cost,opaqueCost;
+                        int cost, opaqueCost;
                         char name[STR_INPUT_BUF], address[STR_INPUT_BUF];
                         char date[STR_INPUT_BUF];
                         //호스트의 id를 가져오기 위해서 현재 세션 회원 정보 가져오기
 
-                        Session* session = SessionCollection::getInstance()->getCurrentSession();
-                            fscanf(inputFp, "%s %s %d %s %d", name, address, &cost, date, &opaqueCost);
-                            addAccommodationUI *ui = addAccommodation::getInstance()->getaddAccommodationUI();
-                            ui->createAccommodation(string(session->getMember()->getID()),string(name), string(address), cost, string(date), opaqueCost);
-                            outputWriter->write(
-                                    string(name) + " " + string(address) + " " + to_string(cost) + " " + string(date) +
-                                    " " + to_string(opaqueCost)+"\n");
+                        Session *session = SessionCollection::getInstance()->getCurrentSession();
+                        fscanf(inputFp, "%s %s %d %s %d", name, address, &cost, date, &opaqueCost);
+                        addAccommodationUI *ui = addAccommodation::getInstance()->getaddAccommodationUI();
+                        ui->createAccommodation(string(session->getMember()->getID()), string(name), string(address),
+                                                cost, string(date), opaqueCost);
+                        outputWriter->write(
+                                string(name) + " " + string(address) + " " + to_string(cost) + " " + string(date) +
+                                " " + to_string(opaqueCost) + "\n");
 
                         break;
                         //endregion
@@ -155,7 +158,7 @@ void doTask() {
                         //region 숙소 검색
                         char address[STR_INPUT_BUF], date[STR_INPUT_BUF];
                         fscanf(inputFp, "%s %s", address, date);
-                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
+                        SearchUI *ui = SearchControl::getInstance()->getSearchUI();
                         outputWriter->writeLine("숙소 검색");
                         outputWriter->write(ui->listSearchResult(string(address), string(date)));
                         break;
@@ -165,15 +168,21 @@ void doTask() {
                         //region 숙소 예약
                         outputWriter->writeLine("숙소 예약");
                         char hostid[STR_INPUT_BUF], name[STR_INPUT_BUF];
-                        fscanf(inputFp,"%s %s",hostid,name);
-                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
-                        outputWriter->write(ui->onReservateButtonClick(hostid,name));
+                        fscanf(inputFp, "%s %s", hostid, name);
+                        SearchUI *ui = SearchControl::getInstance()->getSearchUI();
+                        outputWriter->write(ui->onReservateButtonClick(hostid, name));
                         break;
                         //endregion
                     }
                     case 3: {
                         //region Opaque inventory 예약
                         outputWriter->writeLine("Opaque inventory 예약");
+                        char address[STR_INPUT_BUF], date[STR_INPUT_BUF];
+                        int opaqueCost;
+                        fscanf(inputFp, "%s %s %d", address, date, &opaqueCost);
+                        OpaqueInventoryUI* ui=OpaqueInventoryControl::getInstance()->getOpaqueInventoryUI();
+                        ui->onOpaqueReservationRequest(address, date, opaqueCost);
+
                         break;
                         //endregion
                     }
