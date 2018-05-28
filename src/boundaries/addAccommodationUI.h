@@ -6,7 +6,7 @@
 #define SW_ENGINEERING_HW3_ADDACCOMMODATIONUI_H
 
 
-#include "boundaries/AbstractBoundary.h"
+#include "AbstractBoundary.h"
 
 class addAccommodationControl;
 
@@ -15,10 +15,7 @@ class addAccommodationUI : public AbstractBoundary {
 
 public:
     // TODO: 필요한 Boundary 함수 선언
-    void onaddAccommodation(string basic_string, string basicString);
+    void createAccommodation(string hostid,string name, string address, int cost, string date, int opaqueCost);
 };
-
-#endif //SW_ENGINEERING_HW3_addAccommodationUI_H
-
 
 #endif //SW_ENGINEERING_HW3_ADDACCOMMODATIONUI_H

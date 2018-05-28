@@ -13,6 +13,10 @@
 #include "controls/LoginControl.h"
 #include "boundaries/LogoutUI.h"
 #include "controls/LogoutControl.h"
+#include "controls/SearchControl.h"
+#include "boundaries/addAccommodationUI.h"
+#include "controls/addAccommodation.h"
+#include "SessionCollection.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -118,6 +122,19 @@ void doTask() {
                     case 1: {
                         //region 숙소 등록
                         outputWriter->writeLine("숙소 등록");
+                        int cost,opaqueCost;
+                        char name[STR_INPUT_BUF], address[STR_INPUT_BUF];
+                        char date[STR_INPUT_BUF];
+                        //호스트의 id를 가져오기 위해서 현재 세션 회원 정보 가져오기
+
+                        Session* session = SessionCollection::getInstance()->getCurrentSession();
+                            fscanf(inputFp, "%s %s %d %s %d", name, address, &cost, date, &opaqueCost);
+                            addAccommodationUI *ui = addAccommodation::getInstance()->getaddAccommodationUI();
+                            ui->createAccommodation(string(session->getMember()->getID()),string(name), string(address), cost, string(date), opaqueCost);
+                            outputWriter->write(
+                                    string(name) + " " + string(address) + " " + to_string(cost) + " " + string(date) +
+                                    " " + to_string(opaqueCost)+"\n");
+
                         break;
                         //endregion
                     }
@@ -136,13 +153,21 @@ void doTask() {
                 switch (menuLevel2) {
                     case 1: {
                         //region 숙소 검색
+                        char address[STR_INPUT_BUF], date[STR_INPUT_BUF];
+                        fscanf(inputFp, "%s %s", address, date);
+                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
                         outputWriter->writeLine("숙소 검색");
+                        outputWriter->write(ui->listSearchResult(string(address), string(date)));
                         break;
                         //endregion
                     }
                     case 2: {
                         //region 숙소 예약
                         outputWriter->writeLine("숙소 예약");
+                        char hostid[STR_INPUT_BUF], name[STR_INPUT_BUF];
+                        fscanf(inputFp,"%s %s",hostid,name);
+                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
+                        outputWriter->write(ui->onReservateButtonClick(hostid,name));
                         break;
                         //endregion
                     }

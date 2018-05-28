@@ -5,10 +5,18 @@
 #ifndef SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H
 #define SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H
 
+#include "SingletonMacro.h"
+#include "Accommodation.h"
+#include "Collection.h"
 
-class Accommodation {
+using namespace std;
 
+class AccommodationCollection : public Collection<Accommodation> {
+    GENERATE_SINGLETON_DECLARE(AccommodationCollection);
+private:
+    AccommodationCollection();
 };
+
 
 
 #endif //SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H

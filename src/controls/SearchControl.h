@@ -6,9 +6,19 @@
 #define SW_ENGINEERING_HW3_SEARCHCONTROL_H
 
 
-class SearchControl {
+#include "../SingletonMacro.h"
+#include "../boundaries/SearchUI.h"
+#include "AbstractControl.h"
+class SearchUI;
 
+class SearchControl : public AbstractControl {
+GENERATE_SINGLETON_DECLARE(SearchControl)
+GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchControl, SearchUI)
+
+public:
+    // TODO: 필요한 Control 함수 선언
+    string searchAccommodations(string address, string date);
+    string addReservation(string hostid,string accommoname);
 };
-
 
 #endif //SW_ENGINEERING_HW3_SEARCHCONTROL_H

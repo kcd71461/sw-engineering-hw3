@@ -3,3 +3,16 @@
 //
 
 #include "SearchUI.h"
+#include "../controls/SearchControl.h"
+#include <string>
+GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SearchUI,SearchControl)
+using namespace std;
+
+string SearchUI::listSearchResult(string address, string date) {
+    return this->getSearchControl()->searchAccommodations(address, date);
+}
+
+string SearchUI::onReservateButtonClick(string hostid, string accommoname) {
+    return SearchControl::getInstance()->addReservation(hostid,accommoname);
+}
+// TODO: 필요한 Boundary 함수 구현

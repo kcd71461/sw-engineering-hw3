@@ -2,12 +2,19 @@
 // Created by kimch on 2018-05-24.
 //
 
-#ifndef SW_ENGINEERING_HW3_RESERVATION_H
-#define SW_ENGINEERING_HW3_RESERVATION_H
+#ifndef SW_ENGINEERING_HW3_RESERVATIONCOLLECTION_H
+#define SW_ENGINEERING_HW3_RESERVATIONCOLLECTION_H
 
+#include "SingletonMacro.h"
+#include "Collection.h"
+#include "Reservation.h"
 
-class ReservationCollection {
+using namespace std;
 
+class ReservationCollection : public Collection<Reservation> {
+    GENERATE_SINGLETON_DECLARE(ReservationCollection)
+private:
+    ReservationCollection();
 };
 
 
