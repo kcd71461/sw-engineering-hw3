@@ -13,7 +13,7 @@ using namespace std;
  * 회원 유형
  */
 enum MemberTypes {
-    Host, Guest
+    HostMember, GuestMember
 };
 
 /**
@@ -30,6 +30,8 @@ private:
 public:
 
     Member(MemberTypes type, string name, string securityNumber, string address, string id, string password);
+
+    MemberTypes getType();
 
     string getName();
 

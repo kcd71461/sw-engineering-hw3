@@ -9,10 +9,23 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(RegisterControl, RegisterUI)
 
 void RegisterControl::registerMember(MemberTypes type, string name, string securityNumber, string address, string id,
                                      string password) {
-    Member *newMember = new Member(type, name, securityNumber, address, id, password);
+    Member *newMember;
+
+    switch (type) {
+        case MemberTypes::HostMember:
+            newMember = new Host(name, securityNumber, address, id, password);
+            break;
+
+        case MemberTypes::GuestMember:
+            newMember = new Guest(name, securityNumber, address, id, password);
+            break;
+        default:
+            this->getRegisterUI()->printLine("> unknown member type.");
+            return;
+    }
     MemberCollection::getInstance()->add(newMember);
     this->getRegisterUI()->printLine("> %s %s %s %s %s %s",
-                                     type == MemberTypes::Host ? "host" : "guest",
+                                     type == MemberTypes::HostMember ? "host" : "guest",
                                      name.c_str(),
                                      securityNumber.c_str(),
                                      address.c_str(),
