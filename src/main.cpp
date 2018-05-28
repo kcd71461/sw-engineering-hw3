@@ -39,7 +39,11 @@ int main() {
     inputFp = fopen(INPUT_FILE_NAME, "r+");
     OutputWriter::getInstance()->open(OUTPUT_FILE_NAME);
 
-    doTask();
+    if (inputFp != NULL) {
+        doTask();
+    } else {
+        OutputWriter::getInstance()->writeLine("%s not founded", INPUT_FILE_NAME);
+    }
 
     fclose(inputFp);
     OutputWriter::getInstance()->close();
@@ -74,8 +78,8 @@ void doTask() {
                                 password[STR_INPUT_BUF];
 
                         fscanf(inputFp, "%s %s %s %s %s %s", type, name, securityNumber, address, id, password);
-                        MemberTypes typeEnum = (strcmp((const char *) type, "host") == 0 ? MemberTypes::Host
-                                                                                         : MemberTypes::Guest);
+                        MemberTypes typeEnum = (strcmp((const char *) type, "host") == 0 ? MemberTypes::HostMember
+                                                                                         : MemberTypes::GuestMember);
                         registerUI->onRegisterRequest(typeEnum, string(name), string(securityNumber), string(address),
                                                       string(id), string(password));
                         break;
@@ -180,7 +184,7 @@ void doTask() {
                         char address[STR_INPUT_BUF], date[STR_INPUT_BUF];
                         int opaqueCost;
                         fscanf(inputFp, "%s %s %d", address, date, &opaqueCost);
-                        OpaqueInventoryUI* ui=OpaqueInventoryControl::getInstance()->getOpaqueInventoryUI();
+                        OpaqueInventoryUI *ui = OpaqueInventoryControl::getInstance()->getOpaqueInventoryUI();
                         ui->onOpaqueReservationRequest(address, date, opaqueCost);
 
                         break;

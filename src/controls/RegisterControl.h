@@ -9,7 +9,8 @@
 #include "../boundaries/RegisterUI.h"
 #include "AbstractControl.h"
 #include "../Member.h"
-
+#include "../Host.h"
+#include "../Guest.h"
 
 class RegisterUI;
 

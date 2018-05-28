@@ -35,9 +35,9 @@ protected:
     AbstractControl *getControl();
 
 public:
-    void print(const char *fmt, ...);
+    virtual void print(const char *fmt, ...);
 
-    void printLine(const char *fmt, ...);
+    virtual void printLine(const char *fmt, ...);
 };
 
 

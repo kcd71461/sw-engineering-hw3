@@ -6,8 +6,18 @@
 #define SW_ENGINEERING_HW3_GUEST_H
 
 
-class Guest {
+#include "Member.h"
 
+class Guest : public Member {
+public:
+    Guest(const string &name, const string &securityNumber, const string &address, const string &id, const string &password);
+
+    const string &getLastOpaqueTryTime() const;
+
+    void setLastOpaqueTryTime(const string &lastOpaqueTryTime);
+
+private:
+    string lastOpaqueTryTime;
 };
 
 

@@ -13,7 +13,7 @@ using namespace std;
  * 회원 유형
  */
 enum MemberTypes {
-    Host, Guest
+    HostMember, GuestMember
 };
 
 /**

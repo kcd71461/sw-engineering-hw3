@@ -7,6 +7,7 @@
 
 #include <string>
 #include "SingletonMacro.h"
+#include "boundaries/AbstractBoundary.h"
 
 using namespace std;
 
@@ -14,21 +15,14 @@ using namespace std;
  * File Writing 과 관련된 Class
  */
 class OutputWriter {
+    friend class AbstractBoundary;
+
 GENERATE_SINGLETON_DECLARE(OutputWriter)
 
 private:
     FILE *filePointer = NULL;
 
     OutputWriter();
-
-public:
-    void open(string fileName);
-
-    void close();
-
-    void write(string fmt, ...);
-
-    void writeLine(string fmt, ...);
 
     /**
      * va_list로 받아서 write
@@ -43,6 +37,15 @@ public:
      * @param list
      */
     void vwriteLine(const char *string, va_list list);
+
+public:
+    void open(string fileName);
+
+    void close();
+
+    void write(string fmt, ...);
+
+    void writeLine(string fmt, ...);
 
     void writeLine();
 };
