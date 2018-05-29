@@ -15,7 +15,7 @@ GENERATE_SINGLETON_IMPLEMENT(SearchReservationControl)
 
 void SearchReservationControl::SearchReservation() {
     ReservationCollection *reservations = ReservationCollection::getInstance();
-    string outputMessage = "> ";
+    string outputMessage = "";
     SessionCollection *sessions = SessionCollection::getInstance();
     Session *currentSession = sessions->getCurrentSession();
     string gid = currentSession->getMember()->getID();
@@ -23,10 +23,10 @@ void SearchReservationControl::SearchReservation() {
     for (int i = 0; i < reservations->getSize(); i++) {
         Reservation *reserv = reservations->get(i);
 
-        if (reserv->getGuesid() == gid) {
-            outputMessage += reserv->getHostid() + " " + reserv->getName() + " " + reserv->getAddress() + " " +
+        if (reserv->getGuestID() == gid) {
+            outputMessage += "> " + reserv->getHostID() + " " + reserv->getName() + " " + reserv->getAddress() + " " +
                              reserv->getDate() + " " + to_string(reserv->getCost()) + "\n";
         } else continue;
     }
-    this->getSearchReservationUI()->printLine(outputMessage.c_str());
+    this->getSearchReservationUI()->print(outputMessage.c_str());
 }

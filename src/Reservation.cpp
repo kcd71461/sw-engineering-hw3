@@ -2,7 +2,7 @@
 #include "Reservation.h"
 
 
-const std::string &Reservation::getHostid() const {
+const std::string &Reservation::getHostID() const {
     return hostid;
 }
 
@@ -42,7 +42,7 @@ void Reservation::setCost(int cost) {
     Reservation::cost = cost;
 }
 
-const string &Reservation::getGuesid() const {
+const string &Reservation::getGuestID() const {
     return guesid;
 }
 

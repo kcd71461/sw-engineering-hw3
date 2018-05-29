@@ -21,11 +21,11 @@ public:
 
     Reservation(const string &hostid, const string &guestid,const string &name, const string &address, const string &date, int cost);
 
-    const string &getGuesid() const;
+    const string &getGuestID() const;
 
     void setGuesid(const string &guesid);
 
-    const string &getHostid() const;
+    const string &getHostID() const;
 
     void setHostid(const string &hostid);
 

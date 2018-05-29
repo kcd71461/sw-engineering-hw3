@@ -24,7 +24,7 @@ void SearchControl::searchAccommodations(string address, string date) {
         }
     }
 
-    this->getSearchUI()->printLine(outputMessage.c_str());
+    this->getSearchUI()->print(outputMessage.c_str());
 
 }
 
@@ -47,11 +47,10 @@ void SearchControl::addReservation(string hostid, string guestid, string accommo
 
         }
     }
-    this->getSearchUI()->printLine(outputMessage.c_str());
+    this->getSearchUI()->print(outputMessage.c_str());
 }
 
 void SearchControl::getAllAccommodations() {
-    string outputMessage;
     //등록된 숙소 조회(이용날짜가 빠른순으로 출력)
     // 3 2 커맨드 입력시  {숙소이름 숙소주소 가격 날짜 예약여부 opaque inventory 가격}* 출력
     /*
@@ -60,7 +59,7 @@ void SearchControl::getAllAccommodations() {
         > room2 seoul 100000 2018:05:21 X 70000
      * */
     AccommodationCollection *accommodationCollection = AccommodationCollection::getInstance();
-    accommodationCollection->sortbydate();
+    accommodationCollection->sortByDate();
     ReservationCollection *reservationCollection = ReservationCollection::getInstance();
     for (int i = 0; i < accommodationCollection->getSize(); i++) {
         Accommodation *accommodation = accommodationCollection->get(i);
@@ -70,11 +69,13 @@ void SearchControl::getAllAccommodations() {
             if (accommodation->getName() == reservation->getName())
                 check = true; //예약 컬렉션에 있는 모든 예약에 대해 현재 숙소가 있는지를 검사
         }
-        if (check)
-            outputMessage += accommodation->getName() + " " + accommodation->getAddress() + " " + to_string(accommodation->getCost()) + " " + accommodation->getDate() + " " + "O" + " " + to_string(accommodation->getOpaqueCost()) + "\n";
-        else
-            outputMessage += accommodation->getName() + " " + accommodation->getAddress() + " " + to_string(accommodation->getCost()) + " " + accommodation->getDate() + " " + "X" + " " + to_string(accommodation->getOpaqueCost()) + "\n";
+        this->getSearchUI()->printLine("> %s %s %d %s %s %d",
+                                       accommodation->getName().c_str(),
+                                       accommodation->getAddress().c_str(),
+                                       accommodation->getCost(),
+                                       accommodation->getDate().c_str(),
+                                       check ? "O" : "X",
+                                       accommodation->getOpaqueCost()
+        );
     }
-
-    this->getSearchUI()->printLine(outputMessage.c_str());
 }

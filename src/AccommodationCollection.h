@@ -17,7 +17,7 @@ private:
     AccommodationCollection();
 public:
     void sortbycost(); // 가격을 기준으로 컬렉션 오름차순 정렬
-    void sortbydate(); // 날짜를 기준으로 컬렉션 오름차순 정렬
+    void sortByDate(); // 날짜를 기준으로 컬렉션 오름차순 정렬
 };
 
 

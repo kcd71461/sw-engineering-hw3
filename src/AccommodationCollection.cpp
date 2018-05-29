@@ -30,7 +30,7 @@ void AccommodationCollection::sortbycost() {
 
 }
 
-void AccommodationCollection::sortbydate() {
+void AccommodationCollection::sortByDate() {
     AccommodationCollection* accommodationCollection = AccommodationCollection::getInstance();
     for(int i=0; i<accommodationCollection->getSize()-1; i++){ //selection sort
         string mindate = accommodationCollection->get(i)->getDate();

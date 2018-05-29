@@ -27,7 +27,7 @@ void WithdrawalControl::deleteMember() {
             ReservationCollection *reservations = ReservationCollection::getInstance();
             for (int i = 0, length = reservations->getSize(); i < length; i++) {
                 Reservation *reservation = reservations->get(i);
-                if (reservation->getGuesid().compare(id) == 0 && reservation->getDate().compare(Time::getCurrentTime()) >= 0) {
+                if (reservation->getGuestID().compare(id) == 0 && reservation->getDate().compare(Time::getCurrentTime()) >= 0) {
                     removable = false;
                     this->getWithdrawalUI()->printLine("> 예약이 있습니다.");
                     break;

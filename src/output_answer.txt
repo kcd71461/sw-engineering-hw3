@@ -1,0 +1,65 @@
+6.2. guest session으로 변경
+
+5.1. 현재시간 설정
+> 2018:05:15:12:00
+
+1.1. 회원가입
+> host yoo 112233 seoul ytn testpwd
+
+2.1. 로그인
+> ytn testpwd
+
+3.1. 숙소 등록
+> room1 seoul 100000 2018:05:20 70000
+
+3.1. 숙소 등록
+> room2 seoul 100000 2018:05:21 70000
+
+3.2. 등록 숙소 조회
+> room1 seoul 100000 2018:05:20 X 70000
+> room2 seoul 100000 2018:05:21 X 70000
+
+6.2. guest session으로 변경
+
+5.1. 현재시간 설정
+> 2018:05:15:13:00
+
+1.1. 회원가입
+> guest sohn 334455 busan sbs testpwd
+
+2.1. 로그인
+> sbs testpwd
+
+4.3. Opaque inventory 예약
+> Try again in 24 hours
+
+5.1. 현재시간 설정
+> 2018:05:18:13:00
+
+4.3. Opaque inventory 예약
+> Success ytn room1 seoul 2018:05:20 75000
+
+4.1. 숙소 검색
+> ytn room2 seoul 100000
+
+4.2. 숙소 예약
+> ytn room2 seoul 2018:05:21 100000
+
+4.4. 예약 정보 조회
+> ytn room1 seoul 2018:05:20 75000
+> ytn room2 seoul 2018:05:21 100000
+
+6.1. Session 변경
+> ytn
+
+5.1. 현재시간 설정
+> 2018:05:19:14:00
+
+3.2. 등록 숙소 조회
+> room1 seoul 100000 2018:05:20 O 70000
+> room2 seoul 100000 2018:05:21 O 70000
+
+2.2. 로그아웃
+> ytn
+
+7.1. 종료

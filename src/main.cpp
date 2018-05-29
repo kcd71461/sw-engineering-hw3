@@ -236,7 +236,7 @@ void doTask() {
                     }
                     case 2: {
                         //region Guest session으로 변경
-                        outputWriter->writeLine("Guest session으로 변경");
+                        outputWriter->writeLine("guest session으로 변경");
                         boundary->onChangeGuestSession();
                         break;
                         //endregion
@@ -252,7 +252,7 @@ void doTask() {
                         outputWriter->writeLine("종료");
                         program_exit();
                         isProgramExit = 1;
-                        break;;
+                        return;
                     }
                 }
                 break;
