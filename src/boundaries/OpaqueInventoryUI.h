@@ -15,7 +15,7 @@ GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(OpaqueInventoryControl)
 
 public:
     // TODO: 필요한 Boundary 함수 선언
-    string onOpaqueReservationRequest(string address, string date, int opaqueCost);
+    void onOpaqueReservationRequest(string address, string date, int opaqueCost);
 };
 
 

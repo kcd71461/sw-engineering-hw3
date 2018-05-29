@@ -36,7 +36,7 @@ string OpaqueInventoryControl::addOpaqueReservation(string hostid, string accomm
     return returnvalue;
 }
 
-string OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, string date, int opaqueCost) {
+void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, string date, int opaqueCost) {
 
     //OpaqueInventory 예약 최근 시도 확인 해봅시다.
     string currentTime = Time::getCurrentTime();
@@ -47,7 +47,7 @@ string OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, str
         last_tryTime = guest->getLastOpaqueTryTime();
         string last_tryTime_trans = DateTimeUtils::addDays(last_tryTime, 1);
 
-        if (last_tryTime.compare("") == 0 || last_tryTime_trans.compare(currentTime) < 0 || last_tryTime_trans.compare(currentTime) == 0) {
+        if (last_tryTime.compare(NULL_TIME_STR) == 0 || last_tryTime_trans.compare(currentTime) < 0 || last_tryTime_trans.compare(currentTime) == 0) {
             guest->setLastOpaqueTryTime(currentTime);
 
             //예약 시작

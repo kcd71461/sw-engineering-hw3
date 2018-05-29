@@ -4,7 +4,7 @@
 
 #ifndef SW_ENGINEERING_HW3_DATEUTILS_H
 #define SW_ENGINEERING_HW3_DATEUTILS_H
-
+#define NULL_TIME_STR ""
 #include <string>
 
 using namespace std;
@@ -12,7 +12,7 @@ using namespace std;
 class DateTimeUtils {
 private:
     static tm parseDateTimeString(string dateTime);
-    static string getStringFromTime(time_t time);
+    static string getStringFromTime(tm* pTm);
 public:
     static string addDays(string time, int days);
 
