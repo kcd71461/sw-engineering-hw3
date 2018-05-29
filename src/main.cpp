@@ -19,6 +19,8 @@
 #include "boundaries/addAccommodationUI.h"
 #include "controls/addAccommodation.h"
 #include "SessionCollection.h"
+#include "controls/SearchReservationControl.h"
+#include "boundaries/SearchReservationUI.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -196,6 +198,9 @@ void doTask() {
                     case 4: {
                         //region 예약정보 조회
                         outputWriter->writeLine("예약정보 조회");
+                        SearchReservationUI *ui = SearchReservationControl::getInstance()->getSearchReservationUI();
+                        outputWriter->write(ui->onSearchReservationRequest());
+
                         break;
                         //endregion
                     }
