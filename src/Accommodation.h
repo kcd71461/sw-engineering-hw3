@@ -4,24 +4,32 @@
 
 #ifndef SW_ENGINEERING_HW3_ACCOMMODATION_H
 #define SW_ENGINEERING_HW3_ACCOMMODATION_H
+
 #include <string>
+#include "Time.h"
+
 using namespace std;
 
 class Accommodation {
     string hostid;
-    string name; 
-    string address; 
-    int cost; 
-    string date; 
+    string name;
+    string address;
+    int cost;
+    string date;
+    string createDate;
+
+private:
     int opaqueCost;
 
 public:
-    Accommodation(string hostid,string name, string address, int cost, string date, int opaqueCost) : hostid(hostid),name(name),
-                 address(address),
-                                                                                        cost(cost),
-                                                                                        date(date),
-                                                                                        opaqueCost(
-                                                                                                opaqueCost) {}
+    Accommodation(string hostid, string name, string address, int cost, string date, int opaqueCost) : hostid(hostid), name(name),
+                                                                                                       address(address),
+                                                                                                       cost(cost),
+                                                                                                       date(date),
+                                                                                                       opaqueCost(
+                                                                                                               opaqueCost) {
+        this->createDate = Time::getCurrentTime();
+    }
 
     const string &getHostid() const {
         return hostid;
@@ -69,6 +77,10 @@ public:
 
     void setOpaqueCost(int opaqueCost) {
         Accommodation::opaqueCost = opaqueCost;
+    }
+
+    const string &getCreateDate() const {
+        return createDate;
     }
 };
 
