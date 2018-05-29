@@ -17,7 +17,7 @@ private:
     AccommodationCollection();
 public:
     void sortbycost(); // 가격을 기준으로 컬렉션 오름차순 정렬
-    int comparedate(string date1,string date2); // 두 날짜를 비교 해서 1(<) 0(=) -1(>)를 리턴
+    void sortbydate(); // 날짜를 기준으로 컬렉션 오름차순 정렬
 };
 
 

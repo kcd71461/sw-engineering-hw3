@@ -30,7 +30,25 @@ void AccommodationCollection::sortbycost() {
 
 }
 
-int AccommodationCollection::comparedate(string date1, string date2) {
-    //날짜 포맷 2018:05:20
-    return strcmp(date1.c_str(),date2.c_str());
+void AccommodationCollection::sortbydate() {
+    AccommodationCollection* accommodationCollection = AccommodationCollection::getInstance();
+    for(int i=0; i<accommodationCollection->getSize()-1; i++){ //selection sort
+        string mindate = accommodationCollection->get(i)->getDate();
+        int index=i;
+        for(int j=i+1; j<accommodationCollection->getSize(); j++){
+            Accommodation* accommodation = accommodationCollection->get(j);
+            string curdate = accommodation->getDate();
+            if(mindate.compare(curdate) > 0){
+                mindate = curdate; //deep copy
+                index = j;
+            }
+
+        }
+
+        //arr[index]와 arr[i]를 swap
+        Accommodation* tmp = accommodationCollection->get(index);
+        accommodationCollection->set(index,accommodationCollection->get(i));
+        accommodationCollection->set(i,tmp);
+
+    }
 }

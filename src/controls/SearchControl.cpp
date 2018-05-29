@@ -52,8 +52,15 @@ string SearchControl::addReservation(string hostid, string guestid,string accomm
 
 string SearchControl::getAllAccommodations() {
     string returnvalue;
-
+    //등록된 숙소 조회(이용날짜가 빠른순으로 출력)
+    // 3 2 커맨드 입력시  {숙소이름 숙소주소 가격 날짜 예약여부 opaque inventory 가격}* 출력
+    /*
+     *  3.2. 등록 숙소 조회
+        > room1 seoul 100000 2018:05:20 X 70000
+        > room2 seoul 100000 2018:05:21 X 70000
+     * */
     AccommodationCollection* accommodationCollection = AccommodationCollection::getInstance();
+    accommodationCollection->sortbydate();
     ReservationCollection* reservationCollection = ReservationCollection::getInstance();
     for(int i=0; i<accommodationCollection->getSize(); i++){
         Accommodation* accommodation = accommodationCollection->get(i);
