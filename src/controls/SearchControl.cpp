@@ -16,6 +16,7 @@ GENERATE_SINGLETON_IMPLEMENT(SearchControl)
 string SearchControl::searchAccommodations(string address, string date) {
     AccommodationCollection *accommodations = AccommodationCollection::getInstance();
     string returnvalue;
+    accommodations->sortbycost(); // 가격을 기준으로 오름차순 정렬
     for(int i=0; i<accommodations->getSize(); i++ ){
         Accommodation* accommo = accommodations->get(i);
         if(accommo->getAddress() == address && accommo->getDate() == date){
@@ -27,7 +28,7 @@ string SearchControl::searchAccommodations(string address, string date) {
 
 }
 
-string SearchControl::addReservation(string hostid, string accommoname) {
+string SearchControl::addReservation(string hostid, string guestid,string accommoname) {
     AccommodationCollection* accommodationCollection = AccommodationCollection::getInstance();
     string name,address,date,returnvalue;
     int cost;
@@ -40,7 +41,7 @@ string SearchControl::addReservation(string hostid, string accommoname) {
             date = accommodation->getDate();
             cost = accommodation->getCost();
 
-            reservation = new Reservation(hostid,name,address,date,cost);
+            reservation = new Reservation(hostid,guestid,name,address,date,cost);
             ReservationCollection::getInstance()->add(reservation);
             returnvalue += hostid+" "+name+" "+address+" "+date+" "+to_string(cost)+"\n";
 
@@ -71,4 +72,5 @@ string SearchControl::getAllAccommodations() {
 
     return returnvalue;
 }
+
 // TODO: 필요한 Control 함수 구현

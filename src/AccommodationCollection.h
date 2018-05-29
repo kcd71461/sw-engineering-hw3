@@ -15,6 +15,8 @@ class AccommodationCollection : public Collection<Accommodation> {
     GENERATE_SINGLETON_DECLARE(AccommodationCollection);
 private:
     AccommodationCollection();
+public:
+    void sortbycost();
 };
 
 

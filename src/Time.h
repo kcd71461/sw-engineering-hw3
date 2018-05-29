@@ -18,15 +18,6 @@ public:
     static string getCurrentTime();
 };
 
-string Time::time = "";
-
-void Time::setCurrentTime(string time) {
-    Time::time = time;
-}
-
-string Time::getCurrentTime() {
-    return Time::time;
-}
 
 
 #endif //SW_ENGINEERING_HW3_TIME_H

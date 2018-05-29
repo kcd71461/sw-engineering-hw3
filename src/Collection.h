@@ -27,10 +27,14 @@ public :
      * @return
      */
     void *add(T *);
-
+    /**
+     * 해당 index에 새로운 멤버 삽입 또는 교체
+     * @param index
+     */
+    int set(int index,T* item);
     /**
      * 해당 index의 item을 collection에서 삭제
-     * @param index
+     * @param 성공 여부
      */
     void remove(int index);
 
@@ -66,6 +70,17 @@ T *Collection<T>::get(int index) {
 template<typename T>
 void *Collection<T>::add(T *item) {
     this->_list.push_back(item);
+}
+template<typename T>
+
+int Collection<T>::set(int index,T* item) {
+    if(index >= getSize()) return -1; // 컬렉션의 크기를 초과한 곳에 삽입 하려고 하면 set 실패
+    typename list<T *>::iterator iter = _list.begin();
+    for(int i=0; i< index; i++){
+        iter++;
+    }
+    *iter = item;
+    return 1; //set 성공
 }
 
 template<typename T>
