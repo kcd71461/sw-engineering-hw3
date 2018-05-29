@@ -11,4 +11,3 @@ void Time::setCurrentTime(string time) {
 
 string Time::getCurrentTime() {
     return Time::time;
-}

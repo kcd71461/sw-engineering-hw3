@@ -4,7 +4,9 @@
 
 #include "Guest.h"
 
-Guest::Guest(const string &name, const string &securityNumber, const string &address, const string &id, const string &password) : Member(MemberTypes::GuestMember, name, securityNumber, address, id, password) {}
+Guest::Guest(const string &name, const string &securityNumber, const string &address, const string &id, const string &password) : Member(MemberTypes::GuestMember, name, securityNumber, address, id, password) {
+    lastOpaqueTryTime = "";
+}
 
 const string Guest::getLastOpaqueTryTime() const {
     return lastOpaqueTryTime;

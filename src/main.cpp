@@ -210,7 +210,7 @@ void doTask() {
                         outputWriter->writeLine("현재시간 설정");
                         char currentTime[STR_INPUT_BUF];
                         fscanf(inputFp, "%s\n", currentTime);
-                        Time::setCurrentTime(currentTime);
+                        Time::setCurrentTime(string(currentTime));
                         outputWriter->writeLine("> %s", currentTime);
                         break;
                     }
