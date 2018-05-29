@@ -10,9 +10,9 @@
 #include "../Session.h"
 #include "../SessionCollection.h"
 
-GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SearchReservationUI,SearchReservationControl)
+GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SearchReservationControl,SearchReservationUI)
 // TODO: 필요한 Boundary 함수 구현
-
+GENERATE_SINGLETON_IMPLEMENT(SearchReservationControl)
 string SearchReservationControl::SearchReservation(){
     ReservationCollection *reservations = ReservationCollection::getInstance();
     string result;
