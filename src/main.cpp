@@ -19,8 +19,9 @@
 #include "boundaries/addAccommodationUI.h"
 #include "controls/addAccommodation.h"
 #include "SessionCollection.h"
-#include "controls/SearchReservationControl.h"
+#include "controls/WithdrawalControl.h"
 #include "boundaries/SearchReservationUI.h"
+#include "controls/SearchReservationControl.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -90,6 +91,7 @@ void doTask() {
                     case 2: {
                         //region 회원탈퇴
                         outputWriter->writeLine("회원탈퇴");
+                        WithdrawalControl::getInstance()->getWithdrawalUI()->onWithdrawalRequest();
                         break;
                         //endregion
                     }

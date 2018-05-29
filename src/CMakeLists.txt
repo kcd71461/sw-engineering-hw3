@@ -7,4 +7,9 @@ add_executable(sw_engineering_hw3 main.cpp Member.h Member.cpp Host.h Host.cpp G
         boundaries/addAccommodationUI.h
         controls/addAccommodation.cpp
         controls/SearchReservationControl.cpp controls/SearchReservationControl.h boundaries/SearchReservationUI.cpp boundaries/SearchReservationUI.h
-        controls/addAccommodation.h ReservationCollection.cpp Reservation.cpp Reservation.h controls/OpaqueInventoryControl.cpp controls/OpaqueInventoryControl.h boundaries/OpaqueInventoryUI.cpp boundaries/OpaqueInventoryUI.h Time.cpp)
+        controls/addAccommodation.h ReservationCollection.cpp Reservation.cpp Reservation.h controls/OpaqueInventoryControl.cpp controls/OpaqueInventoryControl.h boundaries/OpaqueInventoryUI.cpp boundaries/OpaqueInventoryUI.h Time.cpp
+        boundaries/WithdrawalUI.cpp
+        boundaries/WithdrawalUI.h
+        controls/WithdrawalControl.cpp
+        controls/WithdrawalControl.h
+        )
