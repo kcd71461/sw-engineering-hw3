@@ -3,11 +3,12 @@
 //
 #include "Time.h"
 
-string Time::time = "";
+string Time::_time = "";
 
 void Time::setCurrentTime(string time) {
-    Time::time = time;
+    Time::_time = time;
 }
 
 string Time::getCurrentTime() {
-    return Time::time;
+    return Time::_time;
+}

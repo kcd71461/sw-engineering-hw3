@@ -2,9 +2,10 @@
 // Created by simjae on 18. 5. 27.
 //
 
+#include <cstring>
 #include "AccommodationCollection.h"
 #include "SingletonMacro.h"
-
+using namespace std;
 GENERATE_SINGLETON_IMPLEMENT(AccommodationCollection)
 
 AccommodationCollection::AccommodationCollection() {
@@ -27,4 +28,9 @@ void AccommodationCollection::sortbycost() {
         accommodationCollection->set(i,tmp);
     }
 
+}
+
+int AccommodationCollection::comparedate(string date1, string date2) {
+    //날짜 포맷 2018:05:20
+    return strcmp(date1.c_str(),date2.c_str());
 }
