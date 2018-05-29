@@ -59,6 +59,7 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
         this->getOpaqueInventoryUI()->printLine("Opaque 예약이 가능한 숙소가 존재하지 않습니다.");
     } else {
         this->addOpaqueReservation(result->getHostid(), result->getName());
+
     }
 
 
