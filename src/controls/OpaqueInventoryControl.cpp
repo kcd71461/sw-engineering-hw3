@@ -26,8 +26,8 @@ string OpaqueInventoryControl::addOpaqueReservation(string hostid, string accomm
             address = accommodation->getAddress();
             date = accommodation->getDate();
             cost = accommodation->getOpaqueCost();
-
-            reservation = new Reservation(hostid, name, address, date, cost);
+            string guestid = SessionCollection::getInstance()->getCurrentSession()->getMember()->getID();
+            reservation = new Reservation(hostid, guestid, name, address, date, cost);
             ReservationCollection::getInstance()->add(reservation);
             returnvalue += hostid + " " + name + " " + address + " " + date + " " + to_string(cost) + "\n";
 

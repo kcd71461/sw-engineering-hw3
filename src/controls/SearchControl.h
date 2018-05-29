@@ -18,7 +18,7 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchControl, SearchUI)
 public:
     // TODO: 필요한 Control 함수 선언
     string searchAccommodations(string address, string date);
-    string addReservation(string hostid,string accommoname);
+    string addReservation(string hostid,string guestid, string accommoname);
     string getAllAccommodations();
 };
 

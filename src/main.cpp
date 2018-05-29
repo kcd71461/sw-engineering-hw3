@@ -175,8 +175,9 @@ void doTask() {
                         outputWriter->writeLine("숙소 예약");
                         char hostid[STR_INPUT_BUF], name[STR_INPUT_BUF];
                         fscanf(inputFp, "%s %s", hostid, name);
+                        Session *session = SessionCollection::getInstance()->getCurrentSession();
                         SearchUI *ui = SearchControl::getInstance()->getSearchUI();
-                        outputWriter->write(ui->onReservateButtonClick(hostid, name));
+                        outputWriter->write(ui->onReservateButtonClick(hostid, session->getMember()->getID(),name));
                         break;
                         //endregion
                     }

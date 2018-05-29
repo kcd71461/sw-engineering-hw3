@@ -12,12 +12,18 @@ using namespace std;
 class Reservation {
 private:
     string hostid;
+    string guesid;
     string name;
     string address;
     string date;
     int cost;
 public:
-    Reservation(const string &hostid, const string &name, const string &address, const string &date, int cost);
+
+    Reservation(const string &hostid, const string &guestid,const string &name, const string &address, const string &date, int cost);
+
+    const string &getGuesid() const;
+
+    void setGuesid(const string &guesid);
 
     const string &getHostid() const;
 

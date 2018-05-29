@@ -19,5 +19,4 @@ public:
     static string getCurrentTime();
 };
 
-
 #endif //SW_ENGINEERING_HW3_TIME_H

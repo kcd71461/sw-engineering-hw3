@@ -1,10 +1,6 @@
 
 #include "Reservation.h"
 
-Reservation::Reservation(const string &hostid, const string &name, const string &address, const string &date,
-                         int cost) {
-
-}
 
 const std::string &Reservation::getHostid() const {
     return hostid;
@@ -45,3 +41,16 @@ int Reservation::getCost() const {
 void Reservation::setCost(int cost) {
     Reservation::cost = cost;
 }
+
+const string &Reservation::getGuesid() const {
+    return guesid;
+}
+
+void Reservation::setGuesid(const string &guesid) {
+    Reservation::guesid = guesid;
+}
+
+
+Reservation::Reservation(const string &hostid, const string &guesid, const string &name, const string &address,
+                         const string &date, int cost) : hostid(hostid), guesid(guesid), name(name), address(address),
+                                                         date(date), cost(cost) {}
