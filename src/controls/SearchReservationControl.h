@@ -15,8 +15,7 @@ GENERATE_SINGLETON_DECLARE(SearchReservationControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchReservationControl, SearchReservationUI)
 
 public:
-    string SearchReservation();
-    // TODO: 필요한 Control 함수 선언
+    void SearchReservation();
 };
 
 

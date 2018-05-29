@@ -11,4 +11,3 @@ GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(WithdrawalUI, WithdrawalControl)
 void WithdrawalUI::onWithdrawalRequest() {
     this->getWithdrawalControl()->deleteMember();
 }
-// TODO: 필요한 Boundary 함수 구현

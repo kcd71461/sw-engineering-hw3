@@ -13,7 +13,6 @@ class LoginUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(LoginControl)
 
 public:
-    // TODO: 필요한 Boundary 함수 선언
     void onRequestLogin(string id, string password);
 };
 

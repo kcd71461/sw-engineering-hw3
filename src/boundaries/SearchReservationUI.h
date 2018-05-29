@@ -14,8 +14,7 @@ class SearchReservationUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchReservationControl)
 
 public:
-    // TODO: 필요한 Boundary 함수 선언
-    string onSearchReservationRequest();
+    void onSearchReservationRequest();
 };
 
 

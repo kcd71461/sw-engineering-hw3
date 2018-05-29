@@ -30,7 +30,7 @@ string OpaqueInventoryControl::addOpaqueReservation(string hostid, string accomm
             string guestid = SessionCollection::getInstance()->getCurrentSession()->getMember()->getID();
             reservation = new Reservation(hostid, guestid, name, address, date, cost);
             ReservationCollection::getInstance()->add(reservation);
-            returnvalue += "success " + hostid + " " + name + " " + address + " " + date + " " + to_string(opaqueCost) + "\n";
+            returnvalue += "> success " + hostid + " " + name + " " + address + " " + date + " " + to_string(opaqueCost) + "\n";
         }
     }
     return returnvalue;
@@ -45,9 +45,9 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
         Guest *guest = static_cast<Guest *>(this->getCurrentMember());
 
         last_tryTime = guest->getLastOpaqueTryTime();
-        string last_tryTime_trans = DateTimeUtils::addDays(last_tryTime, 1);
+        string nextTryTime = DateTimeUtils::addDays(last_tryTime, 1);
 
-        if (last_tryTime.compare(NULL_TIME_STR) == 0 || last_tryTime_trans.compare(currentTime) < 0 || last_tryTime_trans.compare(currentTime) == 0) {
+        if (last_tryTime.compare(NULL_TIME_STR) == 0 || nextTryTime.compare(currentTime) < 0 || nextTryTime.compare(currentTime) == 0) {
             guest->setLastOpaqueTryTime(currentTime);
 
             //예약 시작
@@ -69,24 +69,14 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
             }
 
             if (result == NULL) {
-                this->getOpaqueInventoryUI()->printLine("Opaque 예약이 가능한 숙소가 존재하지 않습니다.");
-                this->getOpaqueInventoryUI()->printLine(currentTime.c_str());
-                this->getOpaqueInventoryUI()->printLine(last_tryTime.c_str());
-                this->getOpaqueInventoryUI()->printLine(last_tryTime_trans.c_str());
+                this->getOpaqueInventoryUI()->printLine("> Opaque 예약이 가능한 숙소가 존재하지 않습니다.");
             } else {
                 string resultMessage = this->addOpaqueReservation(result->getHostid(), result->getName(), opaqueCost);
                 this->getOpaqueInventoryUI()->printLine(resultMessage.c_str());
             }
         } else {
-            this->getOpaqueInventoryUI()->printLine("Try again in 24 hours");
-            this->getOpaqueInventoryUI()->printLine(currentTime.c_str());
-            this->getOpaqueInventoryUI()->printLine(last_tryTime.c_str());
-            this->getOpaqueInventoryUI()->printLine(last_tryTime_trans.c_str());
+            this->getOpaqueInventoryUI()->printLine("> Try again in 24 hours");
         }
-
-        /*else if(last_tryTime_trans < currentTime){
-            this->getOpaqueInventoryUI()->printLine("Try again in 24 hours");
-        }*/
     }
 
 }

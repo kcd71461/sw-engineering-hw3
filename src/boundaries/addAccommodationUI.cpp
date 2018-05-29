@@ -11,7 +11,3 @@ void addAccommodationUI::createAccommodation(string hostid,string name, string a
 
        addAccommodation::getInstance()->addNewAccommodation(hostid,name,address,cost,date,opaqueCost);
 }
-
-
-
-// TODO: 필요한 Boundary 함수 구현

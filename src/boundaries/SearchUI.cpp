@@ -8,20 +8,16 @@
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(SearchUI,SearchControl)
 using namespace std;
 
-string SearchUI::listSearchResult(string address, string date) {
-    return this->getSearchControl()->searchAccommodations(address, date);
+void SearchUI::listSearchResult(string address, string date) {
+    this->getSearchControl()->searchAccommodations(address, date);
 }
 
-string SearchUI::onReservateButtonClick(string hostid, string guestid, string accommoname) {
-    return SearchControl::getInstance()->addReservation(hostid,guestid ,accommoname);
+void SearchUI::onReservateButtonClick(string hostid, string guestid, string accommoname) {
+    SearchControl::getInstance()->addReservation(hostid,guestid ,accommoname);
 }
 
-string SearchUI::getAllAccommodations() {
-
-
-    return SearchControl::getInstance()->getAllAccommodations();
+void SearchUI::getAllAccommodations() {
+    SearchControl::getInstance()->getAllAccommodations();
 
 
 }
-
-// TODO: 필요한 Boundary 함수 구현

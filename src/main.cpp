@@ -67,7 +67,7 @@ void doTask() {
         // 메뉴 구분 및 해당 연산 수행
         switch (menuLevel1) {
             case 1: {
-                //region TODO: 회원가입 & 탈퇴
+                //region 회원가입 & 탈퇴
                 switch (menuLevel2) {
                     case 1: {
                         //region 회원가입
@@ -100,7 +100,7 @@ void doTask() {
                 //endregion
             }
             case 2: {
-                //region TODO: 로그인 & 로그아웃
+                //region 로그인 & 로그아웃
                 switch (menuLevel2) {
                     case 1: {
                         //region 로그인
@@ -127,7 +127,7 @@ void doTask() {
                 //endregion
             }
             case 3: {
-                //region TODO: 숙소 등록 & 조회
+                //region 숙소 등록 & 조회
                 switch (menuLevel2) {
                     case 1: {
                         //region 숙소 등록
@@ -142,10 +142,6 @@ void doTask() {
                         addAccommodationUI *ui = addAccommodation::getInstance()->getaddAccommodationUI();
                         ui->createAccommodation(string(session->getMember()->getID()), string(name), string(address),
                                                 cost, string(date), opaqueCost);
-                        outputWriter->write(
-                                string(name) + " " + string(address) + " " + to_string(cost) + " " + string(date) +
-                                " " + to_string(opaqueCost) + "\n");
-
                         break;
                         //endregion
                     }
@@ -153,7 +149,7 @@ void doTask() {
                         //region 등록 숙소 조회
                         outputWriter->writeLine("등록 숙소 조회");
                         SearchUI* ui = SearchControl::getInstance()->getSearchUI();
-                        outputWriter->write(ui->getAllAccommodations());
+                        ui->getAllAccommodations();
                         break;
                         //endregion
                     }
@@ -162,7 +158,7 @@ void doTask() {
                 //endregion
             }
             case 4: {
-                //region TODO: 숙소 검색 & 예약 & Opaque & 예약 조회
+                //region 숙소 검색 & 예약 & Opaque & 예약 조회
                 switch (menuLevel2) {
                     case 1: {
                         //region 숙소 검색
@@ -170,7 +166,7 @@ void doTask() {
                         fscanf(inputFp, "%s %s", address, date);
                         SearchUI *ui = SearchControl::getInstance()->getSearchUI();
                         outputWriter->writeLine("숙소 검색");
-                        outputWriter->write(ui->listSearchResult(string(address), string(date)));
+                        ui->listSearchResult(string(address), string(date));
                         break;
                         //endregion
                     }
@@ -181,7 +177,7 @@ void doTask() {
                         fscanf(inputFp, "%s %s", hostid, name);
                         Session *session = SessionCollection::getInstance()->getCurrentSession();
                         SearchUI *ui = SearchControl::getInstance()->getSearchUI();
-                        outputWriter->write(ui->onReservateButtonClick(hostid, session->getMember()->getID(),name));
+                        ui->onReservateButtonClick(hostid, session->getMember()->getID(),name);
                         break;
                         //endregion
                     }
@@ -201,7 +197,7 @@ void doTask() {
                         //region 예약정보 조회
                         outputWriter->writeLine("예약정보 조회");
                         SearchReservationUI *ui = SearchReservationControl::getInstance()->getSearchReservationUI();
-                        outputWriter->write(ui->onSearchReservationRequest());
+                        ui->onSearchReservationRequest();
 
                         break;
                         //endregion
