@@ -10,20 +10,13 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(ListHostAccommodationControl, ListH
 
 void ListHostAccommodationControl::listAccommodations() {
     Member *currentMember = this->getCurrentMember();
-    if (currentMember == NULL || currentMember->getType() == MemberTypes::GuestMember) {
+    if (currentMember == NULL || currentMember->getType() == MemberTypes::GuestMember) { //현재 세션이 Host 세션인 경우
         this->getListHostAccommodationUI()->printLine("> Host계정로 로그인 하셔야 조회가 가능합니다.");
         return;
     }
 
-    //등록된 숙소 조회(이용날짜가 빠른순으로 출력)
-    // 3 2 커맨드 입력시  {숙소이름 숙소주소 가격 날짜 예약여부 opaque inventory 가격}* 출력
-    /*
-     *  3.2. 등록 숙소 조회
-        > room1 seoul 100000 2018:05:20 X 70000
-        > room2 seoul 100000 2018:05:21 X 70000
-     * */
     AccommodationCollection *accommodationCollection = AccommodationCollection::getInstance();
-    accommodationCollection->sortByDate();
+    accommodationCollection->sortByDate(); // 숙소 컬렉션에 존재하는 숙소들을 날짜를 기준으로 오름차순 정렬
     ReservationCollection *reservationCollection = ReservationCollection::getInstance();
     for (int i = 0; i < accommodationCollection->getSize(); i++) {
         Accommodation *accommodation = accommodationCollection->get(i);
