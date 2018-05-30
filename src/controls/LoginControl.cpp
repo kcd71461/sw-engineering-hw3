@@ -12,14 +12,14 @@ void LoginControl::tryLogin(string id, string password) {
 
 
     for (int i = 0, length = members->getSize(); i < length; i++) {
-        if (members->get(i)->getID().compare(id) == 0) {
+        if (members->get(i)->getID().compare(id) == 0) { // 멤버 컬렉션에 이미 입력된 id를 갖는 회원이 존재 하는지 확인
             Member *member = NULL;
             member = members->get(i);
-            if (member != NULL && member->equalsPassword(password)) {
+            if (member != NULL && member->equalsPassword(password)) { // 회원의 비밀번호가 입력된 비밀번호와 같은지 확인
                 Session *newSession = new Session(member);
                 SessionCollection *sessions = SessionCollection::getInstance();
-                sessions->add(newSession);
-                sessions->changeCurrentSession(newSession);
+                sessions->add(newSession); // 비밀번호가 제대로 입력된 경우 세션 추가
+                sessions->changeCurrentSession(newSession); // 방금 추가된 세션으로 세션 변경
                 this->getLoginUI()->printLine("> %s %s", id.c_str(), password.c_str());
             } else {
                 if (member == NULL) {
