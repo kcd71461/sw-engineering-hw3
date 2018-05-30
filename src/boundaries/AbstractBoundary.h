@@ -25,7 +25,7 @@ using namespace std;
 class AbstractControl;
 
 /**
- * Boundary Class Abstraction
+ * Base Boundary Class Abstraction.
  */
 class AbstractBoundary {
     friend class AbstractControl;

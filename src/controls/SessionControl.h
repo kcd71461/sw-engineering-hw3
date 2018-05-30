@@ -13,7 +13,7 @@
 class SessionUI;
 
 /**
- * 세션 관련 명령을 수행
+ * 세션 전환 기능 Control Class.
  */
 class SessionControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(SessionControl)
@@ -21,13 +21,13 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SessionControl, SessionUI)
 
 public:
     /**
-     * 세션 전환
+     * 현재 세션 전환
      * @param userID
      */
     void changeSession(string userID);
 
     /**
-     * Guest 세션 전환
+     * 현재 세션을 Guest 세션으로 전환
      */
     void changeSessionToGuest();
 };

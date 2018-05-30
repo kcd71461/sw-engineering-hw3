@@ -11,7 +11,7 @@
 class LoginUI;
 
 /**
- * 로그인 관련 Control
+ * 로그인 기능 Control Class.
  */
 class LoginControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(LoginControl)

@@ -12,15 +12,26 @@
 class SearchUI;
 
 /**
- * 숙소 검색 + 예약 시도
+ * 숙소 검색 + 예약 시도 기능 Control Class.
  */
 class SearchControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(SearchControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchControl, SearchUI)
 
 public:
+    /**
+     * 입력받은 조건을 만족하는 숙소를 list
+     * @param address
+     * @param date
+     */
     void searchAccommodations(string address, string date);
 
+    /**
+     * Reservation Item을 생성하여 ReservationCollection에 추가
+     * @param hostid
+     * @param guestid
+     * @param accommoname
+     */
     void addReservation(string hostid,string guestid, string accommoname);
 };
 

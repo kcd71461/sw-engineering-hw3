@@ -11,7 +11,7 @@
 class WithdrawalUI;
 
 /**
- * 회원 탈퇴 Control
+ * 회원 탈퇴 기능 Control Class.
  */
 class WithdrawalControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(WithdrawalControl)
@@ -19,7 +19,7 @@ GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(WithdrawalControl, WithdrawalUI)
 
 public:
     /**
-     * 회원 삭제 요청을 수행
+     * 탈퇴 조건을 체크하고 MemberCollection 에서 Member 삭제를 시도
      */
     void deleteMember();
 };
