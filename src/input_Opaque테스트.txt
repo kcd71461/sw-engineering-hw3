@@ -1,0 +1,22 @@
+6 2
+3 2
+5 1 2018:05:15:12:00
+1 1 host yoo 112233 seoul ytn testpwd
+2 1 ytn testpwd
+3 1 room1 seoul 100000 2018:05:20 70003
+3 1 room2 seoul 100000 2018:05:20 70002
+3 1 room3 seoul 100000 2018:05:20 70001
+6 2
+5 1 2018:05:15:13:00
+1 1 guest sohn 334455 busan sbs1 testpwd
+1 1 guest sohn 334455 busan sbs2 testpwd
+1 1 guest sohn 334455 busan sbs3 testpwd
+2 1 sbs1 testpwd
+4 3 seoul 2018:05:20 75000
+6 2
+2 1 sbs2 testpwd
+4 3 seoul 2018:05:20 75000
+6 2
+2 1 sbs2 testpwd
+4 3 seoul 2018:05:20 75000
+7 1
