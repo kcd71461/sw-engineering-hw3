@@ -16,6 +16,9 @@ class WithdrawalUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(WithdrawalControl)
 
 public:
+    /**
+     * 회원 탈퇴 요청 핸들러
+     */
     void onWithdrawalRequest();
 };
 

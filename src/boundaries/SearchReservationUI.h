@@ -17,6 +17,9 @@ class SearchReservationUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchReservationControl)
 
 public:
+    /**
+     * 예약 조회 요청 핸들러
+     */
     void onSearchReservationRequest();
 };
 

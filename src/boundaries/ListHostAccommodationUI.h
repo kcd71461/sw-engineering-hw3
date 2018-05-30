@@ -17,7 +17,7 @@ GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(ListHostAccommodationControl)
 
 public:
     /**
-     * 호스트가 등록숙소리스트를 요청
+     * 호스트가 등록숙소리스트를 요청 핸들러
      */
     void onListAccommodation();
 };

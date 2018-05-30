@@ -18,7 +18,7 @@ GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(OpaqueInventoryControl)
 
 public:
     /**
-     * Opaque 예약 요청
+     * Opaque 예약 요청 핸들러
      * @param address
      * @param date
      * @param opaqueCost
