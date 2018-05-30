@@ -10,12 +10,24 @@
 
 using namespace std;
 
+/**
+ * 현재 시각 관련 Util Class
+ */
 class Time {
 private:
-    static string _time;
+    static string _time; // 현재 시각
 public:
+
+    /**
+     * 현재 시각 설정
+     * @param time
+     */
     static void setCurrentTime(string time);
 
+    /**
+     * 현재 시각 getter
+     * @return
+     */
     static string getCurrentTime();
 };
 
