@@ -1,5 +1,5 @@
 //
-// Created by 김창 on 18. 5. 27.
+// Created by 김창덕 on 18. 5. 27.
 //
 
 #include <cstring>
