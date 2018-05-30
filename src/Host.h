@@ -9,11 +9,20 @@
 #include "AccommodationCollection.h"
 #include "Member.h"
 
+/**
+ * Host Type Member Class
+ */
 class Host : public Member {
 public:
+    /**
+     * Host 생성자
+     * @param name
+     * @param securityNumber
+     * @param address
+     * @param id
+     * @param password
+     */
     Host(const string &name, const string &securityNumber, const string &address, const string &id, const string &password);
-
-    AccommodationCollection *getAccommodations();
 };
 
 #endif //SW_ENGINEERING_HW3_HOST_H

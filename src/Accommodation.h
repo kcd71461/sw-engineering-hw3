@@ -10,13 +10,16 @@
 
 using namespace std;
 
+/**
+ * 숙소 정보 Class.
+ */
 class Accommodation {
-    string hostid;
-    string name;
-    string address;
-    int cost;
-    string date;
-    string createDate;
+    string hostid; // Host ID
+    string name; // 숙소명
+    string address; // 주소
+    int cost; // 가격
+    string date; // 숙소 예약 가능일
+    string createDate; // 숙소 등록일
 
 private:
     int opaqueCost;
