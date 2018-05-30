@@ -14,7 +14,7 @@ void Time::setCurrentTime(string time) {
         Accommodation *accommodation = accommodations->get(i);
         string expireDate = DateTimeUtils::addYears(accommodation->getCreateDate(), 1); // 만료일: 등록일 + 1년
 
-        // 만약 (만료일 <현재시각 && 예약가능날짜+1일<현재시각) 이 참이면 숙소 삭제
+        // 만약 (만료일<현재시각 && 예약가능날짜+1일<현재시각) 이 참이면 숙소 삭제
         if (time.compare(expireDate) > 0 && time.compare(DateTimeUtils::addDays(accommodation->getDate(), 1))) {
             accommodations->remove(accommodation);
             i--;
