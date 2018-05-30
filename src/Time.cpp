@@ -1,5 +1,5 @@
 //
-// Created by 권영 on 18. 5. 29.
+// Created by 권영진 on 18. 5. 29.
 //
 #include "Time.h"
 #include "AccommodationCollection.h"
