@@ -13,7 +13,7 @@
 class OpaqueInventoryUI;
 
 /**
- * OpaqueInventory 예약 시도 Control
+ * OpaqueInventory 예약 시도 기능 Control
  */
 class OpaqueInventoryControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(OpaqueInventoryControl)
@@ -21,6 +21,13 @@ GENERATE_SINGLETON_DECLARE(OpaqueInventoryControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(OpaqueInventoryControl, OpaqueInventoryUI)
 
 private:
+    /**
+     * ReservationCollection에 Reservation Item을 생성하여 추가.
+     * @param hostid
+     * @param accommodation
+     * @param opaqueCost
+     * @return
+     */
     string addOpaqueReservation(string hostid, string accommodation, int opaqueCost);
 
 public:

@@ -11,7 +11,7 @@
 class LogoutUI;
 
 /**
- * 로그아웃 Control
+ * 로그아웃 기능 Control Class.
  */
 class LogoutControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(LogoutControl)

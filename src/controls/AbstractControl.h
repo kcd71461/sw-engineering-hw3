@@ -23,19 +23,28 @@ BOUNDARY_CLASS_NAME *CONTROL_CLASS_NAME::get##BOUNDARY_CLASS_NAME() { return sta
 class AbstractBoundary;
 
 /**
- * Control 추상 클래스
+ * Base Control Class Abstraction.
  */
 class AbstractControl {
 private:
+    /**
+     * 매칭 Boundary object
+     */
     AbstractBoundary *boundary;
 protected:
     AbstractControl(AbstractBoundary *boundary);
 
-    ~AbstractControl();
-
 public:
+    /**
+     * 매칭 Boundary object를 반환
+     * @return
+     */
     AbstractBoundary *getBoundary();
 
+    /**
+     * 현재 session의 member를 반환한다.
+     * @return
+     */
     Member *getCurrentMember();
 };
 

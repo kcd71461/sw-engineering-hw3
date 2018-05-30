@@ -11,7 +11,7 @@
 class SearchReservationUI;
 
 /**
- * 예약 내역 조회
+ * 예약 조회 기능 Control Class.
  */
 class SearchReservationControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(SearchReservationControl)

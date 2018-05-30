@@ -14,6 +14,9 @@
 
 class RegisterUI;
 
+/**
+ * 회원 가입 기능 Control Class.
+ */
 class RegisterControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(RegisterControl)
 
