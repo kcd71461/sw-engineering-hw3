@@ -14,9 +14,7 @@ AbstractBoundary *AbstractControl::getBoundary() {
     return this->boundary;
 }
 
-AbstractControl::~AbstractControl() {
-    delete (this->boundary);
-}
+
 
 Member *AbstractControl::getCurrentMember() {
     return SessionCollection::getInstance()->getCurrentSession()->getMember();

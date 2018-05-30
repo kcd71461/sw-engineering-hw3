@@ -7,7 +7,7 @@
 #include "../SessionCollection.h"
 
 void SessionControl::changeSession(string userID) {
-    if (SessionCollection::getInstance()->changeCurrentSession(userID)) {
+    if (SessionCollection::getInstance()->changeCurrentSession(userID)) { // 현재 세션을 변경하려고 하는 id의 세션으로 변경
         this->getSessionUI()->printLine("> %s",
                                         SessionCollection::getInstance()->getCurrentSession()->getMember()->getID().c_str());
     } else {
@@ -16,7 +16,7 @@ void SessionControl::changeSession(string userID) {
 }
 
 void SessionControl::changeSessionToGuest() {
-    SessionCollection::getInstance()->changeCurrentSessionToGuest();
+    SessionCollection::getInstance()->changeCurrentSessionToGuest(); //현재 세션을 게스트 세션으로 변경.
 }
 
 
