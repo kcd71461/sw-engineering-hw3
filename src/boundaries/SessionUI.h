@@ -17,7 +17,14 @@ class SessionUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SessionControl)
 
 public:
+    /**
+     * 세션 변경 요청 핸들러
+     */
     void onChangeSession(char *);
+
+    /**
+     * 개스트 세션 변경 요청 핸들러
+     */
     void onChangeGuestSession();
 };
 

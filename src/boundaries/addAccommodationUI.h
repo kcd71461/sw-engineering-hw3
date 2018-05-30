@@ -11,7 +11,7 @@
 class addAccommodationControl;
 
 /**
- * 숙소 등록 Boundary Class.
+ * 숙소 등록 기능 Boundary Class.
  */
 class addAccommodationUI : public AbstractBoundary {
     GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(addAccommodationControl)
