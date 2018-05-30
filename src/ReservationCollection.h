@@ -11,6 +11,9 @@
 
 using namespace std;
 
+/**
+ * Reservation List의 Wrapper Class. Singleton.
+ */
 class ReservationCollection : public Collection<Reservation> {
     GENERATE_SINGLETON_DECLARE(ReservationCollection)
 private:

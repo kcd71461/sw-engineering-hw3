@@ -8,6 +8,9 @@
 
 #include "Member.h"
 
+/**
+ * Guest Type Member Class.
+ */
 class Guest : public Member {
 public:
     Guest(const string &name, const string &securityNumber, const string &address, const string &id, const string &password);
@@ -17,6 +20,9 @@ public:
     void setLastOpaqueTryTime(const string &lastOpaqueTryTime);
 
 private:
+    /**
+     * 마지막 Opaque 예약 시도 시간
+     */
     string lastOpaqueTryTime;
 };
 

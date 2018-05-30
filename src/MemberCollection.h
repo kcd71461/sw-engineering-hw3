@@ -11,6 +11,9 @@
 
 using namespace std;
 
+/**
+ * Member List의 Wrapper Class. Singleton.
+ */
 class MemberCollection : public Collection<Member> {
 GENERATE_SINGLETON_DECLARE(MemberCollection)
 private:

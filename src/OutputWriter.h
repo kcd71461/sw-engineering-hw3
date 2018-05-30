@@ -12,7 +12,7 @@
 using namespace std;
 
 /**
- * File Writing 과 관련된 Class
+ * File Writing 과 관련된 Wrapper Class
  */
 class OutputWriter {
     friend class AbstractBoundary;
@@ -39,14 +39,36 @@ private:
     void vwriteLine(const char *string, va_list list);
 
 public:
+    /**
+     * 파일 스트림을 open
+     * @param fileName
+     */
     void open(string fileName);
 
+    /**
+     * 파일 스트림 close
+     */
     void close();
 
+    /**
+     * 파일 출력
+     * @param fmt 포맷
+     * @param ... 서식문자 가변인자
+     */
     void write(string fmt, ...);
 
+    /**
+     * 파일 출력 (개행 concat)
+     * @param fmt 포맷
+     * @param ... 서식문자 가변인자
+     */
     void writeLine(string fmt, ...);
 
+    /**
+     * 파일에 개행문자 출력
+     * @param fmt 포맷
+     * @param ... 서식문자 가변인자
+     */
     void writeLine();
 };
 

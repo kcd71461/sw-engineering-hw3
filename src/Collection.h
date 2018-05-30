@@ -10,6 +10,10 @@
 
 using namespace std;
 
+/**
+ * List Wrapper인 Collection Template Class.
+ * @tparam T
+ */
 template<typename T>
 class Collection {
 protected:

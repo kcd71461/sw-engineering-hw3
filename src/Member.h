@@ -10,7 +10,7 @@
 using namespace std;
 
 /**
- * 회원 유형
+ * 회원 유형 Enumerable
  */
 enum MemberTypes {
     HostMember, GuestMember
@@ -21,12 +21,12 @@ enum MemberTypes {
  */
 class Member {
 private:
-    MemberTypes type;
-    string name;
-    string securityNumber;
-    string address;
-    string id;
-    string password;
+    MemberTypes type; // 회원 유형
+    string name; // 회원 이름
+    string securityNumber; // 회원 주민등록 번호
+    string address; // 회원 주소
+    string id; // 회원 ID
+    string password; // 회원 패스워드
 public:
 
     Member(MemberTypes type, string name, string securityNumber, string address, string id, string password);

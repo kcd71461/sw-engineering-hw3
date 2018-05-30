@@ -1,5 +1,5 @@
 //
-// Created by 김창덕 on 2018-05-30.
+// Created by 변상혁 on 2018-05-30.
 //
 
 #include "ListHostAccommodationUI.h"
