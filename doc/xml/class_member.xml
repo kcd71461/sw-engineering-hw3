@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_member" kind="class" language="C++" prot="public">
+    <compoundname>Member</compoundname>
+    <derivedcompoundref refid="class_guest" prot="public" virt="non-virtual">Guest</derivedcompoundref>
+    <derivedcompoundref refid="class_host" prot="public" virt="non-virtual">Host</derivedcompoundref>
+    <includes refid="_member_8h" local="no">Member.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_member_1a258071d2f03e60104e5316ed861f4369" prot="private" static="no" mutable="no">
+        <type>MemberTypes</type>
+        <definition>MemberTypes Member::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="24" column="1" bodyfile="src/Member.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_member_1a9777c104747d3ee2950bf755c296c022" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Member::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="25" column="1" bodyfile="src/Member.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_member_1a8b81be7a38161242131dfeb56c3c2c5d" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Member::securityNumber</definition>
+        <argsstring></argsstring>
+        <name>securityNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="26" column="1" bodyfile="src/Member.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_member_1a012bdbd53fc2c1f641aff22a90ea9575" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Member::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="27" column="1" bodyfile="src/Member.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_member_1a5b9a903d1cc8061a1d47c754ffdcb652" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Member::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="28" column="1" bodyfile="src/Member.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_member_1a5aecdd247fc4a36643f36dd02f66e5aa" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Member::password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="29" column="1" bodyfile="src/Member.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_member_1af48adfcb614a6e5501237dc93e07ab2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Member::Member</definition>
+        <argsstring>(MemberTypes type, string name, string securityNumber, string address, string id, string password)</argsstring>
+        <name>Member</name>
+        <param>
+          <type>MemberTypes</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>securityNumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="32" column="1" bodyfile="src/Member.cpp" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_member_1accf776380b3a2f391b4f57e1d938a071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemberTypes</type>
+        <definition>MemberTypes Member::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="34" column="1" bodyfile="src/Member.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_member_1acbe6a0cd073a21fb0f1da2cbfb260952" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Member::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="36" column="1" bodyfile="src/Member.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_member_1a737850218112eb82ae1d81789c1244e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Member::getAddress</definition>
+        <argsstring>()</argsstring>
+        <name>getAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="38" column="1" bodyfile="src/Member.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_member_1ae486cfbc7e5ab2fc5705115c4f96b2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Member::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="40" column="1" bodyfile="src/Member.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_member_1a9fe3103fb15b00e6a51194d57f6c4148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Member::equalsPassword</definition>
+        <argsstring>(string password)</argsstring>
+        <name>equalsPassword</name>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>패스워드 일치 여부 체크 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>일치 여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Member.h" line="47" column="1" bodyfile="src/Member.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>회원 정보에 관한 Class </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>Guest</label>
+        <link refid="class_guest"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Member</label>
+        <link refid="class_member"/>
+      </node>
+      <node id="76">
+        <label>Host</label>
+        <link refid="class_host"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/Member.h" line="22" column="1" bodyfile="src/Member.h" bodystart="22" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_member_1a012bdbd53fc2c1f641aff22a90ea9575" prot="private" virt="non-virtual"><scope>Member</scope><name>address</name></member>
+      <member refid="class_member_1a9fe3103fb15b00e6a51194d57f6c4148" prot="public" virt="non-virtual"><scope>Member</scope><name>equalsPassword</name></member>
+      <member refid="class_member_1a737850218112eb82ae1d81789c1244e1" prot="public" virt="non-virtual"><scope>Member</scope><name>getAddress</name></member>
+      <member refid="class_member_1ae486cfbc7e5ab2fc5705115c4f96b2c2" prot="public" virt="non-virtual"><scope>Member</scope><name>getID</name></member>
+      <member refid="class_member_1acbe6a0cd073a21fb0f1da2cbfb260952" prot="public" virt="non-virtual"><scope>Member</scope><name>getName</name></member>
+      <member refid="class_member_1accf776380b3a2f391b4f57e1d938a071" prot="public" virt="non-virtual"><scope>Member</scope><name>getType</name></member>
+      <member refid="class_member_1a5b9a903d1cc8061a1d47c754ffdcb652" prot="private" virt="non-virtual"><scope>Member</scope><name>id</name></member>
+      <member refid="class_member_1af48adfcb614a6e5501237dc93e07ab2c" prot="public" virt="non-virtual"><scope>Member</scope><name>Member</name></member>
+      <member refid="class_member_1a9777c104747d3ee2950bf755c296c022" prot="private" virt="non-virtual"><scope>Member</scope><name>name</name></member>
+      <member refid="class_member_1a5aecdd247fc4a36643f36dd02f66e5aa" prot="private" virt="non-virtual"><scope>Member</scope><name>password</name></member>
+      <member refid="class_member_1a8b81be7a38161242131dfeb56c3c2c5d" prot="private" virt="non-virtual"><scope>Member</scope><name>securityNumber</name></member>
+      <member refid="class_member_1a258071d2f03e60104e5316ed861f4369" prot="private" virt="non-virtual"><scope>Member</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

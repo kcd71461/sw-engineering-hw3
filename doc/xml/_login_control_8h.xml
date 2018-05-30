@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_login_control_8h" kind="file" language="C++">
+    <compoundname>LoginControl.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">../SingletonMacro.h</includes>
+    <includes refid="_login_u_i_8h" local="yes">../boundaries/LoginUI.h</includes>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includedby refid="_login_u_i_8cpp" local="yes">src/boundaries/LoginUI.cpp</includedby>
+    <includedby refid="_login_control_8cpp" local="yes">src/controls/LoginControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="355">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>../boundaries/LoginUI.h</label>
+        <link refid="_login_u_i_8h_source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>string</label>
+      </node>
+      <node id="354">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="349">
+        <label>src/controls/LoginControl.h</label>
+        <link refid="_login_control_8h"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_login_control" prot="public">LoginControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/27/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_LOGINCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_LOGINCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/LoginUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_login_u_i" kindref="compound">LoginUI</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_login_control" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_login_control" kindref="compound">LoginControl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="class_login_control" kindref="compound">LoginControl</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(<ref refid="class_login_control" kindref="compound">LoginControl</ref>,<sp/><ref refid="class_login_u_i" kindref="compound">LoginUI</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_login_control_1aff5b73021c402918a3e6de18b326367f" kindref="member">tryLogin</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_LOGINCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/LoginControl.h"/>
+  </compounddef>
+</doxygen>

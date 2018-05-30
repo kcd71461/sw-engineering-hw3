@@ -10,6 +10,9 @@
 
 class SessionControl;
 
+/**
+ * Session 관련 기능 Boundary Class.
+ */
 class SessionUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SessionControl)
 

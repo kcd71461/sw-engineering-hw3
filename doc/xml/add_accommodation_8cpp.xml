@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="add_accommodation_8cpp" kind="file" language="C++">
+    <compoundname>addAccommodation.cpp</compoundname>
+    <includes refid="add_accommodation_8h" local="yes">addAccommodation.h</includes>
+    <includes refid="_accommodation_collection_8h" local="yes">../AccommodationCollection.h</includes>
+    <includes refid="_accommodation_8h" local="yes">../Accommodation.h</includes>
+    <incdepgraph>
+      <node id="301">
+        <label>list</label>
+      </node>
+      <node id="296">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>src/controls/addAccommodation.cpp</label>
+        <link refid="add_accommodation_8cpp"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>addAccommodation.h</label>
+        <link refid="add_accommodation_8h_source"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>string</label>
+      </node>
+      <node id="299">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>../AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>../boundaries/addAccommodationUI.h</label>
+        <link refid="add_accommodation_u_i_8h_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>simjae<sp/>on<sp/>18.<sp/>5.<sp/>27.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;addAccommodation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../AccommodationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Accommodation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(<ref refid="classadd_accommodation" kindref="compound">addAccommodation</ref>,<sp/><ref refid="classadd_accommodation_u_i" kindref="compound">addAccommodationUI</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">GENERATE_SINGLETON_IMPLEMENT(<ref refid="classadd_accommodation" kindref="compound">addAccommodation</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addAccommodation::addNewAccommodation(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hostid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cost,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accommodation" kindref="compound">Accommodation</ref><sp/>*newAccommodation<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_accommodation" kindref="compound">Accommodation</ref>(hostid,<sp/>name,<sp/>address,<sp/>cost,<sp/>date,<sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>AccommodationCollection::getInstance()-&gt;add(newAccommodation);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getaddAccommodationUI()-&gt;printLine(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>%s<sp/>%s<sp/>%d<sp/>%s<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>name.c_str(),<sp/>address.c_str(),<sp/>cost,<sp/>date.c_str(),<sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/addAccommodation.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_register_u_i" kind="class" language="C++" prot="public">
+    <compoundname>RegisterUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_register_u_i_1aae14cecd8059e2542695140d1b25c30c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RegisterUI::onRegisterRequest</definition>
+        <argsstring>(MemberTypes type, string name, string securityNumber, string address, string id, string password)</argsstring>
+        <name>onRegisterRequest</name>
+        <param>
+          <type>MemberTypes</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>securityNumber</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/RegisterUI.h" line="19" column="1" bodyfile="src/boundaries/RegisterUI.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+      <node id="98">
+        <label>RegisterUI</label>
+        <link refid="class_register_u_i"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="101">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+      <node id="100">
+        <label>RegisterUI</label>
+        <link refid="class_register_u_i"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/RegisterUI.h" line="14" column="1" bodyfile="src/boundaries/RegisterUI.h" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>RegisterUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>RegisterUI</scope><name>getControl</name></member>
+      <member refid="class_register_u_i_1aae14cecd8059e2542695140d1b25c30c" prot="public" virt="non-virtual"><scope>RegisterUI</scope><name>onRegisterRequest</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>RegisterUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>RegisterUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

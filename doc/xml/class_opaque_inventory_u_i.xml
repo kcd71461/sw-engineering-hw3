@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_opaque_inventory_u_i" kind="class" language="C++" prot="public">
+    <compoundname>OpaqueInventoryUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_opaque_inventory_u_i_1afa5550666cb6f3616f6a23e738e049c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpaqueInventoryUI::onOpaqueReservationRequest</definition>
+        <argsstring>(string address, string date, int opaqueCost)</argsstring>
+        <name>onOpaqueReservationRequest</name>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/OpaqueInventoryUI.h" line="17" column="1" bodyfile="src/boundaries/OpaqueInventoryUI.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="88">
+        <label>OpaqueInventoryUI</label>
+        <link refid="class_opaque_inventory_u_i"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="90">
+        <label>OpaqueInventoryUI</label>
+        <link refid="class_opaque_inventory_u_i"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/OpaqueInventoryUI.h" line="13" column="1" bodyfile="src/boundaries/OpaqueInventoryUI.h" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>OpaqueInventoryUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>OpaqueInventoryUI</scope><name>getControl</name></member>
+      <member refid="class_opaque_inventory_u_i_1afa5550666cb6f3616f6a23e738e049c8" prot="public" virt="non-virtual"><scope>OpaqueInventoryUI</scope><name>onOpaqueReservationRequest</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>OpaqueInventoryUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>OpaqueInventoryUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

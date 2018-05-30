@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_host_8cpp" kind="file" language="C++">
+    <compoundname>Host.cpp</compoundname>
+    <includes refid="_host_8h" local="yes">Host.h</includes>
+    <incdepgraph>
+      <node id="562">
+        <label>list</label>
+      </node>
+      <node id="563">
+        <label>Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>Host.h</label>
+        <link refid="_host_8h_source"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>string</label>
+      </node>
+      <node id="560">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>src/Host.cpp</label>
+        <link refid="_host_8cpp"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+      </node>
+      <node id="557">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Host.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref><sp/>*Host::getAccommodations()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref><sp/>*accomodations<sp/>=<sp/>AccommodationCollection::getInstance();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>AccommodationCollection<sp/>*result<sp/>=<sp/>new<sp/>AccommodationCollection();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>accomodations-&gt;<ref refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kindref="member">getSize</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">Host::Host(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;securityNumber,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;address,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;password)<sp/>:<sp/><ref refid="class_member" kindref="compound">Member</ref>(MemberTypes::HostMember,<sp/>name,<sp/>securityNumber,<sp/>address,<sp/>id,<sp/>password)<sp/>{}</highlight></codeline>
+    </programlisting>
+    <location file="src/Host.cpp"/>
+  </compounddef>
+</doxygen>

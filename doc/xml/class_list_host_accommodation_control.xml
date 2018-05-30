@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_list_host_accommodation_control" kind="class" language="C++" prot="public">
+    <compoundname>ListHostAccommodationControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_list_host_accommodation_control_1a81b570b7ff3da104613be89c3899db39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListHostAccommodationControl::listAccommodations</definition>
+        <argsstring>()</argsstring>
+        <name>listAccommodations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/ListHostAccommodationControl.h" line="20" column="1" bodyfile="src/controls/ListHostAccommodationControl.cpp" bodystart="11" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="50">
+        <label>ListHostAccommodationControl</label>
+        <link refid="class_list_host_accommodation_control"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="52">
+        <label>ListHostAccommodationControl</label>
+        <link refid="class_list_host_accommodation_control"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/ListHostAccommodationControl.h" line="14" column="1" bodyfile="src/controls/ListHostAccommodationControl.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>ListHostAccommodationControl</scope><name>AbstractControl</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>ListHostAccommodationControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>ListHostAccommodationControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_list_host_accommodation_control_1a81b570b7ff3da104613be89c3899db39" prot="public" virt="non-virtual"><scope>ListHostAccommodationControl</scope><name>listAccommodations</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>ListHostAccommodationControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

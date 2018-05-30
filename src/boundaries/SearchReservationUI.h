@@ -10,6 +10,9 @@
 
 class SearchReservationControl;
 
+/**
+ * 예약 조회 기능 Boundary Class.
+ */
 class SearchReservationUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchReservationControl)
 

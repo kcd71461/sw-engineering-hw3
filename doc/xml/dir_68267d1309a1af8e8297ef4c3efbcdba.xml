@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_16530921cf49faa48e8bbcb1ff46002f">src/boundaries</innerdir>
+    <innerdir refid="dir_020e4a53e97f78b22783b09a7c932b0c">src/cmake-build-debug</innerdir>
+    <innerdir refid="dir_7afd03d72c1de07a6d47e666c364824c">src/controls</innerdir>
+    <innerfile refid="_accommodation_8h">Accommodation.h</innerfile>
+    <innerfile refid="_accommodation_collection_8cpp">AccommodationCollection.cpp</innerfile>
+    <innerfile refid="_accommodation_collection_8h">AccommodationCollection.h</innerfile>
+    <innerfile refid="_collection_8h">Collection.h</innerfile>
+    <innerfile refid="_date_time_utils_8cpp">DateTimeUtils.cpp</innerfile>
+    <innerfile refid="_date_time_utils_8h">DateTimeUtils.h</innerfile>
+    <innerfile refid="_guest_8cpp">Guest.cpp</innerfile>
+    <innerfile refid="_guest_8h">Guest.h</innerfile>
+    <innerfile refid="_host_8cpp">Host.cpp</innerfile>
+    <innerfile refid="_host_8h">Host.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_member_8cpp">Member.cpp</innerfile>
+    <innerfile refid="_member_8h">Member.h</innerfile>
+    <innerfile refid="_member_collection_8cpp">MemberCollection.cpp</innerfile>
+    <innerfile refid="_member_collection_8h">MemberCollection.h</innerfile>
+    <innerfile refid="_opaque_8h">Opaque.h</innerfile>
+    <innerfile refid="_output_writer_8cpp">OutputWriter.cpp</innerfile>
+    <innerfile refid="_output_writer_8h">OutputWriter.h</innerfile>
+    <innerfile refid="_reservation_8cpp">Reservation.cpp</innerfile>
+    <innerfile refid="_reservation_8h">Reservation.h</innerfile>
+    <innerfile refid="_reservation_collection_8cpp">ReservationCollection.cpp</innerfile>
+    <innerfile refid="_reservation_collection_8h">ReservationCollection.h</innerfile>
+    <innerfile refid="_session_8cpp">Session.cpp</innerfile>
+    <innerfile refid="_session_8h">Session.h</innerfile>
+    <innerfile refid="_session_collection_8cpp">SessionCollection.cpp</innerfile>
+    <innerfile refid="_session_collection_8h">SessionCollection.h</innerfile>
+    <innerfile refid="_singleton_macro_8h">SingletonMacro.h</innerfile>
+    <innerfile refid="_time_8cpp">Time.cpp</innerfile>
+    <innerfile refid="_time_8h">Time.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

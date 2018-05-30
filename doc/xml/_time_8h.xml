@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_time_8h" kind="file" language="C++">
+    <compoundname>Time.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="_accommodation_8h" local="yes">src/Accommodation.h</includedby>
+    <includedby refid="_opaque_inventory_control_8cpp" local="yes">src/controls/OpaqueInventoryControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="_time_8cpp" local="yes">src/Time.cpp</includedby>
+    <incdepgraph>
+      <node id="764">
+        <label>string</label>
+      </node>
+      <node id="763">
+        <label>src/Time.h</label>
+        <link refid="_time_8h"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="768">
+        <label>src/Host.h</label>
+        <link refid="_host_8h_source"/>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>src/Time.h</label>
+        <link refid="_time_8h"/>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>src/controls/RegisterControl.h</label>
+        <link refid="_register_control_8h_source"/>
+      </node>
+      <node id="767">
+        <label>src/AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>src/Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="767" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_time" prot="public">Time</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-28.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_TIME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_TIME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_time" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_time" kindref="compound">Time</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_time;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCurrentTime(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>time);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>getCurrentTime();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_TIME_H</highlight></codeline>
+    </programlisting>
+    <location file="src/Time.h"/>
+  </compounddef>
+</doxygen>

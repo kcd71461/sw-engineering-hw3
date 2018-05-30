@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_search_reservation_control" kind="class" language="C++" prot="public">
+    <compoundname>SearchReservationControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="_search_reservation_control_8h" local="no">SearchReservationControl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_reservation_control_1abe42c4bf494cbafebad773f9b0737b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchReservationControl::SearchReservation</definition>
+        <argsstring>()</argsstring>
+        <name>SearchReservation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>현재 세션의 예약 내역을 list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/SearchReservationControl.h" line="24" column="1" bodyfile="src/controls/SearchReservationControl.cpp" bodystart="16" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>예약 내역 조회 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="113">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="112">
+        <label>SearchReservationControl</label>
+        <link refid="class_search_reservation_control"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="115">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="114">
+        <label>SearchReservationControl</label>
+        <link refid="class_search_reservation_control"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/SearchReservationControl.h" line="16" column="1" bodyfile="src/controls/SearchReservationControl.h" bodystart="16" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>SearchReservationControl</scope><name>AbstractControl</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>SearchReservationControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>SearchReservationControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_search_reservation_control_1abe42c4bf494cbafebad773f9b0737b98" prot="public" virt="non-virtual"><scope>SearchReservationControl</scope><name>SearchReservation</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>SearchReservationControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

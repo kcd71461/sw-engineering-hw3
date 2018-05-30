@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_search_u_i_8cpp" kind="file" language="C++">
+    <compoundname>SearchUI.cpp</compoundname>
+    <includes refid="_search_u_i_8h" local="yes">SearchUI.h</includes>
+    <includes refid="_search_control_8h" local="yes">../controls/SearchControl.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="187">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>string</label>
+      </node>
+      <node id="183">
+        <label>SearchUI.h</label>
+        <link refid="_search_u_i_8h_source"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>src/boundaries/SearchUI.cpp</label>
+        <link refid="_search_u_i_8cpp"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="188">
+        <label>../controls/SearchControl.h</label>
+        <link refid="_search_control_8h_source"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>simjae<sp/>on<sp/>18.<sp/>5.<sp/>27.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SearchUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/SearchControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(<ref refid="class_search_u_i" kindref="compound">SearchUI</ref>,<ref refid="class_search_control" kindref="compound">SearchControl</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_search_u_i_1adb0e0b5eb6fd7d5d0a98f1eb0239e6d3" kindref="member">SearchUI::listSearchResult</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getSearchControl()-&gt;searchAccommodations(address,<sp/>date);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_search_u_i_1a135ce7a4e608e1039612b926b85aac15" kindref="member">SearchUI::onReservateButtonClick</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hostid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>guestid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>accommoname)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getSearchControl()-&gt;addReservation(hostid,guestid<sp/>,accommoname);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/SearchUI.cpp"/>
+  </compounddef>
+</doxygen>

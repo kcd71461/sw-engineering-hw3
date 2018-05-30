@@ -24,6 +24,9 @@ using namespace std;
 
 class AbstractControl;
 
+/**
+ * Boundary Class Abstraction
+ */
 class AbstractBoundary {
     friend class AbstractControl;
 
@@ -32,11 +35,24 @@ private:
 protected:
     AbstractBoundary();
 
+    /**
+     * 매칭 Control 반환하는 함수
+     */
     AbstractControl *getControl();
 
 public:
+    /**
+     * 파일 출력
+     * @param fmt 포맷
+     * @param ... 서식문자인자
+     */
     virtual void print(const char *fmt, ...);
 
+    /**
+     * 파일 출력(개행)
+     * @param fmt 포맷
+     * @param ... 서식문자인자
+     */
     virtual void printLine(const char *fmt, ...);
 };
 

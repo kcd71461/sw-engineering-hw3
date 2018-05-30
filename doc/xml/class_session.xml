@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_session" kind="class" language="C++" prot="public">
+    <compoundname>Session</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_session_1ae26602f163053d86c2fda1103ea800c6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_member" kindref="compound">Member</ref> *</type>
+        <definition>Member* Session::member</definition>
+        <argsstring></argsstring>
+        <name>member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Session.h" line="16" column="1" bodyfile="src/Session.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_session_1ad92ef09b872c9227e38a6efdd4d8a837" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Session::Session</definition>
+        <argsstring>()</argsstring>
+        <name>Session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_guest" kindref="compound">Guest</ref> 세션 생성자. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Session.h" line="18" column="1" bodyfile="src/Session.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_1a7f366328741cdcd4200f3184c85d507a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Session::Session</definition>
+        <argsstring>(Member *member)</argsstring>
+        <name>Session</name>
+        <param>
+          <type><ref refid="class_member" kindref="compound">Member</ref> *</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>로그인 사용자 세션 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>member</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Session.h" line="20" column="1" bodyfile="src/Session.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_1aeae3ee95ffc22efdca7112eb10f84c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Session::isGuest</definition>
+        <argsstring>()</argsstring>
+        <name>isGuest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Session.h" line="22" column="1" bodyfile="src/Session.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_1a4867a03de74afef38b440ba32bee98ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_member" kindref="compound">Member</ref> *</type>
+        <definition>Member * Session::getMember</definition>
+        <argsstring>()</argsstring>
+        <name>getMember</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Session.h" line="24" column="1" bodyfile="src/Session.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Session.h" line="14" column="1" bodyfile="src/Session.h" bodystart="14" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_session_1a4867a03de74afef38b440ba32bee98ab" prot="public" virt="non-virtual"><scope>Session</scope><name>getMember</name></member>
+      <member refid="class_session_1aeae3ee95ffc22efdca7112eb10f84c4d" prot="public" virt="non-virtual"><scope>Session</scope><name>isGuest</name></member>
+      <member refid="class_session_1ae26602f163053d86c2fda1103ea800c6" prot="private" virt="non-virtual"><scope>Session</scope><name>member</name></member>
+      <member refid="class_session_1ad92ef09b872c9227e38a6efdd4d8a837" prot="public" virt="non-virtual"><scope>Session</scope><name>Session</name></member>
+      <member refid="class_session_1a7f366328741cdcd4200f3184c85d507a" prot="public" virt="non-virtual"><scope>Session</scope><name>Session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

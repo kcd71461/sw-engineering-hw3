@@ -16,7 +16,6 @@ GENERATE_SINGLETON_DECLARE(ListHostAccommodationControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(ListHostAccommodationControl, ListHostAccommodationUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
     void listAccommodations();
 };
 

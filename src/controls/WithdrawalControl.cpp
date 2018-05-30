@@ -57,4 +57,3 @@ void WithdrawalControl::deleteMember() {
     }
 
 }
-// TODO: 필요한 Control 함수 구현

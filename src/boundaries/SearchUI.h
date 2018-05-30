@@ -10,6 +10,9 @@
 
 class SearchControl;
 
+/**
+ * 숙소 검색+예약기능 Boundary Class.
+ */
 class SearchUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchControl)
 

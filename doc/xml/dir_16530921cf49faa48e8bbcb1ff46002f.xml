@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_16530921cf49faa48e8bbcb1ff46002f" kind="dir">
+    <compoundname>src/boundaries</compoundname>
+    <innerfile refid="_abstract_boundary_8cpp">AbstractBoundary.cpp</innerfile>
+    <innerfile refid="_abstract_boundary_8h">AbstractBoundary.h</innerfile>
+    <innerfile refid="add_accommodation_u_i_8cpp">addAccommodationUI.cpp</innerfile>
+    <innerfile refid="add_accommodation_u_i_8h">addAccommodationUI.h</innerfile>
+    <innerfile refid="_list_host_accommodation_u_i_8cpp">ListHostAccommodationUI.cpp</innerfile>
+    <innerfile refid="_list_host_accommodation_u_i_8h">ListHostAccommodationUI.h</innerfile>
+    <innerfile refid="_login_u_i_8cpp">LoginUI.cpp</innerfile>
+    <innerfile refid="_login_u_i_8h">LoginUI.h</innerfile>
+    <innerfile refid="_logout_u_i_8cpp">LogoutUI.cpp</innerfile>
+    <innerfile refid="_logout_u_i_8h">LogoutUI.h</innerfile>
+    <innerfile refid="_opaque_inventory_u_i_8cpp">OpaqueInventoryUI.cpp</innerfile>
+    <innerfile refid="_opaque_inventory_u_i_8h">OpaqueInventoryUI.h</innerfile>
+    <innerfile refid="_register_u_i_8cpp">RegisterUI.cpp</innerfile>
+    <innerfile refid="_register_u_i_8h">RegisterUI.h</innerfile>
+    <innerfile refid="_search_reservation_u_i_8cpp">SearchReservationUI.cpp</innerfile>
+    <innerfile refid="_search_reservation_u_i_8h">SearchReservationUI.h</innerfile>
+    <innerfile refid="_search_u_i_8cpp">SearchUI.cpp</innerfile>
+    <innerfile refid="_search_u_i_8h">SearchUI.h</innerfile>
+    <innerfile refid="_session_u_i_8cpp">SessionUI.cpp</innerfile>
+    <innerfile refid="_session_u_i_8h">SessionUI.h</innerfile>
+    <innerfile refid="_withdrawal_u_i_8cpp">WithdrawalUI.cpp</innerfile>
+    <innerfile refid="_withdrawal_u_i_8h">WithdrawalUI.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/boundaries/"/>
+  </compounddef>
+</doxygen>

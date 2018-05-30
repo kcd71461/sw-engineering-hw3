@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_time_8cpp" kind="file" language="C++">
+    <compoundname>Time.cpp</compoundname>
+    <includes refid="_time_8h" local="yes">Time.h</includes>
+    <includes refid="_accommodation_collection_8h" local="yes">AccommodationCollection.h</includes>
+    <includes refid="_date_time_utils_8h" local="yes">DateTimeUtils.h</includes>
+    <incdepgraph>
+      <node id="760">
+        <label>list</label>
+      </node>
+      <node id="755">
+        <label>string</label>
+      </node>
+      <node id="754">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>src/Time.cpp</label>
+        <link refid="_time_8cpp"/>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>DateTimeUtils.h</label>
+        <link refid="_date_time_utils_8h_source"/>
+        <childnode refid="755" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>simjae<sp/>on<sp/>18.<sp/>5.<sp/>29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Time.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AccommodationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DateTimeUtils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Time::_time<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Time::setCurrentTime(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>time)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>Time::_time<sp/>=<sp/>time;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref><sp/>*accommodations<sp/>=<sp/>AccommodationCollection::getInstance();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>length<sp/>=<sp/>accommodations-&gt;<ref refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kindref="member">getSize</ref>();<sp/>i<sp/>&lt;<sp/>length;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_accommodation" kindref="compound">Accommodation</ref><sp/>*accommodation<sp/>=<sp/>accommodations-&gt;<ref refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" kindref="member">get</ref>(i);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>expireDate<sp/>=<sp/>DateTimeUtils::addYears(accommodation-&gt;getCreateDate(),<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>만료일:<sp/>등록일<sp/>+<sp/>1년</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>만약<sp/>(만료일<sp/>&lt;현재시각<sp/>&amp;&amp;<sp/>예약가능날짜+1일&lt;현재시각)<sp/>이<sp/>참이면<sp/>숙소<sp/>삭제</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time.compare(expireDate)<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>time.compare(DateTimeUtils::addDays(accommodation-&gt;getDate(),<sp/>1)))<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodations-&gt;<ref refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" kindref="member">remove</ref>(accommodation);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i--;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>length--;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Time::getCurrentTime()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Time::_time;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Time.cpp"/>
+  </compounddef>
+</doxygen>

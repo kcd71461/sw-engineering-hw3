@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_session_collection" kind="class" language="C++" prot="public">
+    <compoundname>SessionCollection</compoundname>
+    <basecompoundref refid="class_collection" prot="public" virt="non-virtual">Collection&lt; Session &gt;</basecompoundref>
+    <includes refid="_session_collection_8h" local="no">SessionCollection.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_session_collection_1a0dea0ab6bd5c5922e1ccd9d9b0805ec2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_session" kindref="compound">Session</ref> *</type>
+        <definition>Session* SessionCollection::currentSession</definition>
+        <argsstring></argsstring>
+        <name>currentSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>현재 사용자의 session </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="34" column="1" bodyfile="src/SessionCollection.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_session_collection_1a9dcabce99a1b1c2b0fe8417c870d553c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SessionCollection::SessionCollection</definition>
+        <argsstring>()</argsstring>
+        <name>SessionCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="23" column="1" bodyfile="src/SessionCollection.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_collection_1af1995afd2d08649d1c8ee238387b211b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_session" kindref="compound">Session</ref> *</type>
+        <definition>Session * SessionCollection::getGuestSession</definition>
+        <argsstring>()</argsstring>
+        <name>getGuestSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>collection에서 guest session을 반환 <simplesect kind="return"><para>guest session </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="29" column="1" bodyfile="src/SessionCollection.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_session_collection_1a57ca0e2003ebc212dc0179c80201b3d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_session" kindref="compound">Session</ref> *</type>
+        <definition>Session * SessionCollection::getCurrentSession</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="36" column="1" bodyfile="src/SessionCollection.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_collection_1a52b76b5e700a4b3395784bbe56ccd1c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SessionCollection::changeCurrentSession</definition>
+        <argsstring>(Session *)</argsstring>
+        <name>changeCurrentSession</name>
+        <param>
+          <type><ref refid="class_session" kindref="compound">Session</ref> *</type>
+          <defname>session</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>현재 세션을 변경한다. <simplesect kind="return"><para>변경 성공 여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="43" column="1" bodyfile="src/SessionCollection.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_collection_1a516c5d275d9adc47040c5acbe1e47372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SessionCollection::changeCurrentSession</definition>
+        <argsstring>(string userID)</argsstring>
+        <name>changeCurrentSession</name>
+        <param>
+          <type>string</type>
+          <declname>userID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>현재 세션을 id={userID} 사용자의 세션으로 변경한다. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>사용자ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>변경 성공 여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="50" column="1" bodyfile="src/SessionCollection.cpp" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_collection_1ada1aab5737803b2f9b11d91c412d8047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SessionCollection::changeCurrentSessionToGuest</definition>
+        <argsstring>()</argsstring>
+        <name>changeCurrentSessionToGuest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>현재 세션을 <ref refid="class_guest" kindref="compound">Guest</ref> 세션으로 변경한다. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SessionCollection.h" line="55" column="1" bodyfile="src/SessionCollection.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_session" kindref="compound">Session</ref> <ref refid="class_collection" kindref="compound">Collection</ref> 현재 로그인한 모든 사용자의 세션들과 <ref refid="class_guest" kindref="compound">Guest</ref> 세션을 가지고있다. collection내에 <ref refid="class_guest" kindref="compound">Guest</ref> 세션은 반드시 하나만 존재한다. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>Collection&lt; Session &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+      <node id="126">
+        <label>SessionCollection</label>
+        <link refid="class_session_collection"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="129">
+        <label>Collection&lt; Session &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+      <node id="128">
+        <label>SessionCollection</label>
+        <link refid="class_session_collection"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/SessionCollection.h" line="20" column="1" bodyfile="src/SessionCollection.h" bodystart="20" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" virt="non-virtual"><scope>SessionCollection</scope><name>_list</name></member>
+      <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>add</name></member>
+      <member refid="class_session_collection_1a52b76b5e700a4b3395784bbe56ccd1c4" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>changeCurrentSession</name></member>
+      <member refid="class_session_collection_1a516c5d275d9adc47040c5acbe1e47372" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>changeCurrentSession</name></member>
+      <member refid="class_session_collection_1ada1aab5737803b2f9b11d91c412d8047" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>changeCurrentSessionToGuest</name></member>
+      <member refid="class_session_collection_1a0dea0ab6bd5c5922e1ccd9d9b0805ec2" prot="private" virt="non-virtual"><scope>SessionCollection</scope><name>currentSession</name></member>
+      <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>exists</name></member>
+      <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>get</name></member>
+      <member refid="class_session_collection_1a57ca0e2003ebc212dc0179c80201b3d1" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>getCurrentSession</name></member>
+      <member refid="class_session_collection_1af1995afd2d08649d1c8ee238387b211b" prot="private" virt="non-virtual"><scope>SessionCollection</scope><name>getGuestSession</name></member>
+      <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>getSize</name></member>
+      <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>remove</name></member>
+      <member refid="class_session_collection_1a9dcabce99a1b1c2b0fe8417c870d553c" prot="private" virt="non-virtual"><scope>SessionCollection</scope><name>SessionCollection</name></member>
+      <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" virt="non-virtual"><scope>SessionCollection</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

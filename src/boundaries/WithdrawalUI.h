@@ -9,6 +9,9 @@
 
 class WithdrawalControl;
 
+/**
+ * 회원 탈퇴 기능 Boundary Class.
+ */
 class WithdrawalUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(WithdrawalControl)
 

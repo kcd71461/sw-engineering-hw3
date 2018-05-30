@@ -1,0 +1,57 @@
+.TH "Member" 3 "Wed May 30 2018" "sw_engineering_hw3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Member
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Member\&.h>\fP
+.PP
+Inherited by \fBGuest\fP, and \fBHost\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMember\fP (MemberTypes type, string name, string securityNumber, string address, string id, string password)"
+.br
+.ti -1c
+.RI "MemberTypes \fBgetType\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetAddress\fP ()"
+.br
+.ti -1c
+.RI "string \fBgetID\fP ()"
+.br
+.ti -1c
+.RI "bool \fBequalsPassword\fP (string password)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+회원 정보에 관한 Class 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Member::equalsPassword (string password)"
+패스워드 일치 여부 체크 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpassword\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+일치 여부 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sw_engineering_hw3 from the source code\&.

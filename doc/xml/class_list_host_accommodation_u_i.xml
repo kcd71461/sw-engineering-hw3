@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_list_host_accommodation_u_i" kind="class" language="C++" prot="public">
+    <compoundname>ListHostAccommodationUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_list_host_accommodation_u_i_1a757ecf0a13adf19cdb60b581a59605bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListHostAccommodationUI::onListAccommodation</definition>
+        <argsstring>()</argsstring>
+        <name>onListAccommodation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/ListHostAccommodationUI.h" line="16" column="1" bodyfile="src/boundaries/ListHostAccommodationUI.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>ListHostAccommodationUI</label>
+        <link refid="class_list_host_accommodation_u_i"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>ListHostAccommodationUI</label>
+        <link refid="class_list_host_accommodation_u_i"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/ListHostAccommodationUI.h" line="12" column="1" bodyfile="src/boundaries/ListHostAccommodationUI.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>ListHostAccommodationUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>ListHostAccommodationUI</scope><name>getControl</name></member>
+      <member refid="class_list_host_accommodation_u_i_1a757ecf0a13adf19cdb60b581a59605bc" prot="public" virt="non-virtual"><scope>ListHostAccommodationUI</scope><name>onListAccommodation</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>ListHostAccommodationUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>ListHostAccommodationUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

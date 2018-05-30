@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_reservation_collection_8cpp" kind="file" language="C++">
+    <compoundname>ReservationCollection.cpp</compoundname>
+    <includes refid="_reservation_collection_8h" local="yes">ReservationCollection.h</includes>
+    <includes refid="_singleton_macro_8h" local="yes">SingletonMacro.h</includes>
+    <incdepgraph>
+      <node id="697">
+        <label>list</label>
+      </node>
+      <node id="699">
+        <label>string</label>
+      </node>
+      <node id="693">
+        <label>src/ReservationCollection.cpp</label>
+        <link refid="_reservation_collection_8cpp"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="697" relation="include">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>ReservationCollection.h</label>
+        <link refid="_reservation_collection_8h_source"/>
+        <childnode refid="695" relation="include">
+        </childnode>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="698">
+        <label>Reservation.h</label>
+        <link refid="_reservation_8h_source"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>simjae<sp/>on<sp/>18.<sp/>5.<sp/>27.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ReservationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">GENERATE_SINGLETON_IMPLEMENT(<ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">ReservationCollection::ReservationCollection()<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/ReservationCollection.cpp"/>
+  </compounddef>
+</doxygen>

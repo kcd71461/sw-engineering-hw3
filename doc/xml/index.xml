@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_abstract_boundary" kind="class"><name>AbstractBoundary</name>
+    <member refid="class_abstract_boundary_1a53e200cea9e8515d1a76f980bcfd500d" kind="friend"><name>AbstractControl</name></member>
+    <member refid="class_abstract_boundary_1ab252c960b0d10fceb194867a51778e1d" kind="variable"><name>control</name></member>
+    <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" kind="function"><name>AbstractBoundary</name></member>
+    <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" kind="function"><name>getControl</name></member>
+    <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" kind="function"><name>print</name></member>
+    <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" kind="function"><name>printLine</name></member>
+  </compound>
+  <compound refid="class_abstract_control" kind="class"><name>AbstractControl</name>
+    <member refid="class_abstract_control_1ad34f8226a11b17f653582d8ca40d2c97" kind="variable"><name>boundary</name></member>
+    <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" kind="function"><name>AbstractControl</name></member>
+    <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" kind="function"><name>~AbstractControl</name></member>
+    <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" kind="function"><name>getBoundary</name></member>
+    <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" kind="function"><name>getCurrentMember</name></member>
+  </compound>
+  <compound refid="class_accommodation" kind="class"><name>Accommodation</name>
+    <member refid="class_accommodation_1a4457b6c27a5eff98f1e48cf8a939ec41" kind="variable"><name>hostid</name></member>
+    <member refid="class_accommodation_1a9f382222022edee28b4941d54a2431a1" kind="variable"><name>name</name></member>
+    <member refid="class_accommodation_1aaaf7c49b719f11243830efa383a405b2" kind="variable"><name>address</name></member>
+    <member refid="class_accommodation_1a82ef4ab33cbfb65e474f57a29e912a57" kind="variable"><name>cost</name></member>
+    <member refid="class_accommodation_1a70180fbf73bd42f1863273ae74c81107" kind="variable"><name>date</name></member>
+    <member refid="class_accommodation_1a5e73c19ef83caab900fec08260907e0e" kind="variable"><name>createDate</name></member>
+    <member refid="class_accommodation_1ad81156978eb954aee94750037b86acdc" kind="variable"><name>opaqueCost</name></member>
+    <member refid="class_accommodation_1a486de6669daa47ce1a8929f410b49c5f" kind="function"><name>Accommodation</name></member>
+    <member refid="class_accommodation_1a4621587884589f6f4e2a96d9ea6a2b6e" kind="function"><name>getHostid</name></member>
+    <member refid="class_accommodation_1a5c304670c0dc1dbd798a78613e0b3517" kind="function"><name>setHostid</name></member>
+    <member refid="class_accommodation_1a3a9149223a98b52d81d75e3a996c763e" kind="function"><name>getName</name></member>
+    <member refid="class_accommodation_1abce7026c22122eb871712ca5e25c5d5c" kind="function"><name>setName</name></member>
+    <member refid="class_accommodation_1ac76a72fca22b2a44de424c8dcdd27591" kind="function"><name>getAddress</name></member>
+    <member refid="class_accommodation_1a54955b147de1f2010e3c5e9c7c5c9d5b" kind="function"><name>setAddress</name></member>
+    <member refid="class_accommodation_1a04dffb4cb999d398751914e2aa21d481" kind="function"><name>getCost</name></member>
+    <member refid="class_accommodation_1a126485fdd60120667ea84dbd67c01021" kind="function"><name>setCost</name></member>
+    <member refid="class_accommodation_1aff0df0114eac57e3ee5fb84c9266e0fb" kind="function"><name>getDate</name></member>
+    <member refid="class_accommodation_1af03f6fa77dcdf6310ff77ee9992410ff" kind="function"><name>setDate</name></member>
+    <member refid="class_accommodation_1aa46b6cd8f78b806b19c6f47da920a05f" kind="function"><name>getOpaqueCost</name></member>
+    <member refid="class_accommodation_1a78797d63a50e68ee2b511222a2a8fd44" kind="function"><name>setOpaqueCost</name></member>
+    <member refid="class_accommodation_1a017e4cf2a6daf1806dffc9c5c8c1b34a" kind="function"><name>getCreateDate</name></member>
+  </compound>
+  <compound refid="class_accommodation_collection" kind="class"><name>AccommodationCollection</name>
+    <member refid="class_accommodation_collection_1a627edf6de615a8406ce746538ab3bb23" kind="function"><name>GENERATE_SINGLETON_DECLARE</name></member>
+    <member refid="class_accommodation_collection_1a7186a0b4d2f3e2040cda39fe61074410" kind="function"><name>AccommodationCollection</name></member>
+    <member refid="class_accommodation_collection_1accd0beebc1658e747c569a9d8c07bd1c" kind="function"><name>sortbycost</name></member>
+    <member refid="class_accommodation_collection_1a9d5d3fe1e5c078e24553592a5d521178" kind="function"><name>sortByDate</name></member>
+  </compound>
+  <compound refid="classadd_accommodation" kind="class"><name>addAccommodation</name>
+    <member refid="classadd_accommodation_1a36fdd088c95c0af12d67bc678d346c78" kind="function"><name>addNewAccommodation</name></member>
+  </compound>
+  <compound refid="classadd_accommodation_u_i" kind="class"><name>addAccommodationUI</name>
+    <member refid="classadd_accommodation_u_i_1aade79d966092990c38b6c23e447e2307" kind="function"><name>createAccommodation</name></member>
+  </compound>
+  <compound refid="class_collection" kind="class"><name>Collection</name>
+    <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" kind="variable"><name>_list</name></member>
+    <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" kind="function"><name>get</name></member>
+    <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" kind="function"><name>add</name></member>
+    <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" kind="function"><name>set</name></member>
+    <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" kind="function"><name>remove</name></member>
+    <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" kind="function"><name>remove</name></member>
+    <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kind="function"><name>getSize</name></member>
+    <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" kind="function"><name>exists</name></member>
+  </compound>
+  <compound refid="class_date_time_utils" kind="class"><name>DateTimeUtils</name>
+    <member refid="class_date_time_utils_1aa0d40c609ded3d052db49432f9cb118b" kind="function"><name>parseDateTimeString</name></member>
+    <member refid="class_date_time_utils_1abf472d7dc0f3bbaf0780c5b19b936814" kind="function"><name>getStringFromTime</name></member>
+    <member refid="class_date_time_utils_1a0116f7ee9d799e4a4a52975c79600a65" kind="function"><name>addDays</name></member>
+    <member refid="class_date_time_utils_1aee21079e4db5bca85131a7c70c5475e1" kind="function"><name>addYears</name></member>
+  </compound>
+  <compound refid="class_guest" kind="class"><name>Guest</name>
+    <member refid="class_guest_1ad4b9ebb1ca2b2abe1f40ce1b9997eca0" kind="variable"><name>lastOpaqueTryTime</name></member>
+    <member refid="class_guest_1a16883a872c23d3b57c330a8c18031795" kind="function"><name>Guest</name></member>
+    <member refid="class_guest_1a9d8fc5c2d74eb419edb0c0ad1f16a73e" kind="function"><name>getLastOpaqueTryTime</name></member>
+    <member refid="class_guest_1a89ceffdfdbf729a0e2ae3592459fcae6" kind="function"><name>setLastOpaqueTryTime</name></member>
+  </compound>
+  <compound refid="class_host" kind="class"><name>Host</name>
+    <member refid="class_host_1a9f21538946cb995974ab3512de663ccd" kind="function"><name>Host</name></member>
+    <member refid="class_host_1a6c9ac82f8263c26b0382ae6b3b52b82d" kind="function"><name>getAccommodations</name></member>
+  </compound>
+  <compound refid="class_list_host_accommodation_control" kind="class"><name>ListHostAccommodationControl</name>
+    <member refid="class_list_host_accommodation_control_1a81b570b7ff3da104613be89c3899db39" kind="function"><name>listAccommodations</name></member>
+  </compound>
+  <compound refid="class_list_host_accommodation_u_i" kind="class"><name>ListHostAccommodationUI</name>
+    <member refid="class_list_host_accommodation_u_i_1a757ecf0a13adf19cdb60b581a59605bc" kind="function"><name>onListAccommodation</name></member>
+  </compound>
+  <compound refid="class_login_control" kind="class"><name>LoginControl</name>
+    <member refid="class_login_control_1aff5b73021c402918a3e6de18b326367f" kind="function"><name>tryLogin</name></member>
+  </compound>
+  <compound refid="class_login_u_i" kind="class"><name>LoginUI</name>
+    <member refid="class_login_u_i_1a5f384aaed36f6ee7c7f78d4a905cd77f" kind="function"><name>onRequestLogin</name></member>
+  </compound>
+  <compound refid="class_logout_control" kind="class"><name>LogoutControl</name>
+    <member refid="class_logout_control_1a312833da79ce891bcfd9879f8a5a2d52" kind="function"><name>tryLogout</name></member>
+  </compound>
+  <compound refid="class_logout_u_i" kind="class"><name>LogoutUI</name>
+    <member refid="class_logout_u_i_1a02c30caf68fb9a3fd9b094b19c18af81" kind="function"><name>onRequestLogout</name></member>
+  </compound>
+  <compound refid="class_member" kind="class"><name>Member</name>
+    <member refid="class_member_1a258071d2f03e60104e5316ed861f4369" kind="variable"><name>type</name></member>
+    <member refid="class_member_1a9777c104747d3ee2950bf755c296c022" kind="variable"><name>name</name></member>
+    <member refid="class_member_1a8b81be7a38161242131dfeb56c3c2c5d" kind="variable"><name>securityNumber</name></member>
+    <member refid="class_member_1a012bdbd53fc2c1f641aff22a90ea9575" kind="variable"><name>address</name></member>
+    <member refid="class_member_1a5b9a903d1cc8061a1d47c754ffdcb652" kind="variable"><name>id</name></member>
+    <member refid="class_member_1a5aecdd247fc4a36643f36dd02f66e5aa" kind="variable"><name>password</name></member>
+    <member refid="class_member_1af48adfcb614a6e5501237dc93e07ab2c" kind="function"><name>Member</name></member>
+    <member refid="class_member_1accf776380b3a2f391b4f57e1d938a071" kind="function"><name>getType</name></member>
+    <member refid="class_member_1acbe6a0cd073a21fb0f1da2cbfb260952" kind="function"><name>getName</name></member>
+    <member refid="class_member_1a737850218112eb82ae1d81789c1244e1" kind="function"><name>getAddress</name></member>
+    <member refid="class_member_1ae486cfbc7e5ab2fc5705115c4f96b2c2" kind="function"><name>getID</name></member>
+    <member refid="class_member_1a9fe3103fb15b00e6a51194d57f6c4148" kind="function"><name>equalsPassword</name></member>
+  </compound>
+  <compound refid="class_member_collection" kind="class"><name>MemberCollection</name>
+    <member refid="class_member_collection_1a7ca69ba8524afaf61ddb2b73ddcf72e5" kind="function"><name>MemberCollection</name></member>
+  </compound>
+  <compound refid="class_opaque" kind="class"><name>Opaque</name>
+  </compound>
+  <compound refid="class_opaque_inventory_control" kind="class"><name>OpaqueInventoryControl</name>
+    <member refid="class_opaque_inventory_control_1a671ed0b02c98801a5f568a710b8fc107" kind="function"><name>tryOpaqueInventoryReservation</name></member>
+    <member refid="class_opaque_inventory_control_1ab3db8bcd22d72ee5d34d7d435b6776ca" kind="function"><name>addOpaqueReservation</name></member>
+  </compound>
+  <compound refid="class_opaque_inventory_u_i" kind="class"><name>OpaqueInventoryUI</name>
+    <member refid="class_opaque_inventory_u_i_1afa5550666cb6f3616f6a23e738e049c8" kind="function"><name>onOpaqueReservationRequest</name></member>
+  </compound>
+  <compound refid="class_output_writer" kind="class"><name>OutputWriter</name>
+    <member refid="class_output_writer_1a184f0c3382d2d98357915f83d1d821c6" kind="friend"><name>AbstractBoundary</name></member>
+    <member refid="class_output_writer_1a5fb1543c1c1f87d1c29f72cedf4a6c9b" kind="variable"><name>filePointer</name></member>
+    <member refid="class_output_writer_1ae4f43da005288c939e6471cc777c92ce" kind="function"><name>OutputWriter</name></member>
+    <member refid="class_output_writer_1a9dfbb9c65c00424ea65ab76fadfc95c8" kind="function"><name>vwrite</name></member>
+    <member refid="class_output_writer_1afc633eedcfd7aaf6b2f8ad8455732856" kind="function"><name>vwriteLine</name></member>
+    <member refid="class_output_writer_1a33a96359971dfce8fafdebac909bdd08" kind="function"><name>open</name></member>
+    <member refid="class_output_writer_1ab802980c4b874cb35ae744a170b5fd89" kind="function"><name>close</name></member>
+    <member refid="class_output_writer_1a6f4f8d99eca724f6fcbb60bcb950a4e9" kind="function"><name>write</name></member>
+    <member refid="class_output_writer_1a17a9fd09b2241b8440ba24057e97e621" kind="function"><name>writeLine</name></member>
+    <member refid="class_output_writer_1a6affce047db6e83ac534488e90462047" kind="function"><name>writeLine</name></member>
+  </compound>
+  <compound refid="class_register_control" kind="class"><name>RegisterControl</name>
+    <member refid="class_register_control_1ad973b13d8abde9fa2a9a0cd623a614b3" kind="function"><name>registerMember</name></member>
+  </compound>
+  <compound refid="class_register_u_i" kind="class"><name>RegisterUI</name>
+    <member refid="class_register_u_i_1aae14cecd8059e2542695140d1b25c30c" kind="function"><name>onRegisterRequest</name></member>
+  </compound>
+  <compound refid="class_reservation" kind="class"><name>Reservation</name>
+    <member refid="class_reservation_1a2529a30333b90d5325177817f76c1ede" kind="variable"><name>hostid</name></member>
+    <member refid="class_reservation_1a088e59a76302cc67b9a7bd4fa12ff54f" kind="variable"><name>guesid</name></member>
+    <member refid="class_reservation_1a62d57fdd6fd6ce6fdc25205002a1a038" kind="variable"><name>name</name></member>
+    <member refid="class_reservation_1a77b82453f02241663b7ab434e51cda08" kind="variable"><name>address</name></member>
+    <member refid="class_reservation_1aa0ea3b82cd592f3ddd450464bf59859d" kind="variable"><name>date</name></member>
+    <member refid="class_reservation_1a293ac53a57bd29cd350cc38b57dcf819" kind="variable"><name>cost</name></member>
+    <member refid="class_reservation_1a4ce6d165547e6b575a0486a43d756cba" kind="function"><name>Reservation</name></member>
+    <member refid="class_reservation_1a3a17896182f418576039658a70f97452" kind="function"><name>getGuestID</name></member>
+    <member refid="class_reservation_1ac43be40b51d10a9d2862a323858521d1" kind="function"><name>setGuesid</name></member>
+    <member refid="class_reservation_1a3dbe71a8f1ba4ec469653d305c8a2f28" kind="function"><name>getHostID</name></member>
+    <member refid="class_reservation_1aaed786c6301ebddfb93fe98e7d4c27c0" kind="function"><name>setHostid</name></member>
+    <member refid="class_reservation_1aaf6681475402a5a34ff9dc0e374c42b4" kind="function"><name>getName</name></member>
+    <member refid="class_reservation_1ac0d1a56baec2d31202bbb89b71b78f4f" kind="function"><name>setName</name></member>
+    <member refid="class_reservation_1aaa52ea0877fab25ac0eb37b83ae2a5f3" kind="function"><name>getAddress</name></member>
+    <member refid="class_reservation_1af54a505ed0d448e5436abf55afb3c15b" kind="function"><name>setAddress</name></member>
+    <member refid="class_reservation_1a41a54af4ed523eaabf62507b15d4df50" kind="function"><name>getDate</name></member>
+    <member refid="class_reservation_1ab742bc4c1a5e33f7a3ffbf2f9393076d" kind="function"><name>setDate</name></member>
+    <member refid="class_reservation_1a107d082624892399e930637d32524993" kind="function"><name>getCost</name></member>
+    <member refid="class_reservation_1a54d871fc33a39b60f3b99b20e1bf6880" kind="function"><name>setCost</name></member>
+  </compound>
+  <compound refid="class_reservation_collection" kind="class"><name>ReservationCollection</name>
+    <member refid="class_reservation_collection_1ab6f463a7cf56d689382faf72a6c22427" kind="function"><name>ReservationCollection</name></member>
+  </compound>
+  <compound refid="class_search_control" kind="class"><name>SearchControl</name>
+    <member refid="class_search_control_1a96712e21f990caabad392818bd3a17a7" kind="function"><name>searchAccommodations</name></member>
+    <member refid="class_search_control_1a754ae7a3d0b00057a559034750422faa" kind="function"><name>addReservation</name></member>
+  </compound>
+  <compound refid="class_search_reservation_control" kind="class"><name>SearchReservationControl</name>
+    <member refid="class_search_reservation_control_1abe42c4bf494cbafebad773f9b0737b98" kind="function"><name>SearchReservation</name></member>
+  </compound>
+  <compound refid="class_search_reservation_u_i" kind="class"><name>SearchReservationUI</name>
+    <member refid="class_search_reservation_u_i_1af97ce0701730415b5ca8dd1d4ee44650" kind="function"><name>onSearchReservationRequest</name></member>
+  </compound>
+  <compound refid="class_search_u_i" kind="class"><name>SearchUI</name>
+    <member refid="class_search_u_i_1adb0e0b5eb6fd7d5d0a98f1eb0239e6d3" kind="function"><name>listSearchResult</name></member>
+    <member refid="class_search_u_i_1a135ce7a4e608e1039612b926b85aac15" kind="function"><name>onReservateButtonClick</name></member>
+  </compound>
+  <compound refid="class_session" kind="class"><name>Session</name>
+    <member refid="class_session_1ae26602f163053d86c2fda1103ea800c6" kind="variable"><name>member</name></member>
+    <member refid="class_session_1ad92ef09b872c9227e38a6efdd4d8a837" kind="function"><name>Session</name></member>
+    <member refid="class_session_1a7f366328741cdcd4200f3184c85d507a" kind="function"><name>Session</name></member>
+    <member refid="class_session_1aeae3ee95ffc22efdca7112eb10f84c4d" kind="function"><name>isGuest</name></member>
+    <member refid="class_session_1a4867a03de74afef38b440ba32bee98ab" kind="function"><name>getMember</name></member>
+  </compound>
+  <compound refid="class_session_collection" kind="class"><name>SessionCollection</name>
+    <member refid="class_session_collection_1a0dea0ab6bd5c5922e1ccd9d9b0805ec2" kind="variable"><name>currentSession</name></member>
+    <member refid="class_session_collection_1a9dcabce99a1b1c2b0fe8417c870d553c" kind="function"><name>SessionCollection</name></member>
+    <member refid="class_session_collection_1af1995afd2d08649d1c8ee238387b211b" kind="function"><name>getGuestSession</name></member>
+    <member refid="class_session_collection_1a57ca0e2003ebc212dc0179c80201b3d1" kind="function"><name>getCurrentSession</name></member>
+    <member refid="class_session_collection_1a52b76b5e700a4b3395784bbe56ccd1c4" kind="function"><name>changeCurrentSession</name></member>
+    <member refid="class_session_collection_1a516c5d275d9adc47040c5acbe1e47372" kind="function"><name>changeCurrentSession</name></member>
+    <member refid="class_session_collection_1ada1aab5737803b2f9b11d91c412d8047" kind="function"><name>changeCurrentSessionToGuest</name></member>
+  </compound>
+  <compound refid="class_session_control" kind="class"><name>SessionControl</name>
+    <member refid="class_session_control_1a09ae13f1e995c6b83ece478921c0722f" kind="function"><name>changeSession</name></member>
+    <member refid="class_session_control_1a2b5ea3cfba3e5f303071845330a69069" kind="function"><name>changeSessionToGuest</name></member>
+  </compound>
+  <compound refid="class_session_u_i" kind="class"><name>SessionUI</name>
+    <member refid="class_session_u_i_1a32778b6a6b4323e9c067b37903906fcf" kind="function"><name>onChangeSession</name></member>
+    <member refid="class_session_u_i_1a9d92daa17c05d5c2eaf13a53b9edf13d" kind="function"><name>onChangeGuestSession</name></member>
+  </compound>
+  <compound refid="class_time" kind="class"><name>Time</name>
+    <member refid="class_time_1ab1f85e6d33c64c53c32b34fc6dae4aa0" kind="variable"><name>_time</name></member>
+    <member refid="class_time_1a01febf5c2528829c56eca9abbda9974a" kind="function"><name>setCurrentTime</name></member>
+    <member refid="class_time_1ab6e399daf85a2a3f2b69aa0715201930" kind="function"><name>getCurrentTime</name></member>
+  </compound>
+  <compound refid="class_withdrawal_control" kind="class"><name>WithdrawalControl</name>
+    <member refid="class_withdrawal_control_1a9bbb9752138ece8a770211cd4d1be5b9" kind="function"><name>deleteMember</name></member>
+  </compound>
+  <compound refid="class_withdrawal_u_i" kind="class"><name>WithdrawalUI</name>
+    <member refid="class_withdrawal_u_i_1a3d555adf9eac49498001d9bed12bdbfe" kind="function"><name>onWithdrawalRequest</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_accommodation_8h" kind="file"><name>Accommodation.h</name>
+  </compound>
+  <compound refid="_accommodation_collection_8cpp" kind="file"><name>AccommodationCollection.cpp</name>
+  </compound>
+  <compound refid="_accommodation_collection_8h" kind="file"><name>AccommodationCollection.h</name>
+  </compound>
+  <compound refid="_abstract_boundary_8cpp" kind="file"><name>AbstractBoundary.cpp</name>
+  </compound>
+  <compound refid="_abstract_boundary_8h" kind="file"><name>AbstractBoundary.h</name>
+    <member refid="_abstract_boundary_8h_1ae3662addfd44b1eba0de1227aff3b9c2" kind="define"><name>GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE</name></member>
+    <member refid="_abstract_boundary_8h_1ab105081087e124e36027cdb846e49de7" kind="define"><name>GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT</name></member>
+  </compound>
+  <compound refid="add_accommodation_u_i_8cpp" kind="file"><name>addAccommodationUI.cpp</name>
+  </compound>
+  <compound refid="add_accommodation_u_i_8h" kind="file"><name>addAccommodationUI.h</name>
+  </compound>
+  <compound refid="_list_host_accommodation_u_i_8cpp" kind="file"><name>ListHostAccommodationUI.cpp</name>
+  </compound>
+  <compound refid="_list_host_accommodation_u_i_8h" kind="file"><name>ListHostAccommodationUI.h</name>
+  </compound>
+  <compound refid="_login_u_i_8cpp" kind="file"><name>LoginUI.cpp</name>
+  </compound>
+  <compound refid="_login_u_i_8h" kind="file"><name>LoginUI.h</name>
+  </compound>
+  <compound refid="_logout_u_i_8cpp" kind="file"><name>LogoutUI.cpp</name>
+  </compound>
+  <compound refid="_logout_u_i_8h" kind="file"><name>LogoutUI.h</name>
+  </compound>
+  <compound refid="_opaque_inventory_u_i_8cpp" kind="file"><name>OpaqueInventoryUI.cpp</name>
+  </compound>
+  <compound refid="_opaque_inventory_u_i_8h" kind="file"><name>OpaqueInventoryUI.h</name>
+  </compound>
+  <compound refid="_register_u_i_8cpp" kind="file"><name>RegisterUI.cpp</name>
+  </compound>
+  <compound refid="_register_u_i_8h" kind="file"><name>RegisterUI.h</name>
+  </compound>
+  <compound refid="_search_reservation_u_i_8cpp" kind="file"><name>SearchReservationUI.cpp</name>
+  </compound>
+  <compound refid="_search_reservation_u_i_8h" kind="file"><name>SearchReservationUI.h</name>
+  </compound>
+  <compound refid="_search_u_i_8cpp" kind="file"><name>SearchUI.cpp</name>
+  </compound>
+  <compound refid="_search_u_i_8h" kind="file"><name>SearchUI.h</name>
+  </compound>
+  <compound refid="_session_u_i_8cpp" kind="file"><name>SessionUI.cpp</name>
+  </compound>
+  <compound refid="_session_u_i_8h" kind="file"><name>SessionUI.h</name>
+  </compound>
+  <compound refid="_withdrawal_u_i_8cpp" kind="file"><name>WithdrawalUI.cpp</name>
+  </compound>
+  <compound refid="_withdrawal_u_i_8h" kind="file"><name>WithdrawalUI.h</name>
+  </compound>
+  <compound refid="_c_make_c_compiler_id_8c" kind="file"><name>CMakeCCompilerId.c</name>
+    <member refid="_c_make_c_compiler_id_8c_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="_c_make_c_compiler_id_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_c_make_c_x_x_compiler_id_8cpp" kind="file"><name>CMakeCXXCompilerId.cpp</name>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a81dee0709ded976b2e0319239f72d174" kind="define"><name>COMPILER_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1adbc5372f40838899018fadbc89bd588b" kind="define"><name>PLATFORM_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1aba35d0d200deaeb06aee95ca297acb28" kind="define"><name>ARCHITECTURE_ID</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a4b0efeb7a5d59313986b3a0390f050f6" kind="variable"><name>info_compiler</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a2321403dee54ee23f0c2fa849c60f7d4" kind="variable"><name>info_platform</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a59647e99d304ed33b15cb284c27ed391" kind="variable"><name>info_arch</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a1ce162bad2fe6966ac8b33cc19e120b8" kind="variable"><name>info_language_dialect_default</name></member>
+    <member refid="_c_make_c_x_x_compiler_id_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="feature__tests_8c" kind="file"><name>feature_tests.c</name>
+    <member refid="feature__tests_8c_1a1582568e32f689337602a16bf8a5bff0" kind="variable"><name>features</name></member>
+    <member refid="feature__tests_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="feature__tests_8cxx" kind="file"><name>feature_tests.cxx</name>
+    <member refid="feature__tests_8cxx_1a1582568e32f689337602a16bf8a5bff0" kind="variable"><name>features</name></member>
+    <member refid="feature__tests_8cxx_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_collection_8h" kind="file"><name>Collection.h</name>
+  </compound>
+  <compound refid="_abstract_control_8cpp" kind="file"><name>AbstractControl.cpp</name>
+  </compound>
+  <compound refid="_abstract_control_8h" kind="file"><name>AbstractControl.h</name>
+    <member refid="_abstract_control_8h_1a029c74cb883574bde1138a3032623248" kind="define"><name>GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE</name></member>
+    <member refid="_abstract_control_8h_1a90ca711ae36e5b30a71961ae9f819433" kind="define"><name>GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT</name></member>
+  </compound>
+  <compound refid="add_accommodation_8cpp" kind="file"><name>addAccommodation.cpp</name>
+  </compound>
+  <compound refid="add_accommodation_8h" kind="file"><name>addAccommodation.h</name>
+  </compound>
+  <compound refid="_list_host_accommodation_control_8cpp" kind="file"><name>ListHostAccommodationControl.cpp</name>
+  </compound>
+  <compound refid="_list_host_accommodation_control_8h" kind="file"><name>ListHostAccommodationControl.h</name>
+  </compound>
+  <compound refid="_login_control_8cpp" kind="file"><name>LoginControl.cpp</name>
+  </compound>
+  <compound refid="_login_control_8h" kind="file"><name>LoginControl.h</name>
+  </compound>
+  <compound refid="_logout_control_8cpp" kind="file"><name>LogoutControl.cpp</name>
+  </compound>
+  <compound refid="_logout_control_8h" kind="file"><name>LogoutControl.h</name>
+  </compound>
+  <compound refid="_opaque_inventory_control_8cpp" kind="file"><name>OpaqueInventoryControl.cpp</name>
+  </compound>
+  <compound refid="_opaque_inventory_control_8h" kind="file"><name>OpaqueInventoryControl.h</name>
+  </compound>
+  <compound refid="_register_control_8cpp" kind="file"><name>RegisterControl.cpp</name>
+  </compound>
+  <compound refid="_register_control_8h" kind="file"><name>RegisterControl.h</name>
+  </compound>
+  <compound refid="_search_control_8cpp" kind="file"><name>SearchControl.cpp</name>
+  </compound>
+  <compound refid="_search_control_8h" kind="file"><name>SearchControl.h</name>
+  </compound>
+  <compound refid="_search_reservation_control_8cpp" kind="file"><name>SearchReservationControl.cpp</name>
+  </compound>
+  <compound refid="_search_reservation_control_8h" kind="file"><name>SearchReservationControl.h</name>
+  </compound>
+  <compound refid="_session_control_8cpp" kind="file"><name>SessionControl.cpp</name>
+  </compound>
+  <compound refid="_session_control_8h" kind="file"><name>SessionControl.h</name>
+  </compound>
+  <compound refid="_withdrawal_control_8cpp" kind="file"><name>WithdrawalControl.cpp</name>
+  </compound>
+  <compound refid="_withdrawal_control_8h" kind="file"><name>WithdrawalControl.h</name>
+  </compound>
+  <compound refid="_date_time_utils_8cpp" kind="file"><name>DateTimeUtils.cpp</name>
+    <member refid="_date_time_utils_8cpp_1a758b7324e69966b53b1540930060aab6" kind="variable"><name>DATE_STR_FORMAT</name></member>
+  </compound>
+  <compound refid="_date_time_utils_8h" kind="file"><name>DateTimeUtils.h</name>
+    <member refid="_date_time_utils_8h_1a4df77ffb1af05d61eff61ec468258fe2" kind="define"><name>NULL_TIME_STR</name></member>
+  </compound>
+  <compound refid="_guest_8cpp" kind="file"><name>Guest.cpp</name>
+  </compound>
+  <compound refid="_guest_8h" kind="file"><name>Guest.h</name>
+  </compound>
+  <compound refid="_host_8cpp" kind="file"><name>Host.cpp</name>
+  </compound>
+  <compound refid="_host_8h" kind="file"><name>Host.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab5187269936538ffb8ccbbe7115ffdbc" kind="define"><name>MAX_STRING</name></member>
+    <member refid="main_8cpp_1adf1c8b620db31b9b46185c7d866b1d28" kind="define"><name>INPUT_FILE_NAME</name></member>
+    <member refid="main_8cpp_1ab0c4c9ae8d3b88ac57ad0e488c6507c2" kind="define"><name>OUTPUT_FILE_NAME</name></member>
+    <member refid="main_8cpp_1a0b1cb8d0d19fb0012e20320ea3d60a3f" kind="define"><name>STR_INPUT_BUF</name></member>
+    <member refid="main_8cpp_1a09393b2ae5c265db51e376917aa35457" kind="variable"><name>inputFp</name></member>
+    <member refid="main_8cpp_1a8ee57855fe5d49ec3af27edbc3487b8a" kind="function"><name>doTask</name></member>
+    <member refid="main_8cpp_1ae1ae611ba50f350ef45905f358e5e3bf" kind="function"><name>program_exit</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_member_8cpp" kind="file"><name>Member.cpp</name>
+  </compound>
+  <compound refid="_member_8h" kind="file"><name>Member.h</name>
+    <member refid="_member_8h_1af9dbdc17e35aa5326b0f55cb51ad408b" kind="enum"><name>MemberTypes</name></member>
+    <member refid="_member_8h_1af9dbdc17e35aa5326b0f55cb51ad408bac0df383e9eeb0c40cd7d4349ae3a3ae3" kind="enumvalue"><name>HostMember</name></member>
+    <member refid="_member_8h_1af9dbdc17e35aa5326b0f55cb51ad408ba512ebe4049a28e058e42802c288711a4" kind="enumvalue"><name>GuestMember</name></member>
+  </compound>
+  <compound refid="_member_collection_8cpp" kind="file"><name>MemberCollection.cpp</name>
+  </compound>
+  <compound refid="_member_collection_8h" kind="file"><name>MemberCollection.h</name>
+  </compound>
+  <compound refid="_opaque_8h" kind="file"><name>Opaque.h</name>
+  </compound>
+  <compound refid="_output_writer_8cpp" kind="file"><name>OutputWriter.cpp</name>
+    <member refid="_output_writer_8cpp_1ac4efd41f4c044d6f1279f5dd7f320571" kind="function"><name>GENERATE_SINGLETON_IMPLEMENT</name></member>
+  </compound>
+  <compound refid="_output_writer_8h" kind="file"><name>OutputWriter.h</name>
+  </compound>
+  <compound refid="_reservation_8cpp" kind="file"><name>Reservation.cpp</name>
+  </compound>
+  <compound refid="_reservation_8h" kind="file"><name>Reservation.h</name>
+  </compound>
+  <compound refid="_reservation_collection_8cpp" kind="file"><name>ReservationCollection.cpp</name>
+  </compound>
+  <compound refid="_reservation_collection_8h" kind="file"><name>ReservationCollection.h</name>
+  </compound>
+  <compound refid="_session_8cpp" kind="file"><name>Session.cpp</name>
+  </compound>
+  <compound refid="_session_8h" kind="file"><name>Session.h</name>
+    <member refid="_session_8h_1ad4fe9d72f50edf1016917eb49906479f" kind="define"><name>GUEST_SESSION_MEMBER_POINTER</name></member>
+  </compound>
+  <compound refid="_session_collection_8cpp" kind="file"><name>SessionCollection.cpp</name>
+  </compound>
+  <compound refid="_session_collection_8h" kind="file"><name>SessionCollection.h</name>
+  </compound>
+  <compound refid="_singleton_macro_8h" kind="file"><name>SingletonMacro.h</name>
+    <member refid="_singleton_macro_8h_1a84ffb055fa4414cbd0b92ffe6cdea8bb" kind="define"><name>GENERATE_SINGLETON_IMPLEMENT</name></member>
+    <member refid="_singleton_macro_8h_1a072e6aa9aa90102e6057f3e3c1edb478" kind="define"><name>GENERATE_SINGLETON_DECLARE</name></member>
+  </compound>
+  <compound refid="_time_8cpp" kind="file"><name>Time.cpp</name>
+  </compound>
+  <compound refid="_time_8h" kind="file"><name>Time.h</name>
+  </compound>
+  <compound refid="dir_7fe0956924078187cc81dc90272e343a" kind="dir"><name>src/cmake-build-debug/CMakeFiles/3.5.1</name>
+  </compound>
+  <compound refid="dir_16530921cf49faa48e8bbcb1ff46002f" kind="dir"><name>src/boundaries</name>
+  </compound>
+  <compound refid="dir_020e4a53e97f78b22783b09a7c932b0c" kind="dir"><name>src/cmake-build-debug</name>
+  </compound>
+  <compound refid="dir_15e745cfa6718f09f4a3a3482dd2e260" kind="dir"><name>src/cmake-build-debug/CMakeFiles</name>
+  </compound>
+  <compound refid="dir_daf56f1f1c6c5cc1562b5f48838a5640" kind="dir"><name>src/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdC</name>
+  </compound>
+  <compound refid="dir_0af6c6117ceca93c620b3041bb1b19bd" kind="dir"><name>src/cmake-build-debug/CMakeFiles/3.5.1/CompilerIdCXX</name>
+  </compound>
+  <compound refid="dir_7afd03d72c1de07a6d47e666c364824c" kind="dir"><name>src/controls</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

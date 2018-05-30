@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_abstract_control_8cpp" kind="file" language="C++">
+    <compoundname>AbstractControl.cpp</compoundname>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includes refid="_session_collection_8h" local="yes">../SessionCollection.h</includes>
+    <incdepgraph>
+      <node id="258">
+        <label>list</label>
+      </node>
+      <node id="255">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>../SessionCollection.h</label>
+        <link refid="_session_collection_8h_source"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>string</label>
+      </node>
+      <node id="259">
+        <label>Session.h</label>
+        <link refid="_session_8h_source"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>../boundaries/AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>src/controls/AbstractControl.cpp</label>
+        <link refid="_abstract_control_8cpp"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/26/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SessionCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">AbstractControl::AbstractControl(<ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>*boundary)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;boundary<sp/>=<sp/>boundary;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;boundary-&gt;control<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>*AbstractControl::getBoundary()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;boundary;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">AbstractControl::~AbstractControl()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>(this-&gt;boundary);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="class_member" kindref="compound">Member</ref><sp/>*AbstractControl::getCurrentMember()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SessionCollection::getInstance()-&gt;getCurrentSession()-&gt;getMember();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/AbstractControl.cpp"/>
+  </compounddef>
+</doxygen>

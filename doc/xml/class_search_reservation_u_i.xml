@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_search_reservation_u_i" kind="class" language="C++" prot="public">
+    <compoundname>SearchReservationUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_reservation_u_i_1af97ce0701730415b5ca8dd1d4ee44650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchReservationUI::onSearchReservationRequest</definition>
+        <argsstring>()</argsstring>
+        <name>onSearchReservationRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/SearchReservationUI.h" line="17" column="1" bodyfile="src/boundaries/SearchReservationUI.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="116">
+        <label>SearchReservationUI</label>
+        <link refid="class_search_reservation_u_i"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="118">
+        <label>SearchReservationUI</label>
+        <link refid="class_search_reservation_u_i"/>
+        <childnode refid="119" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/SearchReservationUI.h" line="13" column="1" bodyfile="src/boundaries/SearchReservationUI.h" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>SearchReservationUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>SearchReservationUI</scope><name>getControl</name></member>
+      <member refid="class_search_reservation_u_i_1af97ce0701730415b5ca8dd1d4ee44650" prot="public" virt="non-virtual"><scope>SearchReservationUI</scope><name>onSearchReservationRequest</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>SearchReservationUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>SearchReservationUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

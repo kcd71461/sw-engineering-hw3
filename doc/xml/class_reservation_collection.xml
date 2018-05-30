@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_reservation_collection" kind="class" language="C++" prot="public">
+    <compoundname>ReservationCollection</compoundname>
+    <basecompoundref refid="class_collection" prot="public" virt="non-virtual">Collection&lt; Reservation &gt;</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_reservation_collection_1ab6f463a7cf56d689382faf72a6c22427" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReservationCollection::ReservationCollection</definition>
+        <argsstring>()</argsstring>
+        <name>ReservationCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ReservationCollection.h" line="17" column="1" bodyfile="src/ReservationCollection.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="104">
+        <label>ReservationCollection</label>
+        <link refid="class_reservation_collection"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Collection&lt; Reservation &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>ReservationCollection</label>
+        <link refid="class_reservation_collection"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Collection&lt; Reservation &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/ReservationCollection.h" line="14" column="1" bodyfile="src/ReservationCollection.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" virt="non-virtual"><scope>ReservationCollection</scope><name>_list</name></member>
+      <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>add</name></member>
+      <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>exists</name></member>
+      <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>get</name></member>
+      <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>getSize</name></member>
+      <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>remove</name></member>
+      <member refid="class_reservation_collection_1ab6f463a7cf56d689382faf72a6c22427" prot="private" virt="non-virtual"><scope>ReservationCollection</scope><name>ReservationCollection</name></member>
+      <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" virt="non-virtual"><scope>ReservationCollection</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_session_control_8h" kind="file" language="C++">
+    <compoundname>SessionControl.h</compoundname>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includes refid="_session_u_i_8h" local="yes">../boundaries/SessionUI.h</includes>
+    <includes refid="_singleton_macro_8h" local="yes">../SingletonMacro.h</includes>
+    <includedby refid="_session_u_i_8cpp" local="yes">src/boundaries/SessionUI.cpp</includedby>
+    <includedby refid="_session_control_8cpp" local="yes">src/controls/SessionControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="503">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>string</label>
+      </node>
+      <node id="500">
+        <label>AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>../boundaries/AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>../boundaries/SessionUI.h</label>
+        <link refid="_session_u_i_8h_source"/>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="499">
+        <label>src/controls/SessionControl.h</label>
+        <link refid="_session_control_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_session_control" prot="public">SessionControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/26/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_SESSIONCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_SESSIONCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/SessionUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_session_u_i" kindref="compound">SessionUI</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_session_control" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_session_control" kindref="compound">SessionControl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="class_session_control" kindref="compound">SessionControl</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(<ref refid="class_session_control" kindref="compound">SessionControl</ref>,<sp/><ref refid="class_session_u_i" kindref="compound">SessionUI</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_session_control_1a09ae13f1e995c6b83ece478921c0722f" kindref="member">changeSession</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>userID);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_session_control_1a2b5ea3cfba3e5f303071845330a69069" kindref="member">changeSessionToGuest</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_SESSIONCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/SessionControl.h"/>
+  </compounddef>
+</doxygen>

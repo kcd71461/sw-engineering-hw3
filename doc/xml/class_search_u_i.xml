@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_search_u_i" kind="class" language="C++" prot="public">
+    <compoundname>SearchUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_u_i_1adb0e0b5eb6fd7d5d0a98f1eb0239e6d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchUI::listSearchResult</definition>
+        <argsstring>(string basic_string, string basicString)</argsstring>
+        <name>listSearchResult</name>
+        <param>
+          <type>string</type>
+          <declname>basic_string</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>basicString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>검색 요청 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>basic_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basicString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/SearchUI.h" line="22" column="1" bodyfile="src/boundaries/SearchUI.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_u_i_1a135ce7a4e608e1039612b926b85aac15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchUI::onReservateButtonClick</definition>
+        <argsstring>(string hostid, string guestid, string accommoname)</argsstring>
+        <name>onReservateButtonClick</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>guestid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>accommoname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>예약 시도 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hostid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>guestid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accommoname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/SearchUI.h" line="30" column="1" bodyfile="src/boundaries/SearchUI.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="120">
+        <label>SearchUI</label>
+        <link refid="class_search_u_i"/>
+        <childnode refid="121" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="122">
+        <label>SearchUI</label>
+        <link refid="class_search_u_i"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/SearchUI.h" line="13" column="1" bodyfile="src/boundaries/SearchUI.h" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>SearchUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>SearchUI</scope><name>getControl</name></member>
+      <member refid="class_search_u_i_1adb0e0b5eb6fd7d5d0a98f1eb0239e6d3" prot="public" virt="non-virtual"><scope>SearchUI</scope><name>listSearchResult</name></member>
+      <member refid="class_search_u_i_1a135ce7a4e608e1039612b926b85aac15" prot="public" virt="non-virtual"><scope>SearchUI</scope><name>onReservateButtonClick</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>SearchUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>SearchUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -11,6 +11,9 @@
 
 class RegisterControl;
 
+/**
+ * 회원가입 기능 Boundary Class.
+ */
 class RegisterUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(RegisterControl)
 

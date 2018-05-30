@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classadd_accommodation" kind="class" language="C++" prot="public">
+    <compoundname>addAccommodation</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="add_accommodation_8h" local="no">addAccommodation.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classadd_accommodation_1a36fdd088c95c0af12d67bc678d346c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void addAccommodation::addNewAccommodation</definition>
+        <argsstring>(string hostid, string name, string address, int cost, string date, int opaqueCost)</argsstring>
+        <name>addNewAccommodation</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/addAccommodation.h" line="17" column="1" bodyfile="src/controls/addAccommodation.cpp" bodystart="11" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>숙소 등록 Control </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="30">
+        <label>addAccommodation</label>
+        <link refid="classadd_accommodation"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="32">
+        <label>addAccommodation</label>
+        <link refid="classadd_accommodation"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/addAccommodation.h" line="12" column="1" bodyfile="src/controls/addAccommodation.h" bodystart="12" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>addAccommodation</scope><name>AbstractControl</name></member>
+      <member refid="classadd_accommodation_1a36fdd088c95c0af12d67bc678d346c78" prot="public" virt="non-virtual"><scope>addAccommodation</scope><name>addNewAccommodation</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>addAccommodation</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>addAccommodation</scope><name>getCurrentMember</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>addAccommodation</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_login_control" kind="class" language="C++" prot="public">
+    <compoundname>LoginControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="_login_control_8h" local="no">LoginControl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_login_control_1aff5b73021c402918a3e6de18b326367f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginControl::tryLogin</definition>
+        <argsstring>(string id, string password)</argsstring>
+        <name>tryLogin</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Login을 시도 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/LoginControl.h" line="26" column="1" bodyfile="src/controls/LoginControl.cpp" bodystart="10" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>로그인 관련 Control </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="58">
+        <label>LoginControl</label>
+        <link refid="class_login_control"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="60">
+        <label>LoginControl</label>
+        <link refid="class_login_control"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/LoginControl.h" line="16" column="1" bodyfile="src/controls/LoginControl.h" bodystart="16" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>LoginControl</scope><name>AbstractControl</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>LoginControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>LoginControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_login_control_1aff5b73021c402918a3e6de18b326367f" prot="public" virt="non-virtual"><scope>LoginControl</scope><name>tryLogin</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>LoginControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

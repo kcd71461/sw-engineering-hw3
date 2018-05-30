@@ -1,0 +1,119 @@
+\hypertarget{class_collection}{}\section{Collection$<$ T $>$ Class Template Reference}
+\label{class_collection}\index{Collection$<$ T $>$@{Collection$<$ T $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T $\ast$ \mbox{\hyperlink{class_collection_a64cd1dc1f2099f0baa1e8ddb0efdd470}{get}} (int index)
+\item 
+void $\ast$ \mbox{\hyperlink{class_collection_ac05ab0d5f369c5a645123bad16d102c1}{add}} (T $\ast$)
+\item 
+int \mbox{\hyperlink{class_collection_a172de5b961f68075b07ce17c4dc79d94}{set}} (int index, T $\ast$item)
+\item 
+void \mbox{\hyperlink{class_collection_a11e03bd78c5b0234fe075b69f776b800}{remove}} (int index)
+\item 
+void \mbox{\hyperlink{class_collection_a6d5b06e5d2528c1251a5eb8b79ce756b}{remove}} (T $\ast$p\+Item)
+\item 
+int \mbox{\hyperlink{class_collection_a2fc76ab0d838768768ccb5df10aee711}{get\+Size}} ()
+\item 
+bool \mbox{\hyperlink{class_collection_a7c44d6d2aad8c98fbfe597646d7fd4ff}{exists}} (T $\ast$p\+Item)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collection_a01e649ea61c423771fc84aed675996b4}\label{class_collection_a01e649ea61c423771fc84aed675996b4}} 
+list$<$ T $\ast$ $>$ {\bfseries \+\_\+list}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collection_ac05ab0d5f369c5a645123bad16d102c1}\label{class_collection_ac05ab0d5f369c5a645123bad16d102c1}} 
+\index{Collection@{Collection}!add@{add}}
+\index{add@{add}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void $\ast$ \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T $\ast$}]{item }\end{DoxyParamCaption})}
+
+collection에 item을 추가 \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collection_a7c44d6d2aad8c98fbfe597646d7fd4ff}\label{class_collection_a7c44d6d2aad8c98fbfe597646d7fd4ff}} 
+\index{Collection@{Collection}!exists@{exists}}
+\index{exists@{exists}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::exists (\begin{DoxyParamCaption}\item[{T $\ast$}]{p\+Item }\end{DoxyParamCaption})}
+
+collection에 Item 포함 여부 
+\begin{DoxyParams}{Parameters}
+{\em p\+Item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+포함 여부 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collection_a64cd1dc1f2099f0baa1e8ddb0efdd470}\label{class_collection_a64cd1dc1f2099f0baa1e8ddb0efdd470}} 
+\index{Collection@{Collection}!get@{get}}
+\index{get@{get}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T $\ast$ \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+해당 index의 item를 반환 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collection_a2fc76ab0d838768768ccb5df10aee711}\label{class_collection_a2fc76ab0d838768768ccb5df10aee711}} 
+\index{Collection@{Collection}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+collection의 item 갯수 반환 \begin{DoxyReturn}{Returns}
+item 갯수 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collection_a11e03bd78c5b0234fe075b69f776b800}\label{class_collection_a11e03bd78c5b0234fe075b69f776b800}} 
+\index{Collection@{Collection}!remove@{remove}}
+\index{remove@{remove}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+해당 index의 item을 collection에서 삭제 
+\begin{DoxyParams}{Parameters}
+{\em 성공} & 여부 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collection_a6d5b06e5d2528c1251a5eb8b79ce756b}\label{class_collection_a6d5b06e5d2528c1251a5eb8b79ce756b}} 
+\index{Collection@{Collection}!remove@{remove}}
+\index{remove@{remove}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T $\ast$}]{p\+Item }\end{DoxyParamCaption})}
+
+해당 item을 collection에서 삭제 
+\begin{DoxyParams}{Parameters}
+{\em p\+Item} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collection_a172de5b961f68075b07ce17c4dc79d94}\label{class_collection_a172de5b961f68075b07ce17c4dc79d94}} 
+\index{Collection@{Collection}!set@{set}}
+\index{set@{set}!Collection@{Collection}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+int \mbox{\hyperlink{class_collection}{Collection}}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T $\ast$}]{item }\end{DoxyParamCaption})}
+
+해당 index에 새로운 멤버 삽입 또는 교체 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Collection.\+h\end{DoxyCompactItemize}

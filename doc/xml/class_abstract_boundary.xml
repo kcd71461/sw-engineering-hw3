@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_abstract_boundary" kind="class" language="C++" prot="public">
+    <compoundname>AbstractBoundary</compoundname>
+    <derivedcompoundref refid="classadd_accommodation_u_i" prot="public" virt="non-virtual">addAccommodationUI</derivedcompoundref>
+    <derivedcompoundref refid="class_list_host_accommodation_u_i" prot="public" virt="non-virtual">ListHostAccommodationUI</derivedcompoundref>
+    <derivedcompoundref refid="class_login_u_i" prot="public" virt="non-virtual">LoginUI</derivedcompoundref>
+    <derivedcompoundref refid="class_logout_u_i" prot="public" virt="non-virtual">LogoutUI</derivedcompoundref>
+    <derivedcompoundref refid="class_opaque_inventory_u_i" prot="public" virt="non-virtual">OpaqueInventoryUI</derivedcompoundref>
+    <derivedcompoundref refid="class_register_u_i" prot="public" virt="non-virtual">RegisterUI</derivedcompoundref>
+    <derivedcompoundref refid="class_search_reservation_u_i" prot="public" virt="non-virtual">SearchReservationUI</derivedcompoundref>
+    <derivedcompoundref refid="class_search_u_i" prot="public" virt="non-virtual">SearchUI</derivedcompoundref>
+    <derivedcompoundref refid="class_session_u_i" prot="public" virt="non-virtual">SessionUI</derivedcompoundref>
+    <derivedcompoundref refid="class_withdrawal_u_i" prot="public" virt="non-virtual">WithdrawalUI</derivedcompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_abstract_boundary_1a53e200cea9e8515d1a76f980bcfd500d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class AbstractControl</definition>
+        <argsstring></argsstring>
+        <name>AbstractControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="28" column="1" bodyfile="src/boundaries/AbstractBoundary.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_abstract_boundary_1ab252c960b0d10fceb194867a51778e1d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref> *</type>
+        <definition>AbstractControl* AbstractBoundary::control</definition>
+        <argsstring></argsstring>
+        <name>control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="31" column="1" bodyfile="src/boundaries/AbstractBoundary.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractBoundary::AbstractBoundary</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="33" column="1" bodyfile="src/boundaries/AbstractBoundary.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref> *</type>
+        <definition>AbstractControl * AbstractBoundary::getControl</definition>
+        <argsstring>()</argsstring>
+        <name>getControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="35" column="1" bodyfile="src/boundaries/AbstractBoundary.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractBoundary::print</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>print</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="38" column="1" bodyfile="src/boundaries/AbstractBoundary.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AbstractBoundary::printLine</definition>
+        <argsstring>(const char *fmt,...)</argsstring>
+        <name>printLine</name>
+        <param>
+          <type>const char *</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/AbstractBoundary.h" line="40" column="1" bodyfile="src/boundaries/AbstractBoundary.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>LoginUI</label>
+        <link refid="class_login_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SearchUI</label>
+        <link refid="class_search_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>addAccommodationUI</label>
+        <link refid="classadd_accommodation_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>OpaqueInventoryUI</label>
+        <link refid="class_opaque_inventory_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SearchReservationUI</label>
+        <link refid="class_search_reservation_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SessionUI</label>
+        <link refid="class_session_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>LogoutUI</label>
+        <link refid="class_logout_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ListHostAccommodationUI</label>
+        <link refid="class_list_host_accommodation_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>WithdrawalUI</label>
+        <link refid="class_withdrawal_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+      <node id="6">
+        <label>RegisterUI</label>
+        <link refid="class_register_u_i"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/boundaries/AbstractBoundary.h" line="27" column="1" bodyfile="src/boundaries/AbstractBoundary.h" bodystart="27" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>AbstractBoundary</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1a53e200cea9e8515d1a76f980bcfd500d" prot="private" virt="non-virtual"><scope>AbstractBoundary</scope><name>AbstractControl</name></member>
+      <member refid="class_abstract_boundary_1ab252c960b0d10fceb194867a51778e1d" prot="private" virt="non-virtual"><scope>AbstractBoundary</scope><name>control</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>AbstractBoundary</scope><name>getControl</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>AbstractBoundary</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>AbstractBoundary</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

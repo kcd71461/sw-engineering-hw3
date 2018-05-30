@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_member_collection" kind="class" language="C++" prot="public">
+    <compoundname>MemberCollection</compoundname>
+    <basecompoundref refid="class_collection" prot="public" virt="non-virtual">Collection&lt; Member &gt;</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_member_collection_1a7ca69ba8524afaf61ddb2b73ddcf72e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MemberCollection::MemberCollection</definition>
+        <argsstring>()</argsstring>
+        <name>MemberCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MemberCollection.h" line="17" column="1" bodyfile="src/MemberCollection.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>MemberCollection</label>
+        <link refid="class_member_collection"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>Collection&lt; Member &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="80">
+        <label>MemberCollection</label>
+        <link refid="class_member_collection"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Collection&lt; Member &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/MemberCollection.h" line="14" column="1" bodyfile="src/MemberCollection.h" bodystart="14" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" virt="non-virtual"><scope>MemberCollection</scope><name>_list</name></member>
+      <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>add</name></member>
+      <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>exists</name></member>
+      <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>get</name></member>
+      <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>getSize</name></member>
+      <member refid="class_member_collection_1a7ca69ba8524afaf61ddb2b73ddcf72e5" prot="private" virt="non-virtual"><scope>MemberCollection</scope><name>MemberCollection</name></member>
+      <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" virt="non-virtual"><scope>MemberCollection</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_session_control" kind="class" language="C++" prot="public">
+    <compoundname>SessionControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="_session_control_8h" local="no">SessionControl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_session_control_1a09ae13f1e995c6b83ece478921c0722f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SessionControl::changeSession</definition>
+        <argsstring>(string userID)</argsstring>
+        <name>changeSession</name>
+        <param>
+          <type>string</type>
+          <declname>userID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>세션 전환 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/SessionControl.h" line="27" column="1" bodyfile="src/controls/SessionControl.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_control_1a2b5ea3cfba3e5f303071845330a69069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SessionControl::changeSessionToGuest</definition>
+        <argsstring>()</argsstring>
+        <name>changeSessionToGuest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_guest" kindref="compound">Guest</ref> 세션 전환 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/SessionControl.h" line="32" column="1" bodyfile="src/controls/SessionControl.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>세션 관련 명령을 수행 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="131">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="130">
+        <label>SessionControl</label>
+        <link refid="class_session_control"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="133">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="132">
+        <label>SessionControl</label>
+        <link refid="class_session_control"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/SessionControl.h" line="18" column="1" bodyfile="src/controls/SessionControl.h" bodystart="18" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>SessionControl</scope><name>AbstractControl</name></member>
+      <member refid="class_session_control_1a09ae13f1e995c6b83ece478921c0722f" prot="public" virt="non-virtual"><scope>SessionControl</scope><name>changeSession</name></member>
+      <member refid="class_session_control_1a2b5ea3cfba3e5f303071845330a69069" prot="public" virt="non-virtual"><scope>SessionControl</scope><name>changeSessionToGuest</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>SessionControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>SessionControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>SessionControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

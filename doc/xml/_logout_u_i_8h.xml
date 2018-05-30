@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_logout_u_i_8h" kind="file" language="C++">
+    <compoundname>LogoutUI.h</compoundname>
+    <includes refid="_abstract_boundary_8h" local="yes">AbstractBoundary.h</includes>
+    <includedby refid="_logout_u_i_8cpp" local="yes">src/boundaries/LogoutUI.cpp</includedby>
+    <includedby refid="_logout_control_8h" local="yes">src/controls/LogoutControl.h</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="124">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>src/boundaries/LogoutUI.h</label>
+        <link refid="_logout_u_i_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>string</label>
+      </node>
+      <node id="123">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="125">
+        <label>src/boundaries/LogoutUI.h</label>
+        <link refid="_logout_u_i_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>src/controls/LogoutControl.h</label>
+        <link refid="_logout_control_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_logout_u_i" prot="public">LogoutUI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/27/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_LOGOUTUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_LOGOUTUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractBoundary.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_logout_control" kindref="compound">LogoutControl</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_logout_u_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_logout_u_i" kindref="compound">LogoutUI</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(<ref refid="class_logout_control" kindref="compound">LogoutControl</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onRequestLogout();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_LOGOUTUI_H</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/LogoutUI.h"/>
+  </compounddef>
+</doxygen>

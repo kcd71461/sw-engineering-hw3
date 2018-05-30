@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_7afd03d72c1de07a6d47e666c364824c" kind="dir">
+    <compoundname>src/controls</compoundname>
+    <innerfile refid="_abstract_control_8cpp">AbstractControl.cpp</innerfile>
+    <innerfile refid="_abstract_control_8h">AbstractControl.h</innerfile>
+    <innerfile refid="add_accommodation_8cpp">addAccommodation.cpp</innerfile>
+    <innerfile refid="add_accommodation_8h">addAccommodation.h</innerfile>
+    <innerfile refid="_list_host_accommodation_control_8cpp">ListHostAccommodationControl.cpp</innerfile>
+    <innerfile refid="_list_host_accommodation_control_8h">ListHostAccommodationControl.h</innerfile>
+    <innerfile refid="_login_control_8cpp">LoginControl.cpp</innerfile>
+    <innerfile refid="_login_control_8h">LoginControl.h</innerfile>
+    <innerfile refid="_logout_control_8cpp">LogoutControl.cpp</innerfile>
+    <innerfile refid="_logout_control_8h">LogoutControl.h</innerfile>
+    <innerfile refid="_opaque_inventory_control_8cpp">OpaqueInventoryControl.cpp</innerfile>
+    <innerfile refid="_opaque_inventory_control_8h">OpaqueInventoryControl.h</innerfile>
+    <innerfile refid="_register_control_8cpp">RegisterControl.cpp</innerfile>
+    <innerfile refid="_register_control_8h">RegisterControl.h</innerfile>
+    <innerfile refid="_search_control_8cpp">SearchControl.cpp</innerfile>
+    <innerfile refid="_search_control_8h">SearchControl.h</innerfile>
+    <innerfile refid="_search_reservation_control_8cpp">SearchReservationControl.cpp</innerfile>
+    <innerfile refid="_search_reservation_control_8h">SearchReservationControl.h</innerfile>
+    <innerfile refid="_session_control_8cpp">SessionControl.cpp</innerfile>
+    <innerfile refid="_session_control_8h">SessionControl.h</innerfile>
+    <innerfile refid="_withdrawal_control_8cpp">WithdrawalControl.cpp</innerfile>
+    <innerfile refid="_withdrawal_control_8h">WithdrawalControl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/controls/"/>
+  </compounddef>
+</doxygen>

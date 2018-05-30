@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_member_collection_8h" kind="file" language="C++">
+    <compoundname>MemberCollection.h</compoundname>
+    <includes refid="_collection_8h" local="yes">Collection.h</includes>
+    <includes refid="_member_8h" local="yes">Member.h</includes>
+    <includes refid="_singleton_macro_8h" local="yes">SingletonMacro.h</includes>
+    <includedby refid="_login_control_8cpp" local="yes">src/controls/LoginControl.cpp</includedby>
+    <includedby refid="_register_control_8cpp" local="yes">src/controls/RegisterControl.cpp</includedby>
+    <includedby refid="_withdrawal_control_8cpp" local="yes">src/controls/WithdrawalControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="_member_collection_8cpp" local="yes">src/MemberCollection.cpp</includedby>
+    <incdepgraph>
+      <node id="662">
+        <label>list</label>
+      </node>
+      <node id="663">
+        <label>Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>string</label>
+      </node>
+      <node id="661">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>src/MemberCollection.h</label>
+        <link refid="_member_collection_8h"/>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_member_collection" prot="public">MemberCollection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-24.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_MEMBERCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_MEMBERCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Collection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Member.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_member_collection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_member_collection" kindref="compound">MemberCollection</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_collection" kindref="compound">Collection</ref>&lt;Member&gt;<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="class_member_collection" kindref="compound">MemberCollection</ref>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_member_collection" kindref="compound">MemberCollection</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_MEMBERCOLLECTION_H</highlight></codeline>
+    </programlisting>
+    <location file="src/MemberCollection.h"/>
+  </compounddef>
+</doxygen>

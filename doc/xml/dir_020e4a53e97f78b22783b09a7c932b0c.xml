@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_020e4a53e97f78b22783b09a7c932b0c" kind="dir">
+    <compoundname>src/cmake-build-debug</compoundname>
+    <innerdir refid="dir_15e745cfa6718f09f4a3a3482dd2e260">src/cmake-build-debug/CMakeFiles</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/cmake-build-debug/"/>
+  </compounddef>
+</doxygen>

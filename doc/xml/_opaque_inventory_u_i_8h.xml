@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_opaque_inventory_u_i_8h" kind="file" language="C++">
+    <compoundname>OpaqueInventoryUI.h</compoundname>
+    <includes refid="_abstract_boundary_8h" local="yes">AbstractBoundary.h</includes>
+    <includedby refid="_opaque_inventory_u_i_8cpp" local="yes">src/boundaries/OpaqueInventoryUI.cpp</includedby>
+    <includedby refid="_opaque_inventory_control_8h" local="yes">src/controls/OpaqueInventoryControl.h</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="140">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>string</label>
+      </node>
+      <node id="136">
+        <label>src/boundaries/OpaqueInventoryUI.h</label>
+        <link refid="_opaque_inventory_u_i_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="141">
+        <label>src/boundaries/OpaqueInventoryUI.h</label>
+        <link refid="_opaque_inventory_u_i_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>src/controls/OpaqueInventoryControl.h</label>
+        <link refid="_opaque_inventory_control_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_opaque_inventory_u_i" prot="public">OpaqueInventoryUI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>권영진<sp/>on<sp/>2018.<sp/>5.<sp/>28..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_OPAQUEINVENTORYUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_OPAQUEINVENTORYUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractBoundary.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_opaque_inventory_control" kindref="compound">OpaqueInventoryControl</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_opaque_inventory_u_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_opaque_inventory_u_i" kindref="compound">OpaqueInventoryUI</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(<ref refid="class_opaque_inventory_control" kindref="compound">OpaqueInventoryControl</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onOpaqueReservationRequest(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_OPAQUEINVENTORYUI_H</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/OpaqueInventoryUI.h"/>
+  </compounddef>
+</doxygen>

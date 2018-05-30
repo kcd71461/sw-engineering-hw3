@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_singleton_macro_8h" kind="file" language="C++">
+    <compoundname>SingletonMacro.h</compoundname>
+    <includedby refid="_accommodation_collection_8h" local="yes">src/AccommodationCollection.h</includedby>
+    <includedby refid="_accommodation_collection_8cpp" local="yes">src/AccommodationCollection.cpp</includedby>
+    <includedby refid="_output_writer_8h" local="yes">src/OutputWriter.h</includedby>
+    <includedby refid="add_accommodation_8h" local="yes">src/controls/addAccommodation.h</includedby>
+    <includedby refid="_list_host_accommodation_control_8h" local="yes">src/controls/ListHostAccommodationControl.h</includedby>
+    <includedby refid="_login_control_8h" local="yes">src/controls/LoginControl.h</includedby>
+    <includedby refid="_logout_control_8h" local="yes">src/controls/LogoutControl.h</includedby>
+    <includedby refid="_opaque_inventory_control_8h" local="yes">src/controls/OpaqueInventoryControl.h</includedby>
+    <includedby refid="_register_control_8h" local="yes">src/controls/RegisterControl.h</includedby>
+    <includedby refid="_search_reservation_control_8h" local="yes">src/controls/SearchReservationControl.h</includedby>
+    <includedby refid="_search_control_8h" local="yes">src/controls/SearchControl.h</includedby>
+    <includedby refid="_session_control_8h" local="yes">src/controls/SessionControl.h</includedby>
+    <includedby refid="_session_collection_8h" local="yes">src/SessionCollection.h</includedby>
+    <includedby refid="_withdrawal_control_8h" local="yes">src/controls/WithdrawalControl.h</includedby>
+    <includedby refid="_reservation_collection_8h" local="yes">src/ReservationCollection.h</includedby>
+    <includedby refid="_member_collection_8h" local="yes">src/MemberCollection.h</includedby>
+    <includedby refid="_session_control_8cpp" local="yes">src/controls/SessionControl.cpp</includedby>
+    <includedby refid="_member_collection_8cpp" local="yes">src/MemberCollection.cpp</includedby>
+    <includedby refid="_output_writer_8cpp" local="yes">src/OutputWriter.cpp</includedby>
+    <includedby refid="_reservation_collection_8cpp" local="yes">src/ReservationCollection.cpp</includedby>
+    <includedby refid="_session_collection_8cpp" local="yes">src/SessionCollection.cpp</includedby>
+    <invincdepgraph>
+      <node id="741">
+        <label>src/controls/addAccommodation.h</label>
+        <link refid="add_accommodation_8h_source"/>
+      </node>
+      <node id="749">
+        <label>src/SessionCollection.h</label>
+        <link refid="_session_collection_8h_source"/>
+      </node>
+      <node id="738">
+        <label>src/Host.h</label>
+        <link refid="_host_8h_source"/>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="746">
+        <label>src/controls/SearchReservationControl.h</label>
+        <link refid="_search_reservation_control_8h_source"/>
+      </node>
+      <node id="742">
+        <label>src/controls/ListHostAccommodationControl.h</label>
+        <link refid="_list_host_accommodation_control_8h_source"/>
+      </node>
+      <node id="739">
+        <label>src/controls/RegisterControl.h</label>
+        <link refid="_register_control_8h_source"/>
+      </node>
+      <node id="750">
+        <label>src/controls/WithdrawalControl.h</label>
+        <link refid="_withdrawal_control_8h_source"/>
+      </node>
+      <node id="737">
+        <label>src/AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>src/controls/LogoutControl.h</label>
+        <link refid="_logout_control_8h_source"/>
+      </node>
+      <node id="751">
+        <label>src/ReservationCollection.h</label>
+        <link refid="_reservation_collection_8h_source"/>
+      </node>
+      <node id="752">
+        <label>src/MemberCollection.h</label>
+        <link refid="_member_collection_8h_source"/>
+      </node>
+      <node id="745">
+        <label>src/controls/OpaqueInventoryControl.h</label>
+        <link refid="_opaque_inventory_control_8h_source"/>
+      </node>
+      <node id="740">
+        <label>src/OutputWriter.h</label>
+        <link refid="_output_writer_8h_source"/>
+      </node>
+      <node id="736">
+        <label>src/SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>src/controls/SessionControl.h</label>
+        <link refid="_session_control_8h_source"/>
+      </node>
+      <node id="743">
+        <label>src/controls/LoginControl.h</label>
+        <link refid="_login_control_8h_source"/>
+      </node>
+      <node id="747">
+        <label>src/controls/SearchControl.h</label>
+        <link refid="_search_control_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_singleton_macro_8h_1a84ffb055fa4414cbd0b92ffe6cdea8bb" prot="public" static="no">
+        <name>GENERATE_SINGLETON_IMPLEMENT</name>
+        <param><defname>CLASS_NAME</defname></param>
+        <initializer>CLASS_NAME *CLASS_NAME::instance = NULL;\
+CLASS_NAME *CLASS_NAME::getInstance() {\
+if (instance == NULL) {instance = new CLASS_NAME();}\
+return instance;\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>singleton 구현부(.cpp) 코드 생성 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SingletonMacro.h" line="11" column="9" bodyfile="src/SingletonMacro.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_singleton_macro_8h_1a072e6aa9aa90102e6057f3e3c1edb478" prot="public" static="no">
+        <name>GENERATE_SINGLETON_DECLARE</name>
+        <param><defname>CLASS_NAME</defname></param>
+        <initializer>private:\
+static CLASS_NAME *instance;\
+public :\
+static CLASS_NAME *getInstance();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SingletonMacro.h" line="20" column="9" bodyfile="src/SingletonMacro.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/26/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_SINGLETONMACRO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_SINGLETONMACRO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#define<sp/>GENERATE_SINGLETON_IMPLEMENT(CLASS_NAME)<sp/>CLASS_NAME<sp/>*CLASS_NAME::instance<sp/>=<sp/>NULL;\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">CLASS_NAME<sp/>*CLASS_NAME::getInstance()<sp/>{\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">if<sp/>(instance<sp/>==<sp/>NULL)<sp/>{instance<sp/>=<sp/>new<sp/>CLASS_NAME();}\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor">return<sp/>instance;\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>singleton<sp/>선언부(.h)<sp/>코드<sp/>생성</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_SINGLETON_DECLARE(CLASS_NAME)<sp/>private:\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">static<sp/>CLASS_NAME<sp/>*instance;\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor">public<sp/>:\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor">static<sp/>CLASS_NAME<sp/>*getInstance();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_SINGLETONMACRO_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SingletonMacro.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_list_host_accommodation_control_8cpp" kind="file" language="C++">
+    <compoundname>ListHostAccommodationControl.cpp</compoundname>
+    <includes refid="_list_host_accommodation_control_8h" local="yes">ListHostAccommodationControl.h</includes>
+    <includes refid="_accommodation_collection_8h" local="yes">../AccommodationCollection.h</includes>
+    <includes refid="_reservation_collection_8h" local="yes">../ReservationCollection.h</includes>
+    <incdepgraph>
+      <node id="323">
+        <label>list</label>
+      </node>
+      <node id="318">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>string</label>
+      </node>
+      <node id="321">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>ListHostAccommodationControl.h</label>
+        <link refid="_list_host_accommodation_control_8h_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>../AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>../boundaries/ListHostAccommodationUI.h</label>
+        <link refid="_list_host_accommodation_u_i_8h_source"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>../ReservationCollection.h</label>
+        <link refid="_reservation_collection_8h_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>src/controls/ListHostAccommodationControl.cpp</label>
+        <link refid="_list_host_accommodation_control_8cpp"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="325">
+        <label>Reservation.h</label>
+        <link refid="_reservation_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-30.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ListHostAccommodationControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../AccommodationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../ReservationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(<ref refid="class_list_host_accommodation_control" kindref="compound">ListHostAccommodationControl</ref>,<sp/><ref refid="class_list_host_accommodation_u_i" kindref="compound">ListHostAccommodationUI</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ListHostAccommodationControl::listAccommodations()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_member" kindref="compound">Member</ref><sp/>*currentMember<sp/>=<sp/>this-&gt;getCurrentMember();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currentMember<sp/>==<sp/>NULL<sp/>||<sp/>currentMember-&gt;getType()<sp/>==<sp/>MemberTypes::GuestMember)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;getListHostAccommodationUI()-&gt;printLine(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>Host계정로<sp/>로그인<sp/>하셔야<sp/>조회가<sp/>가능합니다.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//등록된<sp/>숙소<sp/>조회(이용날짜가<sp/>빠른순으로<sp/>출력)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3<sp/>2<sp/>커맨드<sp/>입력시<sp/><sp/>{숙소이름<sp/>숙소주소<sp/>가격<sp/>날짜<sp/>예약여부<sp/>opaque<sp/>inventory<sp/>가격}*<sp/>출력</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>3.2.<sp/>등록<sp/>숙소<sp/>조회</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;<sp/>room1<sp/>seoul<sp/>100000<sp/>2018:05:20<sp/>X<sp/>70000</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;<sp/>room2<sp/>seoul<sp/>100000<sp/>2018:05:21<sp/>X<sp/>70000</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref><sp/>*accommodationCollection<sp/>=<sp/>AccommodationCollection::getInstance();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>accommodationCollection-&gt;sortByDate();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref><sp/>*reservationCollection<sp/>=<sp/>ReservationCollection::getInstance();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>accommodationCollection-&gt;<ref refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kindref="member">getSize</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_accommodation" kindref="compound">Accommodation</ref><sp/>*accommodation<sp/>=<sp/>accommodationCollection-&gt;<ref refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" kindref="member">get</ref>(i);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(accommodation<sp/>==<sp/>NULL<sp/>||<sp/>accommodation-&gt;getHostid().compare(currentMember-&gt;getID())<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>reservationCollection-&gt;<ref refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kindref="member">getSize</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reservation" kindref="compound">Reservation</ref><sp/>*reservation<sp/>=<sp/>reservationCollection-&gt;<ref refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" kindref="member">get</ref>(j);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(accommodation-&gt;getName()<sp/>==<sp/>reservation-&gt;getName())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//예약<sp/>컬렉션에<sp/>있는<sp/>모든<sp/>예약에<sp/>대해<sp/>현재<sp/>숙소가<sp/>있는지를<sp/>검사</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;getListHostAccommodationUI()-&gt;printLine(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>%s<sp/>%s<sp/>%d<sp/>%s<sp/>%s<sp/>%d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodation-&gt;getName().c_str(),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodation-&gt;getAddress().c_str(),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodation-&gt;getCost(),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodation-&gt;getDate().c_str(),</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;O&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;X&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accommodation-&gt;getOpaqueCost()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">GENERATE_SINGLETON_IMPLEMENT(<ref refid="class_list_host_accommodation_control" kindref="compound">ListHostAccommodationControl</ref>)</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/ListHostAccommodationControl.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_abstract_control_8h" kind="file" language="C++">
+    <compoundname>AbstractControl.h</compoundname>
+    <includes refid="_abstract_boundary_8h" local="yes">../boundaries/AbstractBoundary.h</includes>
+    <includes refid="_member_8h" local="yes">../Member.h</includes>
+    <includedby refid="_abstract_boundary_8h" local="yes">src/boundaries/AbstractBoundary.h</includedby>
+    <includedby refid="add_accommodation_8h" local="yes">src/controls/addAccommodation.h</includedby>
+    <includedby refid="_list_host_accommodation_control_8h" local="yes">src/controls/ListHostAccommodationControl.h</includedby>
+    <includedby refid="_login_control_8h" local="yes">src/controls/LoginControl.h</includedby>
+    <includedby refid="_logout_control_8h" local="yes">src/controls/LogoutControl.h</includedby>
+    <includedby refid="_opaque_inventory_control_8h" local="yes">src/controls/OpaqueInventoryControl.h</includedby>
+    <includedby refid="_register_control_8h" local="yes">src/controls/RegisterControl.h</includedby>
+    <includedby refid="_search_reservation_control_8h" local="yes">src/controls/SearchReservationControl.h</includedby>
+    <includedby refid="_search_control_8h" local="yes">src/controls/SearchControl.h</includedby>
+    <includedby refid="_session_control_8h" local="yes">src/controls/SessionControl.h</includedby>
+    <includedby refid="_withdrawal_control_8h" local="yes">src/controls/WithdrawalControl.h</includedby>
+    <includedby refid="_abstract_control_8cpp" local="yes">src/controls/AbstractControl.cpp</includedby>
+    <incdepgraph>
+      <node id="265">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>string</label>
+      </node>
+      <node id="262">
+        <label>src/controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>../boundaries/AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="273">
+        <label>src/boundaries/LoginUI.h</label>
+        <link refid="_login_u_i_8h_source"/>
+        <childnode refid="274" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>src/controls/addAccommodation.h</label>
+        <link refid="add_accommodation_8h_source"/>
+      </node>
+      <node id="275">
+        <label>src/boundaries/LogoutUI.h</label>
+        <link refid="_logout_u_i_8h_source"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>src/boundaries/SearchUI.h</label>
+        <link refid="_search_u_i_8h_source"/>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>src/controls/SearchReservationControl.h</label>
+        <link refid="_search_reservation_control_8h_source"/>
+      </node>
+      <node id="272">
+        <label>src/controls/ListHostAccommodationControl.h</label>
+        <link refid="_list_host_accommodation_control_8h_source"/>
+      </node>
+      <node id="277">
+        <label>src/boundaries/OpaqueInventoryUI.h</label>
+        <link refid="_opaque_inventory_u_i_8h_source"/>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>src/controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>src/controls/RegisterControl.h</label>
+        <link refid="_register_control_8h_source"/>
+      </node>
+      <node id="267">
+        <label>src/boundaries/AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>src/controls/WithdrawalControl.h</label>
+        <link refid="_withdrawal_control_8h_source"/>
+      </node>
+      <node id="281">
+        <label>src/boundaries/SearchReservationUI.h</label>
+        <link refid="_search_reservation_u_i_8h_source"/>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>src/boundaries/ListHostAccommodationUI.h</label>
+        <link refid="_list_host_accommodation_u_i_8h_source"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>src/controls/LogoutControl.h</label>
+        <link refid="_logout_control_8h_source"/>
+      </node>
+      <node id="279">
+        <label>src/boundaries/RegisterUI.h</label>
+        <link refid="_register_u_i_8h_source"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>src/controls/OpaqueInventoryControl.h</label>
+        <link refid="_opaque_inventory_control_8h_source"/>
+      </node>
+      <node id="287">
+        <label>src/boundaries/WithdrawalUI.h</label>
+        <link refid="_withdrawal_u_i_8h_source"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>src/boundaries/SessionUI.h</label>
+        <link refid="_session_u_i_8h_source"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>src/OutputWriter.h</label>
+        <link refid="_output_writer_8h_source"/>
+      </node>
+      <node id="269">
+        <label>src/boundaries/addAccommodationUI.h</label>
+        <link refid="add_accommodation_u_i_8h_source"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>src/controls/SessionControl.h</label>
+        <link refid="_session_control_8h_source"/>
+      </node>
+      <node id="274">
+        <label>src/controls/LoginControl.h</label>
+        <link refid="_login_control_8h_source"/>
+      </node>
+      <node id="284">
+        <label>src/controls/SearchControl.h</label>
+        <link refid="_search_control_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_abstract_control" prot="public">AbstractControl</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_abstract_control_8h_1a029c74cb883574bde1138a3032623248" prot="public" static="no">
+        <name>GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE</name>
+        <param><defname>CONTROL_CLASS_NAME</defname></param>
+        <param><defname>BOUNDARY_CLASS_NAME</defname></param>
+        <initializer>public: BOUNDARY_CLASS_NAME *get##BOUNDARY_CLASS_NAME();\
+private: CONTROL_CLASS_NAME();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get[BoundaryClassName] interface와 기본 생성자 선언부(.h) 코드 생성 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="11" column="9" bodyfile="src/controls/AbstractControl.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_abstract_control_8h_1a90ca711ae36e5b30a71961ae9f819433" prot="public" static="no">
+        <name>GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT</name>
+        <param><defname>CONTROL_CLASS_NAME</defname></param>
+        <param><defname>BOUNDARY_CLASS_NAME</defname></param>
+        <initializer>CONTROL_CLASS_NAME::CONTROL_CLASS_NAME() : <ref refid="class_abstract_control" kindref="compound">AbstractControl</ref>(new BOUNDARY_CLASS_NAME) {} \
+BOUNDARY_CLASS_NAME *CONTROL_CLASS_NAME::get##BOUNDARY_CLASS_NAME() { return static_cast&lt;BOUNDARY_CLASS_NAME *&gt;(this-&gt;getBoundary());};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get[BoundaryClassName] interface와 기본 생성자 구현부(.cpp) 코드 생성 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="17" column="9" bodyfile="src/controls/AbstractControl.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/26/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_BASECONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_BASECONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#define<sp/>GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(CONTROL_CLASS_NAME,<sp/>BOUNDARY_CLASS_NAME)<sp/>public:<sp/>BOUNDARY_CLASS_NAME<sp/>*get##BOUNDARY_CLASS_NAME();\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">private:<sp/>CONTROL_CLASS_NAME();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#define<sp/>GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(CONTROL_CLASS_NAME,<sp/>BOUNDARY_CLASS_NAME)<sp/>CONTROL_CLASS_NAME::CONTROL_CLASS_NAME()<sp/>:<sp/>AbstractControl(new<sp/>BOUNDARY_CLASS_NAME)<sp/>{}<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">BOUNDARY_CLASS_NAME<sp/>*CONTROL_CLASS_NAME::get##BOUNDARY_CLASS_NAME()<sp/>{<sp/>return<sp/>static_cast&lt;BOUNDARY_CLASS_NAME<sp/>*&gt;(this-&gt;getBoundary());};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/AbstractBoundary.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Member.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_abstract_control" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>*boundary;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref>(<ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>*boundary);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_abstract_control" kindref="compound">AbstractControl</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>*getBoundary();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_member" kindref="compound">Member</ref><sp/>*getCurrentMember();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_BASECONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/AbstractControl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_guest" kind="class" language="C++" prot="public">
+    <compoundname>Guest</compoundname>
+    <basecompoundref refid="class_member" prot="public" virt="non-virtual">Member</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_guest_1ad4b9ebb1ca2b2abe1f40ce1b9997eca0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Guest::lastOpaqueTryTime</definition>
+        <argsstring></argsstring>
+        <name>lastOpaqueTryTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Guest.h" line="20" column="1" bodyfile="src/Guest.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_guest_1a16883a872c23d3b57c330a8c18031795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Guest::Guest</definition>
+        <argsstring>(const string &amp;name, const string &amp;securityNumber, const string &amp;address, const string &amp;id, const string &amp;password)</argsstring>
+        <name>Guest</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>securityNumber</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Guest.h" line="13" column="1" bodyfile="src/Guest.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_guest_1a9d8fc5c2d74eb419edb0c0ad1f16a73e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string Guest::getLastOpaqueTryTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getLastOpaqueTryTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Guest.h" line="15" column="1" bodyfile="src/Guest.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_guest_1a89ceffdfdbf729a0e2ae3592459fcae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Guest::setLastOpaqueTryTime</definition>
+        <argsstring>(const string &amp;lastOpaqueTryTime)</argsstring>
+        <name>setLastOpaqueTryTime</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>lastOpaqueTryTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Guest.h" line="17" column="1" bodyfile="src/Guest.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>Guest</label>
+        <link refid="class_guest"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Member</label>
+        <link refid="class_member"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>Guest</label>
+        <link refid="class_guest"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Member</label>
+        <link refid="class_member"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Guest.h" line="11" column="1" bodyfile="src/Guest.h" bodystart="11" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_member_1a9fe3103fb15b00e6a51194d57f6c4148" prot="public" virt="non-virtual"><scope>Guest</scope><name>equalsPassword</name></member>
+      <member refid="class_member_1a737850218112eb82ae1d81789c1244e1" prot="public" virt="non-virtual"><scope>Guest</scope><name>getAddress</name></member>
+      <member refid="class_member_1ae486cfbc7e5ab2fc5705115c4f96b2c2" prot="public" virt="non-virtual"><scope>Guest</scope><name>getID</name></member>
+      <member refid="class_guest_1a9d8fc5c2d74eb419edb0c0ad1f16a73e" prot="public" virt="non-virtual"><scope>Guest</scope><name>getLastOpaqueTryTime</name></member>
+      <member refid="class_member_1acbe6a0cd073a21fb0f1da2cbfb260952" prot="public" virt="non-virtual"><scope>Guest</scope><name>getName</name></member>
+      <member refid="class_member_1accf776380b3a2f391b4f57e1d938a071" prot="public" virt="non-virtual"><scope>Guest</scope><name>getType</name></member>
+      <member refid="class_guest_1a16883a872c23d3b57c330a8c18031795" prot="public" virt="non-virtual"><scope>Guest</scope><name>Guest</name></member>
+      <member refid="class_guest_1ad4b9ebb1ca2b2abe1f40ce1b9997eca0" prot="private" virt="non-virtual"><scope>Guest</scope><name>lastOpaqueTryTime</name></member>
+      <member refid="class_member_1af48adfcb614a6e5501237dc93e07ab2c" prot="public" virt="non-virtual"><scope>Guest</scope><name>Member</name></member>
+      <member refid="class_guest_1a89ceffdfdbf729a0e2ae3592459fcae6" prot="public" virt="non-virtual"><scope>Guest</scope><name>setLastOpaqueTryTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

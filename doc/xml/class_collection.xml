@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_collection" kind="class" language="C++" prot="public">
+    <compoundname>Collection</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" static="no" mutable="no">
+        <type>list&lt; T * &gt;</type>
+        <definition>list&lt;T *&gt; Collection&lt; T &gt;::_list</definition>
+        <argsstring></argsstring>
+        <name>_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="16" column="1" bodyfile="src/Collection.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * Collection&lt; T &gt;::get</definition>
+        <argsstring>(int index)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>해당 index의 item를 반환 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>item </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="23" column="1" bodyfile="src/Collection.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * Collection&lt; T &gt;::add</definition>
+        <argsstring>(T *)</argsstring>
+        <name>add</name>
+        <param>
+          <type>T *</type>
+          <defname>item</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>collection에 item을 추가 <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="29" column="1" bodyfile="src/Collection.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Collection&lt; T &gt;::set</definition>
+        <argsstring>(int index, T *item)</argsstring>
+        <name>set</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>해당 index에 새로운 멤버 삽입 또는 교체 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="34" column="1" bodyfile="src/Collection.h" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Collection&lt; T &gt;::remove</definition>
+        <argsstring>(int index)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>해당 index의 item을 collection에서 삭제 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>성공</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="39" column="1" bodyfile="src/Collection.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Collection&lt; T &gt;::remove</definition>
+        <argsstring>(T *pItem)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>T *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>해당 item을 collection에서 삭제 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="45" column="1" bodyfile="src/Collection.h" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Collection&lt; T &gt;::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>collection의 item 갯수 반환 <simplesect kind="return"><para>item 갯수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="51" column="1" bodyfile="src/Collection.h" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Collection&lt; T &gt;::exists</definition>
+        <argsstring>(T *pItem)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>T *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>collection에 Item 포함 여부 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>포함 여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Collection.h" line="58" column="1" bodyfile="src/Collection.h" bodystart="102" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Collection.h" line="14" column="1" bodyfile="src/Collection.h" bodystart="14" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" virt="non-virtual"><scope>Collection</scope><name>_list</name></member>
+      <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" virt="non-virtual"><scope>Collection</scope><name>add</name></member>
+      <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" virt="non-virtual"><scope>Collection</scope><name>exists</name></member>
+      <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" virt="non-virtual"><scope>Collection</scope><name>get</name></member>
+      <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" virt="non-virtual"><scope>Collection</scope><name>getSize</name></member>
+      <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" virt="non-virtual"><scope>Collection</scope><name>remove</name></member>
+      <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" virt="non-virtual"><scope>Collection</scope><name>remove</name></member>
+      <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" virt="non-virtual"><scope>Collection</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

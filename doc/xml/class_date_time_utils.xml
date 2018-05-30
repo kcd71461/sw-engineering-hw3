@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_date_time_utils" kind="class" language="C++" prot="public">
+    <compoundname>DateTimeUtils</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_date_time_utils_1aa0d40c609ded3d052db49432f9cb118b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tm</type>
+        <definition>tm DateTimeUtils::parseDateTimeString</definition>
+        <argsstring>(string dateTime)</argsstring>
+        <name>parseDateTimeString</name>
+        <param>
+          <type>string</type>
+          <declname>dateTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DateTimeUtils.h" line="14" column="1" bodyfile="src/DateTimeUtils.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_utils_1abf472d7dc0f3bbaf0780c5b19b936814" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string DateTimeUtils::getStringFromTime</definition>
+        <argsstring>(tm *pTm)</argsstring>
+        <name>getStringFromTime</name>
+        <param>
+          <type>tm *</type>
+          <declname>pTm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DateTimeUtils.h" line="15" column="1" bodyfile="src/DateTimeUtils.cpp" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_date_time_utils_1a0116f7ee9d799e4a4a52975c79600a65" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string DateTimeUtils::addDays</definition>
+        <argsstring>(string time, int days)</argsstring>
+        <name>addDays</name>
+        <param>
+          <type>string</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>days</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DateTimeUtils.h" line="17" column="1" bodyfile="src/DateTimeUtils.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_utils_1aee21079e4db5bca85131a7c70c5475e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string DateTimeUtils::addYears</definition>
+        <argsstring>(string time, int years)</argsstring>
+        <name>addYears</name>
+        <param>
+          <type>string</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>years</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DateTimeUtils.h" line="19" column="1" bodyfile="src/DateTimeUtils.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/DateTimeUtils.h" line="12" column="1" bodyfile="src/DateTimeUtils.h" bodystart="12" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_date_time_utils_1a0116f7ee9d799e4a4a52975c79600a65" prot="public" virt="non-virtual"><scope>DateTimeUtils</scope><name>addDays</name></member>
+      <member refid="class_date_time_utils_1aee21079e4db5bca85131a7c70c5475e1" prot="public" virt="non-virtual"><scope>DateTimeUtils</scope><name>addYears</name></member>
+      <member refid="class_date_time_utils_1abf472d7dc0f3bbaf0780c5b19b936814" prot="private" virt="non-virtual"><scope>DateTimeUtils</scope><name>getStringFromTime</name></member>
+      <member refid="class_date_time_utils_1aa0d40c609ded3d052db49432f9cb118b" prot="private" virt="non-virtual"><scope>DateTimeUtils</scope><name>parseDateTimeString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

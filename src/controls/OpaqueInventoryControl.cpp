@@ -75,9 +75,6 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
                 this->getOpaqueInventoryUI()->print(resultMessage.c_str());
             }
 
-        }
-        else this->getOpaqueInventoryUI()->printLine("> Opaque inventory 예약은 24시간에 한 번만 가능합니다.");
+        } else this->getOpaqueInventoryUI()->printLine("> Opaque inventory 예약은 24시간에 한 번만 가능합니다.");
     }
-
 }
-// TODO: 필요한 Control 함수 구현

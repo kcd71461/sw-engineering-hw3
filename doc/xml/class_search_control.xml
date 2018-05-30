@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_search_control" kind="class" language="C++" prot="public">
+    <compoundname>SearchControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="_search_control_8h" local="no">SearchControl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_search_control_1a96712e21f990caabad392818bd3a17a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchControl::searchAccommodations</definition>
+        <argsstring>(string address, string date)</argsstring>
+        <name>searchAccommodations</name>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/SearchControl.h" line="22" column="1" bodyfile="src/controls/SearchControl.cpp" bodystart="16" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_search_control_1a754ae7a3d0b00057a559034750422faa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SearchControl::addReservation</definition>
+        <argsstring>(string hostid, string guestid, string accommoname)</argsstring>
+        <name>addReservation</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>guestid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>accommoname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/SearchControl.h" line="24" column="1" bodyfile="src/controls/SearchControl.cpp" bodystart="31" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>숙소 검색 + 예약 시도 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="109">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="108">
+        <label>SearchControl</label>
+        <link refid="class_search_control"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="111">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="110">
+        <label>SearchControl</label>
+        <link refid="class_search_control"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/SearchControl.h" line="17" column="1" bodyfile="src/controls/SearchControl.h" bodystart="17" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>SearchControl</scope><name>AbstractControl</name></member>
+      <member refid="class_search_control_1a754ae7a3d0b00057a559034750422faa" prot="public" virt="non-virtual"><scope>SearchControl</scope><name>addReservation</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>SearchControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>SearchControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_search_control_1a96712e21f990caabad392818bd3a17a7" prot="public" virt="non-virtual"><scope>SearchControl</scope><name>searchAccommodations</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>SearchControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

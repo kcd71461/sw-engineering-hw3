@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_session_u_i_8cpp" kind="file" language="C++">
+    <compoundname>SessionUI.cpp</compoundname>
+    <includes refid="_session_u_i_8h" local="yes">SessionUI.h</includes>
+    <includes refid="_session_control_8h" local="yes">../controls/SessionControl.h</includes>
+    <includes refid="_session_collection_8h" local="yes">../SessionCollection.h</includes>
+    <incdepgraph>
+      <node id="208">
+        <label>list</label>
+      </node>
+      <node id="203">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>../SessionCollection.h</label>
+        <link refid="_session_collection_8h_source"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>string</label>
+      </node>
+      <node id="209">
+        <label>Session.h</label>
+        <link refid="_session_8h_source"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>src/boundaries/SessionUI.cpp</label>
+        <link refid="_session_u_i_8cpp"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>SessionUI.h</label>
+        <link refid="_session_u_i_8h_source"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="204">
+        <label>../controls/SessionControl.h</label>
+        <link refid="_session_control_8h_source"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/26/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SessionUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/SessionControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SessionCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(<ref refid="class_session_u_i" kindref="compound">SessionUI</ref>,<sp/><ref refid="class_session_control" kindref="compound">SessionControl</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SessionUI::onChangeSession(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userID)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>getSessionControl()-&gt;changeSession(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(userID));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SessionUI::onChangeGuestSession()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>getSessionControl()-&gt;changeSessionToGuest();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/SessionUI.cpp"/>
+  </compounddef>
+</doxygen>

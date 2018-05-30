@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_withdrawal_u_i_8cpp" kind="file" language="C++">
+    <compoundname>WithdrawalUI.cpp</compoundname>
+    <includes refid="_withdrawal_u_i_8h" local="yes">WithdrawalUI.h</includes>
+    <includes refid="_withdrawal_control_8h" local="yes">../controls/WithdrawalControl.h</includes>
+    <incdepgraph>
+      <node id="223">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>src/boundaries/WithdrawalUI.cpp</label>
+        <link refid="_withdrawal_u_i_8cpp"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>string</label>
+      </node>
+      <node id="222">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>../controls/WithdrawalControl.h</label>
+        <link refid="_withdrawal_control_8h_source"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>WithdrawalUI.h</label>
+        <link refid="_withdrawal_u_i_8h_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;WithdrawalUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;WithdrawalUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/WithdrawalControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(<ref refid="class_withdrawal_u_i" kindref="compound">WithdrawalUI</ref>,<sp/><ref refid="class_withdrawal_control" kindref="compound">WithdrawalControl</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WithdrawalUI::onWithdrawalRequest()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getWithdrawalControl()-&gt;deleteMember();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/WithdrawalUI.cpp"/>
+  </compounddef>
+</doxygen>

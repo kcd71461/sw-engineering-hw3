@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_withdrawal_u_i_8h" kind="file" language="C++">
+    <compoundname>WithdrawalUI.h</compoundname>
+    <includes refid="_abstract_boundary_8h" local="yes">AbstractBoundary.h</includes>
+    <includedby refid="_withdrawal_u_i_8cpp" local="yes">src/boundaries/WithdrawalUI.cpp</includedby>
+    <includedby refid="_withdrawal_control_8h" local="yes">src/controls/WithdrawalControl.h</includedby>
+    <incdepgraph>
+      <node id="231">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>string</label>
+      </node>
+      <node id="230">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>src/boundaries/WithdrawalUI.h</label>
+        <link refid="_withdrawal_u_i_8h"/>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="233">
+        <label>src/controls/WithdrawalControl.h</label>
+        <link refid="_withdrawal_control_8h_source"/>
+      </node>
+      <node id="232">
+        <label>src/boundaries/WithdrawalUI.h</label>
+        <link refid="_withdrawal_u_i_8h"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_withdrawal_u_i" prot="public">WithdrawalUI</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_WITHDRAWALUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_WITHDRAWALUI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractBoundary.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_withdrawal_control" kindref="compound">WithdrawalControl</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_withdrawal_u_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_withdrawal_u_i" kindref="compound">WithdrawalUI</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(<ref refid="class_withdrawal_control" kindref="compound">WithdrawalControl</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onWithdrawalRequest();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_WITHDRAWALUI_H</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/WithdrawalUI.h"/>
+  </compounddef>
+</doxygen>

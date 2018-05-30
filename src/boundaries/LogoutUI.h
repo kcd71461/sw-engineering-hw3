@@ -9,10 +9,16 @@
 
 class LogoutControl;
 
+/**
+ * 비로그인 사용자의 로그아웃 Boundary Class
+ */
 class LogoutUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(LogoutControl)
 
 public:
+    /**
+     * 회원의 로그아웃 요청 핸들러
+     */
     void onRequestLogout();
 };
 

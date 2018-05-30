@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_logout_control_8cpp" kind="file" language="C++">
+    <compoundname>LogoutControl.cpp</compoundname>
+    <includes refid="_logout_control_8h" local="yes">LogoutControl.h</includes>
+    <includes refid="_session_collection_8h" local="yes">../SessionCollection.h</includes>
+    <incdepgraph>
+      <node id="367">
+        <label>list</label>
+      </node>
+      <node id="364">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>../SessionCollection.h</label>
+        <link refid="_session_collection_8h_source"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>../boundaries/LogoutUI.h</label>
+        <link refid="_logout_u_i_8h_source"/>
+        <childnode refid="361" relation="include">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>string</label>
+      </node>
+      <node id="368">
+        <label>Session.h</label>
+        <link refid="_session_8h_source"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>src/controls/LogoutControl.cpp</label>
+        <link refid="_logout_control_8cpp"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>LogoutControl.h</label>
+        <link refid="_logout_control_8h_source"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/27/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;LogoutControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SessionCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(<ref refid="class_logout_control" kindref="compound">LogoutControl</ref>,<sp/><ref refid="class_logout_u_i" kindref="compound">LogoutUI</ref>)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_logout_control_1a312833da79ce891bcfd9879f8a5a2d52" kindref="member">LogoutControl::tryLogout</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_session_collection" kindref="compound">SessionCollection</ref><sp/>*sessions<sp/>=<sp/>SessionCollection::getInstance();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_session" kindref="compound">Session</ref><sp/>*currentSession<sp/>=<sp/>sessions-&gt;getCurrentSession();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(currentSession-&gt;isGuest())<sp/>{<sp/></highlight><highlight class="comment">//<sp/>현재<sp/>세션이<sp/>Guest이면<sp/>로그아웃<sp/>불가</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;getLogoutUI()-&gt;printLine(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>현재<sp/>guest<sp/>세션이므로<sp/>로그아웃<sp/>할<sp/>수<sp/>없습니다.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>현재<sp/>세션<sp/>삭제<sp/>후<sp/>Guest<sp/>세션으로<sp/>전환</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>currentSession-&gt;getMember()-&gt;getID();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sessions-&gt;<ref refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" kindref="member">remove</ref>(currentSession);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sessions-&gt;<ref refid="class_session_collection_1ada1aab5737803b2f9b11d91c412d8047" kindref="member">changeCurrentSessionToGuest</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;getLogoutUI()-&gt;printLine(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">.c_str());</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">GENERATE_SINGLETON_IMPLEMENT(<ref refid="class_logout_control" kindref="compound">LogoutControl</ref>)</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/LogoutControl.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+.TH "SessionCollection" 3 "Wed May 30 2018" "sw_engineering_hw3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SessionCollection
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SessionCollection\&.h>\fP
+.PP
+Inherits \fBCollection< Session >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSession\fP * \fBgetCurrentSession\fP () const"
+.br
+.ti -1c
+.RI "bool \fBchangeCurrentSession\fP (\fBSession\fP *)"
+.br
+.ti -1c
+.RI "bool \fBchangeCurrentSession\fP (string userID)"
+.br
+.ti -1c
+.RI "void \fBchangeCurrentSessionToGuest\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBSession\fP \fBCollection\fP 현재 로그인한 모든 사용자의 세션들과 \fBGuest\fP 세션을 가지고있다\&. collection내에 \fBGuest\fP 세션은 반드시 하나만 존재한다\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool SessionCollection::changeCurrentSession (\fBSession\fP * session)"
+현재 세션을 변경한다\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+변경 성공 여부 
+.RE
+.PP
+
+.SS "bool SessionCollection::changeCurrentSession (string userID)"
+현재 세션을 id={userID} 사용자의 세션으로 변경한다\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIuserID\fP 사용자ID 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+변경 성공 여부 
+.RE
+.PP
+
+.SS "void SessionCollection::changeCurrentSessionToGuest ()"
+현재 세션을 \fBGuest\fP 세션으로 변경한다\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sw_engineering_hw3 from the source code\&.

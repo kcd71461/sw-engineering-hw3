@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="add_accommodation_8h" kind="file" language="C++">
+    <compoundname>addAccommodation.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">../SingletonMacro.h</includes>
+    <includes refid="add_accommodation_u_i_8h" local="yes">../boundaries/addAccommodationUI.h</includes>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includedby refid="add_accommodation_u_i_8cpp" local="yes">src/boundaries/addAccommodationUI.cpp</includedby>
+    <includedby refid="add_accommodation_8cpp" local="yes">src/controls/addAccommodation.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="309">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>src/controls/addAccommodation.h</label>
+        <link refid="add_accommodation_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>string</label>
+      </node>
+      <node id="308">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>../boundaries/addAccommodationUI.h</label>
+        <link refid="add_accommodation_u_i_8h_source"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classadd_accommodation" prot="public">addAccommodation</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_addAccommodationCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_addAccommodationCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/addAccommodationUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadd_accommodation_u_i" kindref="compound">addAccommodationUI</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classadd_accommodation" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadd_accommodation" kindref="compound">addAccommodation</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="classadd_accommodation" kindref="compound">addAccommodation</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(<ref refid="classadd_accommodation" kindref="compound">addAccommodation</ref>,<sp/><ref refid="classadd_accommodation_u_i" kindref="compound">addAccommodationUI</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addNewAccommodation(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hostid,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cost,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_addAccommodationCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/addAccommodation.h"/>
+  </compounddef>
+</doxygen>

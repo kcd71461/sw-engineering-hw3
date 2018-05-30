@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_search_reservation_control_8cpp" kind="file" language="C++">
+    <compoundname>SearchReservationControl.cpp</compoundname>
+    <includes refid="_search_reservation_u_i_8h" local="yes">../boundaries/SearchReservationUI.h</includes>
+    <includes refid="_search_reservation_control_8h" local="yes">../controls/SearchReservationControl.h</includes>
+    <includes refid="_reservation_8h" local="yes">../Reservation.h</includes>
+    <includes refid="_reservation_collection_8h" local="yes">../ReservationCollection.h</includes>
+    <includes refid="_guest_8h" local="yes">../Guest.h</includes>
+    <includes refid="_member_8h" local="yes">../Member.h</includes>
+    <includes refid="_session_8h" local="yes">../Session.h</includes>
+    <includes refid="_session_collection_8h" local="yes">../SessionCollection.h</includes>
+    <incdepgraph>
+      <node id="473">
+        <label>list</label>
+      </node>
+      <node id="474">
+        <label>../Guest.h</label>
+        <link refid="_guest_8h_source"/>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="465" relation="include">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>src/controls/SearchReservationControl.cpp</label>
+        <link refid="_search_reservation_control_8cpp"/>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+      </node>
+      <node id="476">
+        <label>../SessionCollection.h</label>
+        <link refid="_session_collection_8h_source"/>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>string</label>
+      </node>
+      <node id="475">
+        <label>../Session.h</label>
+        <link refid="_session_8h_source"/>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>../controls/SearchReservationControl.h</label>
+        <link refid="_search_reservation_control_8h_source"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>../boundaries/SearchReservationUI.h</label>
+        <link refid="_search_reservation_u_i_8h_source"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>../ReservationCollection.h</label>
+        <link refid="_reservation_collection_8h_source"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="470">
+        <label>../Reservation.h</label>
+        <link refid="_reservation_8h_source"/>
+        <childnode refid="465" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>권영진<sp/>on<sp/>2018.<sp/>5.<sp/>28..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/SearchReservationUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/SearchReservationControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Reservation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../ReservationCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Guest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Member.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Session.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SessionCollection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(<ref refid="class_search_reservation_control" kindref="compound">SearchReservationControl</ref>,<sp/><ref refid="class_search_reservation_u_i" kindref="compound">SearchReservationUI</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">GENERATE_SINGLETON_IMPLEMENT(<ref refid="class_search_reservation_control" kindref="compound">SearchReservationControl</ref>)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_search_reservation_control_1abe42c4bf494cbafebad773f9b0737b98" kindref="member">SearchReservationControl::SearchReservation</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref><sp/>*reservations<sp/>=<sp/>ReservationCollection::getInstance();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>outputMessage<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_session_collection" kindref="compound">SessionCollection</ref><sp/>*sessions<sp/>=<sp/>SessionCollection::getInstance();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_session" kindref="compound">Session</ref><sp/>*currentSession<sp/>=<sp/>sessions-&gt;getCurrentSession();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>gid<sp/>=<sp/>currentSession-&gt;getMember()-&gt;getID();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>reservations-&gt;<ref refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" kindref="member">getSize</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reservation" kindref="compound">Reservation</ref><sp/>*reserv<sp/>=<sp/>reservations-&gt;<ref refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" kindref="member">get</ref>(i);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reserv-&gt;getGuestID()<sp/>==<sp/>gid)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMessage<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>reserv-&gt;getHostID()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>reserv-&gt;getName()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>reserv-&gt;getAddress()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reserv-&gt;getDate()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(reserv-&gt;getCost())<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getSearchReservationUI()-&gt;print(outputMessage.c_str());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/SearchReservationControl.cpp"/>
+  </compounddef>
+</doxygen>

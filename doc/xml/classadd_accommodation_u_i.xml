@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classadd_accommodation_u_i" kind="class" language="C++" prot="public">
+    <compoundname>addAccommodationUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classadd_accommodation_u_i_1aade79d966092990c38b6c23e447e2307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void addAccommodationUI::createAccommodation</definition>
+        <argsstring>(string hostid, string name, string address, int cost, string date, int opaqueCost)</argsstring>
+        <name>createAccommodation</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/addAccommodationUI.h" line="17" column="1" bodyfile="src/boundaries/addAccommodationUI.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>addAccommodationUI</label>
+        <link refid="classadd_accommodation_u_i"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>addAccommodationUI</label>
+        <link refid="classadd_accommodation_u_i"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/addAccommodationUI.h" line="13" column="1" bodyfile="src/boundaries/addAccommodationUI.h" bodystart="13" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>addAccommodationUI</scope><name>AbstractBoundary</name></member>
+      <member refid="classadd_accommodation_u_i_1aade79d966092990c38b6c23e447e2307" prot="public" virt="non-virtual"><scope>addAccommodationUI</scope><name>createAccommodation</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>addAccommodationUI</scope><name>getControl</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>addAccommodationUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>addAccommodationUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

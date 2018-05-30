@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_host" kind="class" language="C++" prot="public">
+    <compoundname>Host</compoundname>
+    <basecompoundref refid="class_member" prot="public" virt="non-virtual">Member</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_host_1a9f21538946cb995974ab3512de663ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Host::Host</definition>
+        <argsstring>(const string &amp;name, const string &amp;securityNumber, const string &amp;address, const string &amp;id, const string &amp;password)</argsstring>
+        <name>Host</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>securityNumber</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Host.h" line="14" column="1" bodyfile="src/Host.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_host_1a6c9ac82f8263c26b0382ae6b3b52b82d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref> *</type>
+        <definition>AccommodationCollection * Host::getAccommodations</definition>
+        <argsstring>()</argsstring>
+        <name>getAccommodations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Host.h" line="16" column="1" bodyfile="src/Host.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>Member</label>
+        <link refid="class_member"/>
+      </node>
+      <node id="46">
+        <label>Host</label>
+        <link refid="class_host"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="49">
+        <label>Member</label>
+        <link refid="class_member"/>
+      </node>
+      <node id="48">
+        <label>Host</label>
+        <link refid="class_host"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Host.h" line="12" column="1" bodyfile="src/Host.h" bodystart="12" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_member_1a9fe3103fb15b00e6a51194d57f6c4148" prot="public" virt="non-virtual"><scope>Host</scope><name>equalsPassword</name></member>
+      <member refid="class_host_1a6c9ac82f8263c26b0382ae6b3b52b82d" prot="public" virt="non-virtual"><scope>Host</scope><name>getAccommodations</name></member>
+      <member refid="class_member_1a737850218112eb82ae1d81789c1244e1" prot="public" virt="non-virtual"><scope>Host</scope><name>getAddress</name></member>
+      <member refid="class_member_1ae486cfbc7e5ab2fc5705115c4f96b2c2" prot="public" virt="non-virtual"><scope>Host</scope><name>getID</name></member>
+      <member refid="class_member_1acbe6a0cd073a21fb0f1da2cbfb260952" prot="public" virt="non-virtual"><scope>Host</scope><name>getName</name></member>
+      <member refid="class_member_1accf776380b3a2f391b4f57e1d938a071" prot="public" virt="non-virtual"><scope>Host</scope><name>getType</name></member>
+      <member refid="class_host_1a9f21538946cb995974ab3512de663ccd" prot="public" virt="non-virtual"><scope>Host</scope><name>Host</name></member>
+      <member refid="class_member_1af48adfcb614a6e5501237dc93e07ab2c" prot="public" virt="non-virtual"><scope>Host</scope><name>Member</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

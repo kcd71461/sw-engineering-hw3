@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_abstract_control" kind="class" language="C++" prot="public">
+    <compoundname>AbstractControl</compoundname>
+    <derivedcompoundref refid="classadd_accommodation" prot="public" virt="non-virtual">addAccommodation</derivedcompoundref>
+    <derivedcompoundref refid="class_list_host_accommodation_control" prot="public" virt="non-virtual">ListHostAccommodationControl</derivedcompoundref>
+    <derivedcompoundref refid="class_login_control" prot="public" virt="non-virtual">LoginControl</derivedcompoundref>
+    <derivedcompoundref refid="class_logout_control" prot="public" virt="non-virtual">LogoutControl</derivedcompoundref>
+    <derivedcompoundref refid="class_opaque_inventory_control" prot="public" virt="non-virtual">OpaqueInventoryControl</derivedcompoundref>
+    <derivedcompoundref refid="class_register_control" prot="public" virt="non-virtual">RegisterControl</derivedcompoundref>
+    <derivedcompoundref refid="class_search_control" prot="public" virt="non-virtual">SearchControl</derivedcompoundref>
+    <derivedcompoundref refid="class_search_reservation_control" prot="public" virt="non-virtual">SearchReservationControl</derivedcompoundref>
+    <derivedcompoundref refid="class_session_control" prot="public" virt="non-virtual">SessionControl</derivedcompoundref>
+    <derivedcompoundref refid="class_withdrawal_control" prot="public" virt="non-virtual">WithdrawalControl</derivedcompoundref>
+    <includes refid="_abstract_control_8h" local="no">AbstractControl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_abstract_control_1ad34f8226a11b17f653582d8ca40d2c97" prot="private" static="no" mutable="no">
+        <type><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref> *</type>
+        <definition>AbstractBoundary* AbstractControl::boundary</definition>
+        <argsstring></argsstring>
+        <name>boundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="30" column="1" bodyfile="src/controls/AbstractControl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractControl::AbstractControl</definition>
+        <argsstring>(AbstractBoundary *boundary)</argsstring>
+        <name>AbstractControl</name>
+        <param>
+          <type><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref> *</type>
+          <declname>boundary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="32" column="1" bodyfile="src/controls/AbstractControl.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractControl::~AbstractControl</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="34" column="1" bodyfile="src/controls/AbstractControl.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_abstract_boundary" kindref="compound">AbstractBoundary</ref> *</type>
+        <definition>AbstractBoundary * AbstractControl::getBoundary</definition>
+        <argsstring>()</argsstring>
+        <name>getBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="37" column="1" bodyfile="src/controls/AbstractControl.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_member" kindref="compound">Member</ref> *</type>
+        <definition>Member * AbstractControl::getCurrentMember</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentMember</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/AbstractControl.h" line="39" column="1" bodyfile="src/controls/AbstractControl.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Control 추상 클래스 </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="16">
+        <label>LogoutControl</label>
+        <link refid="class_logout_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SearchControl</label>
+        <link refid="class_search_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>ListHostAccommodationControl</label>
+        <link refid="class_list_host_accommodation_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>SearchReservationControl</label>
+        <link refid="class_search_reservation_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>LoginControl</label>
+        <link refid="class_login_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>SessionControl</label>
+        <link refid="class_session_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>RegisterControl</label>
+        <link refid="class_register_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>WithdrawalControl</label>
+        <link refid="class_withdrawal_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>OpaqueInventoryControl</label>
+        <link refid="class_opaque_inventory_control"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>addAccommodation</label>
+        <link refid="classadd_accommodation"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/controls/AbstractControl.h" line="28" column="1" bodyfile="src/controls/AbstractControl.h" bodystart="28" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>AbstractControl</scope><name>AbstractControl</name></member>
+      <member refid="class_abstract_control_1ad34f8226a11b17f653582d8ca40d2c97" prot="private" virt="non-virtual"><scope>AbstractControl</scope><name>boundary</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>AbstractControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>AbstractControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>AbstractControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

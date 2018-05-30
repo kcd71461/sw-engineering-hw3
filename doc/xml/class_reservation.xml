@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_reservation" kind="class" language="C++" prot="public">
+    <compoundname>Reservation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_reservation_1a2529a30333b90d5325177817f76c1ede" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Reservation::hostid</definition>
+        <argsstring></argsstring>
+        <name>hostid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="14" column="1" bodyfile="src/Reservation.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reservation_1a088e59a76302cc67b9a7bd4fa12ff54f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Reservation::guesid</definition>
+        <argsstring></argsstring>
+        <name>guesid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="15" column="1" bodyfile="src/Reservation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reservation_1a62d57fdd6fd6ce6fdc25205002a1a038" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Reservation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="16" column="1" bodyfile="src/Reservation.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reservation_1a77b82453f02241663b7ab434e51cda08" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Reservation::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="17" column="1" bodyfile="src/Reservation.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reservation_1aa0ea3b82cd592f3ddd450464bf59859d" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Reservation::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="18" column="1" bodyfile="src/Reservation.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reservation_1a293ac53a57bd29cd350cc38b57dcf819" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Reservation::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="19" column="1" bodyfile="src/Reservation.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_reservation_1a4ce6d165547e6b575a0486a43d756cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Reservation::Reservation</definition>
+        <argsstring>(const string &amp;hostid, const string &amp;guestid, const string &amp;name, const string &amp;address, const string &amp;date, int cost)</argsstring>
+        <name>Reservation</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>guestid</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="22" column="1" bodyfile="src/Reservation.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1a3a17896182f418576039658a70f97452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string &amp; Reservation::getGuestID</definition>
+        <argsstring>() const</argsstring>
+        <name>getGuestID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="24" column="1" bodyfile="src/Reservation.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1ac43be40b51d10a9d2862a323858521d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setGuesid</definition>
+        <argsstring>(const string &amp;guesid)</argsstring>
+        <name>setGuesid</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>guesid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="26" column="1" bodyfile="src/Reservation.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1a3dbe71a8f1ba4ec469653d305c8a2f28" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const std::string &amp; Reservation::getHostID</definition>
+        <argsstring>() const</argsstring>
+        <name>getHostID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="28" column="1" bodyfile="src/Reservation.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1aaed786c6301ebddfb93fe98e7d4c27c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setHostid</definition>
+        <argsstring>(const string &amp;hostid)</argsstring>
+        <name>setHostid</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>hostid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="30" column="1" bodyfile="src/Reservation.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1aaf6681475402a5a34ff9dc0e374c42b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const std::string &amp; Reservation::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="32" column="1" bodyfile="src/Reservation.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1ac0d1a56baec2d31202bbb89b71b78f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setName</definition>
+        <argsstring>(const string &amp;name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="34" column="1" bodyfile="src/Reservation.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1aaa52ea0877fab25ac0eb37b83ae2a5f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const std::string &amp; Reservation::getAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="36" column="1" bodyfile="src/Reservation.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1af54a505ed0d448e5436abf55afb3c15b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setAddress</definition>
+        <argsstring>(const string &amp;address)</argsstring>
+        <name>setAddress</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="38" column="1" bodyfile="src/Reservation.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1a41a54af4ed523eaabf62507b15d4df50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const std::string &amp; Reservation::getDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="40" column="1" bodyfile="src/Reservation.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1ab742bc4c1a5e33f7a3ffbf2f9393076d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setDate</definition>
+        <argsstring>(const string &amp;date)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="42" column="1" bodyfile="src/Reservation.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1a107d082624892399e930637d32524993" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Reservation::getCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="44" column="1" bodyfile="src/Reservation.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reservation_1a54d871fc33a39b60f3b99b20e1bf6880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reservation::setCost</definition>
+        <argsstring>(int cost)</argsstring>
+        <name>setCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Reservation.h" line="46" column="1" bodyfile="src/Reservation.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Reservation.h" line="12" column="1" bodyfile="src/Reservation.h" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_reservation_1a77b82453f02241663b7ab434e51cda08" prot="private" virt="non-virtual"><scope>Reservation</scope><name>address</name></member>
+      <member refid="class_reservation_1a293ac53a57bd29cd350cc38b57dcf819" prot="private" virt="non-virtual"><scope>Reservation</scope><name>cost</name></member>
+      <member refid="class_reservation_1aa0ea3b82cd592f3ddd450464bf59859d" prot="private" virt="non-virtual"><scope>Reservation</scope><name>date</name></member>
+      <member refid="class_reservation_1aaa52ea0877fab25ac0eb37b83ae2a5f3" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getAddress</name></member>
+      <member refid="class_reservation_1a107d082624892399e930637d32524993" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getCost</name></member>
+      <member refid="class_reservation_1a41a54af4ed523eaabf62507b15d4df50" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getDate</name></member>
+      <member refid="class_reservation_1a3a17896182f418576039658a70f97452" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getGuestID</name></member>
+      <member refid="class_reservation_1a3dbe71a8f1ba4ec469653d305c8a2f28" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getHostID</name></member>
+      <member refid="class_reservation_1aaf6681475402a5a34ff9dc0e374c42b4" prot="public" virt="non-virtual"><scope>Reservation</scope><name>getName</name></member>
+      <member refid="class_reservation_1a088e59a76302cc67b9a7bd4fa12ff54f" prot="private" virt="non-virtual"><scope>Reservation</scope><name>guesid</name></member>
+      <member refid="class_reservation_1a2529a30333b90d5325177817f76c1ede" prot="private" virt="non-virtual"><scope>Reservation</scope><name>hostid</name></member>
+      <member refid="class_reservation_1a62d57fdd6fd6ce6fdc25205002a1a038" prot="private" virt="non-virtual"><scope>Reservation</scope><name>name</name></member>
+      <member refid="class_reservation_1a4ce6d165547e6b575a0486a43d756cba" prot="public" virt="non-virtual"><scope>Reservation</scope><name>Reservation</name></member>
+      <member refid="class_reservation_1af54a505ed0d448e5436abf55afb3c15b" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setAddress</name></member>
+      <member refid="class_reservation_1a54d871fc33a39b60f3b99b20e1bf6880" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setCost</name></member>
+      <member refid="class_reservation_1ab742bc4c1a5e33f7a3ffbf2f9393076d" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setDate</name></member>
+      <member refid="class_reservation_1ac43be40b51d10a9d2862a323858521d1" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setGuesid</name></member>
+      <member refid="class_reservation_1aaed786c6301ebddfb93fe98e7d4c27c0" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setHostid</name></member>
+      <member refid="class_reservation_1ac0d1a56baec2d31202bbb89b71b78f4f" prot="public" virt="non-virtual"><scope>Reservation</scope><name>setName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

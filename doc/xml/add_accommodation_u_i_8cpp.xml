@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="add_accommodation_u_i_8cpp" kind="file" language="C++">
+    <compoundname>addAccommodationUI.cpp</compoundname>
+    <includes refid="add_accommodation_u_i_8h" local="yes">addAccommodationUI.h</includes>
+    <includes refid="add_accommodation_8h" local="yes">../controls/addAccommodation.h</includes>
+    <incdepgraph>
+      <node id="68">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>../controls/addAccommodation.h</label>
+        <link refid="add_accommodation_8h_source"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>string</label>
+      </node>
+      <node id="67">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="64">
+        <label>addAccommodationUI.h</label>
+        <link refid="add_accommodation_u_i_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>src/boundaries/addAccommodationUI.cpp</label>
+        <link refid="add_accommodation_u_i_8cpp"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>simjae<sp/>on<sp/>18.<sp/>5.<sp/>27.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;addAccommodationUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/addAccommodation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(<ref refid="classadd_accommodation_u_i" kindref="compound">addAccommodationUI</ref>,addAccommodationControl)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addAccommodationUI::createAccommodation(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hostid,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cost,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>addAccommodation::getInstance()-&gt;addNewAccommodation(hostid,name,address,cost,date,opaqueCost);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/addAccommodationUI.cpp"/>
+  </compounddef>
+</doxygen>

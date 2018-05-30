@@ -1,0 +1,119 @@
+.TH "Collection< T >" 3 "Wed May 30 2018" "sw_engineering_hw3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Collection< T >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "T * \fBget\fP (int index)"
+.br
+.ti -1c
+.RI "void * \fBadd\fP (T *)"
+.br
+.ti -1c
+.RI "int \fBset\fP (int index, T *item)"
+.br
+.ti -1c
+.RI "void \fBremove\fP (int index)"
+.br
+.ti -1c
+.RI "void \fBremove\fP (T *pItem)"
+.br
+.ti -1c
+.RI "int \fBgetSize\fP ()"
+.br
+.ti -1c
+.RI "bool \fBexists\fP (T *pItem)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "list< T * > \fB_list\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T> void * \fBCollection\fP< T >::add (T * item)"
+collection에 item을 추가 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.SS "template<typename T> bool \fBCollection\fP< T >::exists (T * pItem)"
+collection에 Item 포함 여부 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpItem\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+포함 여부 
+.RE
+.PP
+
+.SS "template<typename T > T * \fBCollection\fP< T >::get (int index)"
+해당 index의 item를 반환 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+item 
+.RE
+.PP
+
+.SS "template<typename T > int \fBCollection\fP< T >::getSize ()"
+collection의 item 갯수 반환 
+.PP
+\fBReturns:\fP
+.RS 4
+item 갯수 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCollection\fP< T >::remove (int index)"
+해당 index의 item을 collection에서 삭제 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI성공\fP 여부 
+.RE
+.PP
+
+.SS "template<typename T> void \fBCollection\fP< T >::remove (T * pItem)"
+해당 item을 collection에서 삭제 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpItem\fP 
+.RE
+.PP
+
+.SS "template<typename T> int \fBCollection\fP< T >::set (int index, T * item)"
+해당 index에 새로운 멤버 삽입 또는 교체 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for sw_engineering_hw3 from the source code\&.

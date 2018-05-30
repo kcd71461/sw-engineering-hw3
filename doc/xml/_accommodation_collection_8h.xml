@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_accommodation_collection_8h" kind="file" language="C++">
+    <compoundname>AccommodationCollection.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">SingletonMacro.h</includes>
+    <includes refid="_accommodation_8h" local="yes">Accommodation.h</includes>
+    <includes refid="_collection_8h" local="yes">Collection.h</includes>
+    <includedby refid="_accommodation_collection_8cpp" local="yes">src/AccommodationCollection.cpp</includedby>
+    <includedby refid="_host_8h" local="yes">src/Host.h</includedby>
+    <includedby refid="add_accommodation_8cpp" local="yes">src/controls/addAccommodation.cpp</includedby>
+    <includedby refid="_list_host_accommodation_control_8cpp" local="yes">src/controls/ListHostAccommodationControl.cpp</includedby>
+    <includedby refid="_opaque_inventory_control_8cpp" local="yes">src/controls/OpaqueInventoryControl.cpp</includedby>
+    <includedby refid="_search_control_8cpp" local="yes">src/controls/SearchControl.cpp</includedby>
+    <includedby refid="_time_8cpp" local="yes">src/Time.cpp</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>list</label>
+      </node>
+      <node id="20">
+        <label>string</label>
+      </node>
+      <node id="21">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>src/AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="25">
+        <label>src/Host.h</label>
+        <link refid="_host_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/controls/RegisterControl.h</label>
+        <link refid="_register_control_8h_source"/>
+      </node>
+      <node id="24">
+        <label>src/AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_accommodation_collection" prot="public">AccommodationCollection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-24.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Accommodation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Collection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_accommodation_collection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_collection" kindref="compound">Collection</ref>&lt;Accommodation&gt;<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATE_SINGLETON_DECLARE(<ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sortbycost();<sp/></highlight><highlight class="comment">//<sp/>가격을<sp/>기준으로<sp/>컬렉션<sp/>오름차순<sp/>정렬</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sortByDate();<sp/></highlight><highlight class="comment">//<sp/>날짜를<sp/>기준으로<sp/>컬렉션<sp/>오름차순<sp/>정렬</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_ACCOMMODATIONCOLLECTION_H</highlight></codeline>
+    </programlisting>
+    <location file="src/AccommodationCollection.h"/>
+  </compounddef>
+</doxygen>

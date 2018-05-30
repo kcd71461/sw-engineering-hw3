@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_reservation_collection_8h" kind="file" language="C++">
+    <compoundname>ReservationCollection.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">SingletonMacro.h</includes>
+    <includes refid="_collection_8h" local="yes">Collection.h</includes>
+    <includes refid="_reservation_8h" local="yes">Reservation.h</includes>
+    <includedby refid="_list_host_accommodation_control_8cpp" local="yes">src/controls/ListHostAccommodationControl.cpp</includedby>
+    <includedby refid="_opaque_inventory_control_8cpp" local="yes">src/controls/OpaqueInventoryControl.cpp</includedby>
+    <includedby refid="_search_control_8cpp" local="yes">src/controls/SearchControl.cpp</includedby>
+    <includedby refid="_search_reservation_control_8cpp" local="yes">src/controls/SearchReservationControl.cpp</includedby>
+    <includedby refid="_withdrawal_control_8cpp" local="yes">src/controls/WithdrawalControl.cpp</includedby>
+    <includedby refid="_reservation_collection_8cpp" local="yes">src/ReservationCollection.cpp</includedby>
+    <incdepgraph>
+      <node id="704">
+        <label>list</label>
+      </node>
+      <node id="706">
+        <label>string</label>
+      </node>
+      <node id="703">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="704" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>src/ReservationCollection.h</label>
+        <link refid="_reservation_collection_8h"/>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+      <node id="705">
+        <label>Reservation.h</label>
+        <link refid="_reservation_8h_source"/>
+        <childnode refid="706" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_reservation_collection" prot="public">ReservationCollection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>2018-05-24.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_RESERVATIONCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_RESERVATIONCOLLECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Collection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Reservation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_reservation_collection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_collection" kindref="compound">Collection</ref>&lt;Reservation&gt;<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATE_SINGLETON_DECLARE(<ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref>)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reservation_collection" kindref="compound">ReservationCollection</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_RESERVATION_H</highlight></codeline>
+    </programlisting>
+    <location file="src/ReservationCollection.h"/>
+  </compounddef>
+</doxygen>

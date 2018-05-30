@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_session_u_i" kind="class" language="C++" prot="public">
+    <compoundname>SessionUI</compoundname>
+    <basecompoundref refid="class_abstract_boundary" prot="public" virt="non-virtual">AbstractBoundary</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_session_u_i_1a32778b6a6b4323e9c067b37903906fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SessionUI::onChangeSession</definition>
+        <argsstring>(char *)</argsstring>
+        <name>onChangeSession</name>
+        <param>
+          <type>char *</type>
+          <defname>userID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/SessionUI.h" line="17" column="1" bodyfile="src/boundaries/SessionUI.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_session_u_i_1a9d92daa17c05d5c2eaf13a53b9edf13d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SessionUI::onChangeGuestSession</definition>
+        <argsstring>()</argsstring>
+        <name>onChangeGuestSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/boundaries/SessionUI.h" line="18" column="1" bodyfile="src/boundaries/SessionUI.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="134">
+        <label>SessionUI</label>
+        <link refid="class_session_u_i"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>SessionUI</label>
+        <link refid="class_session_u_i"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>AbstractBoundary</label>
+        <link refid="class_abstract_boundary"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/boundaries/SessionUI.h" line="13" column="1" bodyfile="src/boundaries/SessionUI.h" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_abstract_boundary_1a8ccd57021f4fb07be8fe55eeb2c737b1" prot="protected" virt="non-virtual"><scope>SessionUI</scope><name>AbstractBoundary</name></member>
+      <member refid="class_abstract_boundary_1ae5d219b7f0f0941db96fb033469e7593" prot="protected" virt="non-virtual"><scope>SessionUI</scope><name>getControl</name></member>
+      <member refid="class_session_u_i_1a9d92daa17c05d5c2eaf13a53b9edf13d" prot="public" virt="non-virtual"><scope>SessionUI</scope><name>onChangeGuestSession</name></member>
+      <member refid="class_session_u_i_1a32778b6a6b4323e9c067b37903906fcf" prot="public" virt="non-virtual"><scope>SessionUI</scope><name>onChangeSession</name></member>
+      <member refid="class_abstract_boundary_1a58d0f5dad1635f64f847d96f3451b145" prot="public" virt="virtual"><scope>SessionUI</scope><name>print</name></member>
+      <member refid="class_abstract_boundary_1a70c2c2983a38d43a6c5ccd6e831d5c5d" prot="public" virt="virtual"><scope>SessionUI</scope><name>printLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

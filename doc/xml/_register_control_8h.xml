@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_register_control_8h" kind="file" language="C++">
+    <compoundname>RegisterControl.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">../SingletonMacro.h</includes>
+    <includes refid="_register_u_i_8h" local="yes">../boundaries/RegisterUI.h</includes>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includes refid="_member_8h" local="yes">../Member.h</includes>
+    <includes refid="_host_8h" local="yes">../Host.h</includes>
+    <includes refid="_guest_8h" local="yes">../Guest.h</includes>
+    <includedby refid="_register_u_i_8cpp" local="yes">src/boundaries/RegisterUI.cpp</includedby>
+    <includedby refid="_register_control_8cpp" local="yes">src/controls/RegisterControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="435">
+        <label>list</label>
+      </node>
+      <node id="436">
+        <label>../Guest.h</label>
+        <link refid="_guest_8h_source"/>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>../Host.h</label>
+        <link refid="_host_8h_source"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>string</label>
+      </node>
+      <node id="433">
+        <label>Time.h</label>
+        <link refid="_time_8h_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>src/controls/RegisterControl.h</label>
+        <link refid="_register_control_8h"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>AccommodationCollection.h</label>
+        <link refid="_accommodation_collection_8h_source"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>Collection.h</label>
+        <link refid="_collection_8h_source"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>../boundaries/RegisterUI.h</label>
+        <link refid="_register_u_i_8h_source"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>Accommodation.h</label>
+        <link refid="_accommodation_8h_source"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_register_control" prot="public">RegisterControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>kimch<sp/>on<sp/>5/27/2018.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_REGISTERCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_REGISTERCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/RegisterUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Member.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Host.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Guest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_register_u_i" kindref="compound">RegisterUI</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_register_control" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_register_control" kindref="compound">RegisterControl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="class_register_control" kindref="compound">RegisterControl</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(<ref refid="class_register_control" kindref="compound">RegisterControl</ref>,<sp/><ref refid="class_register_u_i" kindref="compound">RegisterUI</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_register_control_1ad973b13d8abde9fa2a9a0cd623a614b3" kindref="member">registerMember</ref>(MemberTypes<sp/>type,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>securityNumber,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_REGISTERCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/RegisterControl.h"/>
+  </compounddef>
+</doxygen>

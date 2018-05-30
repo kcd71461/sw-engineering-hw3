@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_opaque_inventory_control" kind="class" language="C++" prot="public">
+    <compoundname>OpaqueInventoryControl</compoundname>
+    <basecompoundref refid="class_abstract_control" prot="public" virt="non-virtual">AbstractControl</basecompoundref>
+    <includes refid="_opaque_inventory_control_8h" local="no">OpaqueInventoryControl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_opaque_inventory_control_1a671ed0b02c98801a5f568a710b8fc107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OpaqueInventoryControl::tryOpaqueInventoryReservation</definition>
+        <argsstring>(string address, string date, int opaqueCost)</argsstring>
+        <name>tryOpaqueInventoryReservation</name>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>OpaqueInventory 예약을 시도 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opaqueCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/OpaqueInventoryControl.h" line="28" column="1" bodyfile="src/controls/OpaqueInventoryControl.cpp" bodystart="38" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_opaque_inventory_control_1ab3db8bcd22d72ee5d34d7d435b6776ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string OpaqueInventoryControl::addOpaqueReservation</definition>
+        <argsstring>(string hostid, string accommodation, int opaqueCost)</argsstring>
+        <name>addOpaqueReservation</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>accommodation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/controls/OpaqueInventoryControl.h" line="29" column="1" bodyfile="src/controls/OpaqueInventoryControl.cpp" bodystart="18" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>OpaqueInventory 예약 시도 Control </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="85">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="84">
+        <label>OpaqueInventoryControl</label>
+        <link refid="class_opaque_inventory_control"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>AbstractControl</label>
+        <link refid="class_abstract_control"/>
+      </node>
+      <node id="86">
+        <label>OpaqueInventoryControl</label>
+        <link refid="class_opaque_inventory_control"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/controls/OpaqueInventoryControl.h" line="17" column="1" bodyfile="src/controls/OpaqueInventoryControl.h" bodystart="17" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_abstract_control_1aa762455bc70bbb9b065ef6c8715ec2e4" prot="protected" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>AbstractControl</name></member>
+      <member refid="class_opaque_inventory_control_1ab3db8bcd22d72ee5d34d7d435b6776ca" prot="public" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>addOpaqueReservation</name></member>
+      <member refid="class_abstract_control_1a01dbe49782ca39665619e8d254d9df7f" prot="public" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>getBoundary</name></member>
+      <member refid="class_abstract_control_1a8d4de279a0a6209c60ca14678507d993" prot="public" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>getCurrentMember</name></member>
+      <member refid="class_opaque_inventory_control_1a671ed0b02c98801a5f568a710b8fc107" prot="public" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>tryOpaqueInventoryReservation</name></member>
+      <member refid="class_abstract_control_1aa47ac9c4f68c76e14f8d03e55af76aa9" prot="protected" virt="non-virtual"><scope>OpaqueInventoryControl</scope><name>~AbstractControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

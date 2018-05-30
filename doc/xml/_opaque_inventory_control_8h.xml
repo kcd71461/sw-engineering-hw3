@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_opaque_inventory_control_8h" kind="file" language="C++">
+    <compoundname>OpaqueInventoryControl.h</compoundname>
+    <includes refid="_singleton_macro_8h" local="yes">../SingletonMacro.h</includes>
+    <includes refid="_opaque_inventory_u_i_8h" local="yes">../boundaries/OpaqueInventoryUI.h</includes>
+    <includes refid="_abstract_control_8h" local="yes">AbstractControl.h</includes>
+    <includedby refid="_opaque_inventory_u_i_8cpp" local="yes">src/boundaries/OpaqueInventoryUI.cpp</includedby>
+    <includedby refid="_opaque_inventory_control_8cpp" local="yes">src/controls/OpaqueInventoryControl.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <incdepgraph>
+      <node id="404">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="402" relation="include">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>string</label>
+      </node>
+      <node id="400">
+        <label>../boundaries/OpaqueInventoryUI.h</label>
+        <link refid="_opaque_inventory_u_i_8h_source"/>
+        <childnode refid="401" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>src/controls/OpaqueInventoryControl.h</label>
+        <link refid="_opaque_inventory_control_8h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_opaque_inventory_control" prot="public">OpaqueInventoryControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>권영진<sp/>on<sp/>2018.<sp/>5.<sp/>28..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SW_ENGINEERING_HW3_OPAQUEINVENTORYCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_ENGINEERING_HW3_OPAQUEINVENTORYCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SingletonMacro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../boundaries/OpaqueInventoryUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;AbstractControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_opaque_inventory_u_i" kindref="compound">OpaqueInventoryUI</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_opaque_inventory_control" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_opaque_inventory_control" kindref="compound">OpaqueInventoryControl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_abstract_control" kindref="compound">AbstractControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">GENERATE_SINGLETON_DECLARE(<ref refid="class_opaque_inventory_control" kindref="compound">OpaqueInventoryControl</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(<ref refid="class_opaque_inventory_control" kindref="compound">OpaqueInventoryControl</ref>,<sp/><ref refid="class_opaque_inventory_u_i" kindref="compound">OpaqueInventoryUI</ref>)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_opaque_inventory_control_1a671ed0b02c98801a5f568a710b8fc107" kindref="member">tryOpaqueInventoryReservation</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>date,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addOpaqueReservation(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hostid,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>accommodation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opaqueCost);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//SW_ENGINEERING_HW3_OPAQUEINVENTORYCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="src/controls/OpaqueInventoryControl.h"/>
+  </compounddef>
+</doxygen>

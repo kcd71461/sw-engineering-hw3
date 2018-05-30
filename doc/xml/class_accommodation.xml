@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_accommodation" kind="class" language="C++" prot="public">
+    <compoundname>Accommodation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_accommodation_1a4457b6c27a5eff98f1e48cf8a939ec41" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Accommodation::hostid</definition>
+        <argsstring></argsstring>
+        <name>hostid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="14" column="1" bodyfile="src/Accommodation.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1a9f382222022edee28b4941d54a2431a1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Accommodation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="15" column="1" bodyfile="src/Accommodation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1aaaf7c49b719f11243830efa383a405b2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Accommodation::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="16" column="1" bodyfile="src/Accommodation.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1a82ef4ab33cbfb65e474f57a29e912a57" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Accommodation::cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="17" column="1" bodyfile="src/Accommodation.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1a70180fbf73bd42f1863273ae74c81107" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Accommodation::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="18" column="1" bodyfile="src/Accommodation.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1a5e73c19ef83caab900fec08260907e0e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Accommodation::createDate</definition>
+        <argsstring></argsstring>
+        <name>createDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="19" column="1" bodyfile="src/Accommodation.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_accommodation_1ad81156978eb954aee94750037b86acdc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Accommodation::opaqueCost</definition>
+        <argsstring></argsstring>
+        <name>opaqueCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="22" column="1" bodyfile="src/Accommodation.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_accommodation_1a486de6669daa47ce1a8929f410b49c5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Accommodation::Accommodation</definition>
+        <argsstring>(string hostid, string name, string address, int cost, string date, int opaqueCost)</argsstring>
+        <name>Accommodation</name>
+        <param>
+          <type>string</type>
+          <declname>hostid</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="25" column="1" bodyfile="src/Accommodation.h" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a4621587884589f6f4e2a96d9ea6a2b6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; Accommodation::getHostid</definition>
+        <argsstring>() const</argsstring>
+        <name>getHostid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="34" column="1" bodyfile="src/Accommodation.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a5c304670c0dc1dbd798a78613e0b3517" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setHostid</definition>
+        <argsstring>(const string &amp;hostid)</argsstring>
+        <name>setHostid</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>hostid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="38" column="1" bodyfile="src/Accommodation.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a3a9149223a98b52d81d75e3a996c763e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; Accommodation::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="42" column="1" bodyfile="src/Accommodation.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1abce7026c22122eb871712ca5e25c5d5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setName</definition>
+        <argsstring>(const string &amp;name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="46" column="1" bodyfile="src/Accommodation.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1ac76a72fca22b2a44de424c8dcdd27591" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; Accommodation::getAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="50" column="1" bodyfile="src/Accommodation.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a54955b147de1f2010e3c5e9c7c5c9d5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setAddress</definition>
+        <argsstring>(const string &amp;address)</argsstring>
+        <name>setAddress</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="54" column="1" bodyfile="src/Accommodation.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a04dffb4cb999d398751914e2aa21d481" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Accommodation::getCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="58" column="1" bodyfile="src/Accommodation.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a126485fdd60120667ea84dbd67c01021" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setCost</definition>
+        <argsstring>(int cost)</argsstring>
+        <name>setCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="62" column="1" bodyfile="src/Accommodation.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1aff0df0114eac57e3ee5fb84c9266e0fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; Accommodation::getDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="66" column="1" bodyfile="src/Accommodation.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1af03f6fa77dcdf6310ff77ee9992410ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setDate</definition>
+        <argsstring>(const string &amp;date)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="70" column="1" bodyfile="src/Accommodation.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1aa46b6cd8f78b806b19c6f47da920a05f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Accommodation::getOpaqueCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getOpaqueCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="74" column="1" bodyfile="src/Accommodation.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a78797d63a50e68ee2b511222a2a8fd44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accommodation::setOpaqueCost</definition>
+        <argsstring>(int opaqueCost)</argsstring>
+        <name>setOpaqueCost</name>
+        <param>
+          <type>int</type>
+          <declname>opaqueCost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="78" column="1" bodyfile="src/Accommodation.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_1a017e4cf2a6daf1806dffc9c5c8c1b34a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string &amp;</type>
+        <definition>const string&amp; Accommodation::getCreateDate</definition>
+        <argsstring>() const</argsstring>
+        <name>getCreateDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Accommodation.h" line="82" column="1" bodyfile="src/Accommodation.h" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Accommodation.h" line="13" column="1" bodyfile="src/Accommodation.h" bodystart="13" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_accommodation_1a486de6669daa47ce1a8929f410b49c5f" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>Accommodation</name></member>
+      <member refid="class_accommodation_1aaaf7c49b719f11243830efa383a405b2" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>address</name></member>
+      <member refid="class_accommodation_1a82ef4ab33cbfb65e474f57a29e912a57" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>cost</name></member>
+      <member refid="class_accommodation_1a5e73c19ef83caab900fec08260907e0e" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>createDate</name></member>
+      <member refid="class_accommodation_1a70180fbf73bd42f1863273ae74c81107" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>date</name></member>
+      <member refid="class_accommodation_1ac76a72fca22b2a44de424c8dcdd27591" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getAddress</name></member>
+      <member refid="class_accommodation_1a04dffb4cb999d398751914e2aa21d481" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getCost</name></member>
+      <member refid="class_accommodation_1a017e4cf2a6daf1806dffc9c5c8c1b34a" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getCreateDate</name></member>
+      <member refid="class_accommodation_1aff0df0114eac57e3ee5fb84c9266e0fb" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getDate</name></member>
+      <member refid="class_accommodation_1a4621587884589f6f4e2a96d9ea6a2b6e" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getHostid</name></member>
+      <member refid="class_accommodation_1a3a9149223a98b52d81d75e3a996c763e" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getName</name></member>
+      <member refid="class_accommodation_1aa46b6cd8f78b806b19c6f47da920a05f" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>getOpaqueCost</name></member>
+      <member refid="class_accommodation_1a4457b6c27a5eff98f1e48cf8a939ec41" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>hostid</name></member>
+      <member refid="class_accommodation_1a9f382222022edee28b4941d54a2431a1" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>name</name></member>
+      <member refid="class_accommodation_1ad81156978eb954aee94750037b86acdc" prot="private" virt="non-virtual"><scope>Accommodation</scope><name>opaqueCost</name></member>
+      <member refid="class_accommodation_1a54955b147de1f2010e3c5e9c7c5c9d5b" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setAddress</name></member>
+      <member refid="class_accommodation_1a126485fdd60120667ea84dbd67c01021" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setCost</name></member>
+      <member refid="class_accommodation_1af03f6fa77dcdf6310ff77ee9992410ff" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setDate</name></member>
+      <member refid="class_accommodation_1a5c304670c0dc1dbd798a78613e0b3517" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setHostid</name></member>
+      <member refid="class_accommodation_1abce7026c22122eb871712ca5e25c5d5c" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setName</name></member>
+      <member refid="class_accommodation_1a78797d63a50e68ee2b511222a2a8fd44" prot="public" virt="non-virtual"><scope>Accommodation</scope><name>setOpaqueCost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

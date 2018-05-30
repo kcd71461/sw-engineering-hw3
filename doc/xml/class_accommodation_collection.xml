@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_accommodation_collection" kind="class" language="C++" prot="public">
+    <compoundname>AccommodationCollection</compoundname>
+    <basecompoundref refid="class_collection" prot="public" virt="non-virtual">Collection&lt; Accommodation &gt;</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_accommodation_collection_1a627edf6de615a8406ce746538ab3bb23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccommodationCollection::GENERATE_SINGLETON_DECLARE</definition>
+        <argsstring>(AccommodationCollection)</argsstring>
+        <name>GENERATE_SINGLETON_DECLARE</name>
+        <param>
+          <type><ref refid="class_accommodation_collection" kindref="compound">AccommodationCollection</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AccommodationCollection.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_collection_1a7186a0b4d2f3e2040cda39fe61074410" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AccommodationCollection::AccommodationCollection</definition>
+        <argsstring>()</argsstring>
+        <name>AccommodationCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AccommodationCollection.h" line="17" column="1" bodyfile="src/AccommodationCollection.cpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_accommodation_collection_1accd0beebc1658e747c569a9d8c07bd1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccommodationCollection::sortbycost</definition>
+        <argsstring>()</argsstring>
+        <name>sortbycost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AccommodationCollection.h" line="19" column="1" bodyfile="src/AccommodationCollection.cpp" bodystart="14" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_accommodation_collection_1a9d5d3fe1e5c078e24553592a5d521178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AccommodationCollection::sortByDate</definition>
+        <argsstring>()</argsstring>
+        <name>sortByDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AccommodationCollection.h" line="20" column="1" bodyfile="src/AccommodationCollection.cpp" bodystart="33" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>Collection&lt; Accommodation &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+      <node id="26">
+        <label>AccommodationCollection</label>
+        <link refid="class_accommodation_collection"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>Collection&lt; Accommodation &gt;</label>
+        <link refid="class_collection"/>
+      </node>
+      <node id="28">
+        <label>AccommodationCollection</label>
+        <link refid="class_accommodation_collection"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/AccommodationCollection.h" line="14" column="1" bodyfile="src/AccommodationCollection.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_collection_1a01e649ea61c423771fc84aed675996b4" prot="protected" virt="non-virtual"><scope>AccommodationCollection</scope><name>_list</name></member>
+      <member refid="class_accommodation_collection_1a7186a0b4d2f3e2040cda39fe61074410" prot="private" virt="non-virtual"><scope>AccommodationCollection</scope><name>AccommodationCollection</name></member>
+      <member refid="class_collection_1ac05ab0d5f369c5a645123bad16d102c1" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>add</name></member>
+      <member refid="class_collection_1a7c44d6d2aad8c98fbfe597646d7fd4ff" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>exists</name></member>
+      <member refid="class_accommodation_collection_1a627edf6de615a8406ce746538ab3bb23" prot="private" virt="non-virtual"><scope>AccommodationCollection</scope><name>GENERATE_SINGLETON_DECLARE</name></member>
+      <member refid="class_collection_1a64cd1dc1f2099f0baa1e8ddb0efdd470" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>get</name></member>
+      <member refid="class_collection_1a2fc76ab0d838768768ccb5df10aee711" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>getSize</name></member>
+      <member refid="class_collection_1a11e03bd78c5b0234fe075b69f776b800" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a6d5b06e5d2528c1251a5eb8b79ce756b" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>remove</name></member>
+      <member refid="class_collection_1a172de5b961f68075b07ce17c4dc79d94" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>set</name></member>
+      <member refid="class_accommodation_collection_1accd0beebc1658e747c569a9d8c07bd1c" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>sortbycost</name></member>
+      <member refid="class_accommodation_collection_1a9d5d3fe1e5c078e24553592a5d521178" prot="public" virt="non-virtual"><scope>AccommodationCollection</scope><name>sortByDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

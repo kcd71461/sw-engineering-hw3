@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_search_reservation_u_i_8cpp" kind="file" language="C++">
+    <compoundname>SearchReservationUI.cpp</compoundname>
+    <includes refid="_search_reservation_u_i_8h" local="yes">SearchReservationUI.h</includes>
+    <includes refid="_search_reservation_control_8h" local="yes">../controls/SearchReservationControl.h</includes>
+    <incdepgraph>
+      <node id="171">
+        <label>../Member.h</label>
+        <link refid="_member_8h_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>string</label>
+      </node>
+      <node id="172">
+        <label>../controls/SearchReservationControl.h</label>
+        <link refid="_search_reservation_control_8h_source"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>../controls/AbstractControl.h</label>
+        <link refid="_abstract_control_8h_source"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>AbstractBoundary.h</label>
+        <link refid="_abstract_boundary_8h_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>SearchReservationUI.h</label>
+        <link refid="_search_reservation_u_i_8h_source"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>src/boundaries/SearchReservationUI.cpp</label>
+        <link refid="_search_reservation_u_i_8cpp"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>../SingletonMacro.h</label>
+        <link refid="_singleton_macro_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>권영진<sp/>on<sp/>2018.<sp/>5.<sp/>28..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SearchReservationUI.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../controls/SearchReservationControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">GENERATE_DEFAULT_BOUNDARY_INTERFACE_IMPLEMENT(<ref refid="class_search_reservation_u_i" kindref="compound">SearchReservationUI</ref>,<ref refid="class_search_reservation_control" kindref="compound">SearchReservationControl</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SearchReservationUI::onSearchReservationRequest(){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;getSearchReservationControl()-&gt;SearchReservation();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/boundaries/SearchReservationUI.cpp"/>
+  </compounddef>
+</doxygen>

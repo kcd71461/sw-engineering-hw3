@@ -10,10 +10,19 @@
 
 class OpaqueInventoryControl;
 
+/**
+ * Opque 예약 시도 기능 Boundary Class.
+ */
 class OpaqueInventoryUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(OpaqueInventoryControl)
 
 public:
+    /**
+     * Opaque 예약 요청
+     * @param address
+     * @param date
+     * @param opaqueCost
+     */
     void onOpaqueReservationRequest(string address, string date, int opaqueCost);
 };
 

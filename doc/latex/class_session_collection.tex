@@ -1,0 +1,66 @@
+\hypertarget{class_session_collection}{}\section{Session\+Collection Class Reference}
+\label{class_session_collection}\index{Session\+Collection@{Session\+Collection}}
+
+
+{\ttfamily \#include $<$Session\+Collection.\+h$>$}
+
+Inheritance diagram for Session\+Collection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_session_collection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_session_collection_a57ca0e2003ebc212dc0179c80201b3d1}\label{class_session_collection_a57ca0e2003ebc212dc0179c80201b3d1}} 
+\mbox{\hyperlink{class_session}{Session}} $\ast$ {\bfseries get\+Current\+Session} () const
+\item 
+bool \mbox{\hyperlink{class_session_collection_a52b76b5e700a4b3395784bbe56ccd1c4}{change\+Current\+Session}} (\mbox{\hyperlink{class_session}{Session}} $\ast$)
+\item 
+bool \mbox{\hyperlink{class_session_collection_a516c5d275d9adc47040c5acbe1e47372}{change\+Current\+Session}} (string user\+ID)
+\item 
+void \mbox{\hyperlink{class_session_collection_ada1aab5737803b2f9b11d91c412d8047}{change\+Current\+Session\+To\+Guest}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_session}{Session}} \mbox{\hyperlink{class_collection}{Collection}} 현재 로그인한 모든 사용자의 세션들과 \mbox{\hyperlink{class_guest}{Guest}} 세션을 가지고있다. collection내에 \mbox{\hyperlink{class_guest}{Guest}} 세션은 반드시 하나만 존재한다. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_session_collection_a52b76b5e700a4b3395784bbe56ccd1c4}\label{class_session_collection_a52b76b5e700a4b3395784bbe56ccd1c4}} 
+\index{Session\+Collection@{Session\+Collection}!change\+Current\+Session@{change\+Current\+Session}}
+\index{change\+Current\+Session@{change\+Current\+Session}!Session\+Collection@{Session\+Collection}}
+\subsubsection{\texorpdfstring{change\+Current\+Session()}{changeCurrentSession()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Session\+Collection\+::change\+Current\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_session}{Session}} $\ast$}]{session }\end{DoxyParamCaption})}
+
+현재 세션을 변경한다. \begin{DoxyReturn}{Returns}
+변경 성공 여부 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_collection_a516c5d275d9adc47040c5acbe1e47372}\label{class_session_collection_a516c5d275d9adc47040c5acbe1e47372}} 
+\index{Session\+Collection@{Session\+Collection}!change\+Current\+Session@{change\+Current\+Session}}
+\index{change\+Current\+Session@{change\+Current\+Session}!Session\+Collection@{Session\+Collection}}
+\subsubsection{\texorpdfstring{change\+Current\+Session()}{changeCurrentSession()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Session\+Collection\+::change\+Current\+Session (\begin{DoxyParamCaption}\item[{string}]{user\+ID }\end{DoxyParamCaption})}
+
+현재 세션을 id=\{user\+ID\} 사용자의 세션으로 변경한다. 
+\begin{DoxyParams}{Parameters}
+{\em user\+ID} & 사용자\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+변경 성공 여부 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_session_collection_ada1aab5737803b2f9b11d91c412d8047}\label{class_session_collection_ada1aab5737803b2f9b11d91c412d8047}} 
+\index{Session\+Collection@{Session\+Collection}!change\+Current\+Session\+To\+Guest@{change\+Current\+Session\+To\+Guest}}
+\index{change\+Current\+Session\+To\+Guest@{change\+Current\+Session\+To\+Guest}!Session\+Collection@{Session\+Collection}}
+\subsubsection{\texorpdfstring{change\+Current\+Session\+To\+Guest()}{changeCurrentSessionToGuest()}}
+{\footnotesize\ttfamily void Session\+Collection\+::change\+Current\+Session\+To\+Guest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+현재 세션을 \mbox{\hyperlink{class_guest}{Guest}} 세션으로 변경한다. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Session\+Collection.\+h\item 
+src/Session\+Collection.\+cpp\end{DoxyCompactItemize}

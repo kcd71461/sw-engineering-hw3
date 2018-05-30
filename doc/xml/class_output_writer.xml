@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_output_writer" kind="class" language="C++" prot="public">
+    <compoundname>OutputWriter</compoundname>
+    <includes refid="_output_writer_8h" local="no">OutputWriter.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_output_writer_1a184f0c3382d2d98357915f83d1d821c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class AbstractBoundary</definition>
+        <argsstring></argsstring>
+        <name>AbstractBoundary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="18" column="1" bodyfile="src/OutputWriter.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_output_writer_1a5fb1543c1c1f87d1c29f72cedf4a6c9b" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* OutputWriter::filePointer</definition>
+        <argsstring></argsstring>
+        <name>filePointer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="23" column="1" bodyfile="src/OutputWriter.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_output_writer_1ae4f43da005288c939e6471cc777c92ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>OutputWriter::OutputWriter</definition>
+        <argsstring>()</argsstring>
+        <name>OutputWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="25" column="1" bodyfile="src/OutputWriter.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1a9dfbb9c65c00424ea65ab76fadfc95c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::vwrite</definition>
+        <argsstring>(const char *string, va_list list)</argsstring>
+        <name>vwrite</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>va_list로 받아서 write <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="32" column="1" bodyfile="src/OutputWriter.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1afc633eedcfd7aaf6b2f8ad8455732856" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::vwriteLine</definition>
+        <argsstring>(const char *string, va_list list)</argsstring>
+        <name>vwriteLine</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>va_list로 받아서 writeLine <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="39" column="1" bodyfile="src/OutputWriter.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_output_writer_1a33a96359971dfce8fafdebac909bdd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::open</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>open</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="42" column="1" bodyfile="src/OutputWriter.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1ab802980c4b874cb35ae744a170b5fd89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="44" column="1" bodyfile="src/OutputWriter.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1a6f4f8d99eca724f6fcbb60bcb950a4e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::write</definition>
+        <argsstring>(string fmt,...)</argsstring>
+        <name>write</name>
+        <param>
+          <type>string</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="46" column="1" bodyfile="src/OutputWriter.cpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1a17a9fd09b2241b8440ba24057e97e621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::writeLine</definition>
+        <argsstring>(string fmt,...)</argsstring>
+        <name>writeLine</name>
+        <param>
+          <type>string</type>
+          <declname>fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="48" column="1" bodyfile="src/OutputWriter.cpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_output_writer_1a6affce047db6e83ac534488e90462047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputWriter::writeLine</definition>
+        <argsstring>()</argsstring>
+        <name>writeLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/OutputWriter.h" line="50" column="1" bodyfile="src/OutputWriter.cpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>File Writing 과 관련된 Class </para>    </detaileddescription>
+    <location file="src/OutputWriter.h" line="17" column="1" bodyfile="src/OutputWriter.h" bodystart="17" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_output_writer_1a184f0c3382d2d98357915f83d1d821c6" prot="private" virt="non-virtual"><scope>OutputWriter</scope><name>AbstractBoundary</name></member>
+      <member refid="class_output_writer_1ab802980c4b874cb35ae744a170b5fd89" prot="public" virt="non-virtual"><scope>OutputWriter</scope><name>close</name></member>
+      <member refid="class_output_writer_1a5fb1543c1c1f87d1c29f72cedf4a6c9b" prot="private" virt="non-virtual"><scope>OutputWriter</scope><name>filePointer</name></member>
+      <member refid="class_output_writer_1a33a96359971dfce8fafdebac909bdd08" prot="public" virt="non-virtual"><scope>OutputWriter</scope><name>open</name></member>
+      <member refid="class_output_writer_1ae4f43da005288c939e6471cc777c92ce" prot="private" virt="non-virtual"><scope>OutputWriter</scope><name>OutputWriter</name></member>
+      <member refid="class_output_writer_1a9dfbb9c65c00424ea65ab76fadfc95c8" prot="private" virt="non-virtual"><scope>OutputWriter</scope><name>vwrite</name></member>
+      <member refid="class_output_writer_1afc633eedcfd7aaf6b2f8ad8455732856" prot="private" virt="non-virtual"><scope>OutputWriter</scope><name>vwriteLine</name></member>
+      <member refid="class_output_writer_1a6f4f8d99eca724f6fcbb60bcb950a4e9" prot="public" virt="non-virtual"><scope>OutputWriter</scope><name>write</name></member>
+      <member refid="class_output_writer_1a17a9fd09b2241b8440ba24057e97e621" prot="public" virt="non-virtual"><scope>OutputWriter</scope><name>writeLine</name></member>
+      <member refid="class_output_writer_1a6affce047db6e83ac534488e90462047" prot="public" virt="non-virtual"><scope>OutputWriter</scope><name>writeLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
