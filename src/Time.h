@@ -1,5 +1,5 @@
 //
-// Created by 김창덕 on 2018-05-28.
+// Created by 권영진 on 2018-05-28.
 //
 
 #ifndef SW_ENGINEERING_HW3_TIME_H
