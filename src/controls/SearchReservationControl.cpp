@@ -13,9 +13,11 @@
 GENERATE_DEFAULT_CONTROL_INTERFACE_IMPLEMENT(SearchReservationControl, SearchReservationUI)
 GENERATE_SINGLETON_IMPLEMENT(SearchReservationControl)
 
+//예약 정보 조회
 void SearchReservationControl::SearchReservation() {
     ReservationCollection *reservations = ReservationCollection::getInstance();
     string outputMessage = "";
+
     SessionCollection *sessions = SessionCollection::getInstance();
     Session *currentSession = sessions->getCurrentSession();
     string gid = currentSession->getMember()->getID();
