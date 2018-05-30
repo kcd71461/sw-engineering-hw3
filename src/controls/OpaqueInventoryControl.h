@@ -9,6 +9,7 @@
 #include "../SingletonMacro.h"
 #include "../boundaries/OpaqueInventoryUI.h"
 #include "AbstractControl.h"
+
 class OpaqueInventoryUI;
 
 /**
@@ -16,7 +17,11 @@ class OpaqueInventoryUI;
  */
 class OpaqueInventoryControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(OpaqueInventoryControl)
+
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(OpaqueInventoryControl, OpaqueInventoryUI)
+
+private:
+    string addOpaqueReservation(string hostid, string accommodation, int opaqueCost);
 
 public:
     /**
@@ -26,7 +31,6 @@ public:
      * @param opaqueCost
      */
     void tryOpaqueInventoryReservation(string address, string date, int opaqueCost);
-    string addOpaqueReservation(string hostid, string accommodation, int opaqueCost);
 };
 
 
