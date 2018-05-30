@@ -19,17 +19,18 @@ GENERATE_SINGLETON_IMPLEMENT(OpaqueInventoryControl)
 string OpaqueInventoryControl::addOpaqueReservation(string hostid, string accommoname, int opaqueCost) {
     AccommodationCollection *accommodationCollection = AccommodationCollection::getInstance();
     ReservationCollection *reservations = ReservationCollection::getInstance();
-    string name, address, date, outputMessage;
+    string address, date, outputMessage;
     for (int i = 0; i < accommodationCollection->getSize(); i++) {
         Accommodation *accommodation = accommodationCollection->get(i);
         if (accommodation->getName() == accommoname) {
-            name = accommodation->getName();
             address = accommodation->getAddress();
             date = accommodation->getDate();
-            string guestid = SessionCollection::getInstance()->getCurrentSession()->getMember()->getID();
-            Reservation *reservation = new Reservation(hostid, guestid, name, address, date, opaqueCost);
+            string guestid = this->getCurrentMember()->getID();
+            Reservation *reservation = new Reservation(hostid, guestid, accommoname, address, date, opaqueCost);
             reservations->add(reservation);
-            outputMessage = "> Success " + hostid + " " + name + " " + address + " " + date + " " + to_string(opaqueCost);
+            outputMessage =
+                    "> Success " + hostid + " " + accommoname + " " + address + " " + date + " " + to_string(opaqueCost);
+            break;
         }
     }
     return outputMessage;
@@ -51,28 +52,32 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
         string nextTryTime = DateTimeUtils::addDays(last_tryTime, 1);
 
         //24시간 내에 한 번만 시도 가능
-        if (last_tryTime.compare(NULL_TIME_STR) == 0 || nextTryTime.compare(currentTime) < 0 || nextTryTime.compare(currentTime) == 0) {
+        if (last_tryTime.compare(NULL_TIME_STR) == 0 || nextTryTime.compare(currentTime) < 0 ||
+            nextTryTime.compare(currentTime) == 0) {
             guest->setLastOpaqueTryTime(currentTime);
 
             // 예약 가능 숙소 검색
-            for (int i = 0; i < accommodations->getSize(); i++) {
+            for (int i = 0, accommodationsSize = accommodations->getSize(); i < accommodationsSize; i++) {
                 //<editor-fold desc="예약이 된 숙소는 스킵한다.">
                 Accommodation *accommodation = accommodations->get(i);
-                bool occupied = false;
-                for (int j = 0, reservationSize = reservations->getSize(); j < reservationSize; j++) {
+                bool reserved = false;
+                for (int j = 0, reservationsSize = reservations->getSize(); j < reservationsSize; j++) {
                     Reservation *reservation = reservations->get(j);
-                    if (reservation->getName() == accommodation->getName() && reservation->getAddress() == accommodation->getAddress() && reservation->getHostID() == accommodation->getHostid()) {
-                        occupied = true;
+                    if (reservation->getName() == accommodation->getName() &&
+                        reservation->getAddress() == accommodation->getAddress() &&
+                        reservation->getHostID() == accommodation->getHostid()) {
+                        reserved = true;
                         break;
                     }
                 }
-                if (occupied) {
+                if (reserved) {
                     continue;
                 }
                 //</editor-fold>
 
                 //도시명, 날짜 일치하고 OpaqueCost 값이 0이 아닌, 즉 OpaqueCost에 값이 들어있는 숙소 검색 및 날짜가 빠른 숙소 선택
-                if (accommodation->getAddress() == address && accommodation->getDate() == date && accommodation->getOpaqueCost() != 0) {
+                if (accommodation->getAddress() == address && accommodation->getDate() == date &&
+                    accommodation->getOpaqueCost() != 0) {
                     if (accommodation->getOpaqueCost() < opaqueCost || accommodation->getOpaqueCost() == opaqueCost) {
                         if (result == NULL) {
                             result = accommodation;
@@ -91,6 +96,10 @@ void OpaqueInventoryControl::tryOpaqueInventoryReservation(string address, strin
                 this->getOpaqueInventoryUI()->printLine(resultMessage.c_str());
             }
 
-        } else this->getOpaqueInventoryUI()->printLine("> Opaque inventory 예약은 24시간에 한 번만 가능합니다.");
+        } else {
+            this->getOpaqueInventoryUI()->printLine("> Opaque inventory 예약은 24시간에 한 번만 가능합니다.");
+        }
+    } else {
+        this->getOpaqueInventoryUI()->printLine("> Guest 회원으로 로그인 하셔야 합니다.");
     }
 }
