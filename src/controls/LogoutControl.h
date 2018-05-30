@@ -10,12 +10,17 @@
 #include "AbstractControl.h"
 class LogoutUI;
 
+/**
+ * 로그아웃 Control
+ */
 class LogoutControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(LogoutControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(LogoutControl, LogoutUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
+    /**
+     * 로그아웃을 시도함
+     */
     void tryLogout();
 };
 

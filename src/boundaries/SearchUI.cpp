@@ -13,11 +13,11 @@ void SearchUI::listSearchResult(string address, string date) {
 }
 
 void SearchUI::onReservateButtonClick(string hostid, string guestid, string accommoname) {
-    SearchControl::getInstance()->addReservation(hostid,guestid ,accommoname);
+    this->getSearchControl()->addReservation(hostid,guestid ,accommoname);
 }
 
 void SearchUI::getAllAccommodations() {
-    SearchControl::getInstance()->getAllAccommodations();
+    this->getSearchControl()->getAllAccommodations();
 
 
 }

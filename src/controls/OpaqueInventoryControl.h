@@ -11,12 +11,20 @@
 #include "AbstractControl.h"
 class OpaqueInventoryUI;
 
+/**
+ * OpaqueInventory 예약 시도 Control
+ */
 class OpaqueInventoryControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(OpaqueInventoryControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(OpaqueInventoryControl, OpaqueInventoryUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
+    /**
+     * OpaqueInventory 예약을 시도
+     * @param address
+     * @param date
+     * @param opaqueCost
+     */
     void tryOpaqueInventoryReservation(string address, string date, int opaqueCost);
     string addOpaqueReservation(string hostid, string accommodation, int opaqueCost);
 };

@@ -10,12 +10,17 @@
 #include "AbstractControl.h"
 class WithdrawalUI;
 
+/**
+ * 회원 탈퇴 Control
+ */
 class WithdrawalControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(WithdrawalControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(WithdrawalControl, WithdrawalUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
+    /**
+     * 회원 삭제 요청을 수행
+     */
     void deleteMember();
 };
 

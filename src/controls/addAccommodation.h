@@ -6,12 +6,14 @@
 #include "AbstractControl.h"
 class addAccommodationUI;
 
+/**
+ * 숙소 등록 Control
+ */
 class addAccommodation : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(addAccommodation)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(addAccommodation, addAccommodationUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
     void addNewAccommodation(string hostid,string name, string address, int cost, string date, int opaqueCost);
 };
 

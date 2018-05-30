@@ -16,6 +16,9 @@ GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchControl)
 public:
     void listSearchResult(string basic_string, string basicString);
     void onReservateButtonClick(string hostid,string guestid,string accommoname);
+    /**
+     * 등록한 숙소 조회
+     */
     void getAllAccommodations();
 };
 

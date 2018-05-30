@@ -10,12 +10,19 @@
 #include "AbstractControl.h"
 class LoginUI;
 
+/**
+ * 로그인 관련 Control
+ */
 class LoginControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(LoginControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(LoginControl, LoginUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
+    /**
+     * Login을 시도
+     * @param id
+     * @param password
+     */
     void tryLogin(string id, string password);
 };
 

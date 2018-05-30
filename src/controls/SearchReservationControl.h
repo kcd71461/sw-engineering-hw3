@@ -10,11 +10,17 @@
 #include "AbstractControl.h"
 class SearchReservationUI;
 
+/**
+ * 예약 내역 조회
+ */
 class SearchReservationControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(SearchReservationControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchReservationControl, SearchReservationUI)
 
 public:
+    /**
+     * 현재 세션의 예약 내역을 list
+     */
     void SearchReservation();
 };
 

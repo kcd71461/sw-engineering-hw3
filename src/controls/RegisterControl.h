@@ -20,6 +20,15 @@ GENERATE_SINGLETON_DECLARE(RegisterControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(RegisterControl, RegisterUI)
 
 public:
+    /**
+     * 회원등록 요청을 수행
+     * @param type
+     * @param name
+     * @param securityNumber
+     * @param address
+     * @param id
+     * @param password
+     */
     void registerMember(MemberTypes type, string name, string securityNumber, string address, string id,
                         string password);
 };

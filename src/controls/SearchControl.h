@@ -11,14 +11,21 @@
 #include "AbstractControl.h"
 class SearchUI;
 
+/**
+ * 숙소 검색 + 예약 시도
+ */
 class SearchControl : public AbstractControl {
 GENERATE_SINGLETON_DECLARE(SearchControl)
 GENERATE_DEFAULT_CONTROL_INTERFACE_DECLARE(SearchControl, SearchUI)
 
 public:
-    // TODO: 필요한 Control 함수 선언
     void searchAccommodations(string address, string date);
+
     void addReservation(string hostid,string guestid, string accommoname);
+
+    /**
+     * 등록한 숙소 list
+     */
     void getAllAccommodations();
 };
 

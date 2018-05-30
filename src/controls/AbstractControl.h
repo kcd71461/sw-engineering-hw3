@@ -22,6 +22,9 @@ BOUNDARY_CLASS_NAME *CONTROL_CLASS_NAME::get##BOUNDARY_CLASS_NAME() { return sta
 
 class AbstractBoundary;
 
+/**
+ * Control 추상 클래스
+ */
 class AbstractControl {
 private:
     AbstractBoundary *boundary;
