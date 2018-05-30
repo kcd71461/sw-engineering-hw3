@@ -1,5 +1,5 @@
 //
-// Created by 김창덕 on 5/27/2018.
+// Created by 심재철 on 5/27/2018.
 //
 
 #include "RegisterControl.h"

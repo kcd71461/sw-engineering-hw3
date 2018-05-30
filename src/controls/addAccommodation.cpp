@@ -1,5 +1,5 @@
 //
-// Created by 심재철 on 18. 5. 27.
+// Created by 변상혁 on 18. 5. 27.
 //
 
 #include "addAccommodation.h"

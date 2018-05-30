@@ -1,5 +1,5 @@
 //
-// Created by 권영진 on 2018. 5. 28..
+// Created by 변상혁 on 2018. 5. 28..
 //
 
 #ifndef SW_ENGINEERING_HW3_SEARCHRESERVATIONCONTROL_H

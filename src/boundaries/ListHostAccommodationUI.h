@@ -1,5 +1,5 @@
 //
-// Created by 변상 on 2018-05-30.
+// Created by 변상혁 on 2018-05-30.
 //
 
 #ifndef SW_ENGINEERING_HW3_HOSTACCOMMODATIONLISTUI_H
