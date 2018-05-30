@@ -22,6 +22,7 @@
 #include "controls/WithdrawalControl.h"
 #include "boundaries/SearchReservationUI.h"
 #include "controls/SearchReservationControl.h"
+#include "controls/ListHostAccommodationControl.h"
 // 상수 선언
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
@@ -148,8 +149,7 @@ void doTask() {
                     case 2: {
                         //region 등록 숙소 조회
                         outputWriter->writeLine("등록 숙소 조회");
-                        SearchUI* ui = SearchControl::getInstance()->getSearchUI();
-                        ui->getAllAccommodations();
+                        ListHostAccommodationControl::getInstance()->getListHostAccommodationUI()->onListAccommodation();
                         break;
                         //endregion
                     }

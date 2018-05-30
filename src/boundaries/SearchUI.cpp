@@ -15,9 +15,3 @@ void SearchUI::listSearchResult(string address, string date) {
 void SearchUI::onReservateButtonClick(string hostid, string guestid, string accommoname) {
     this->getSearchControl()->addReservation(hostid,guestid ,accommoname);
 }
-
-void SearchUI::getAllAccommodations() {
-    this->getSearchControl()->getAllAccommodations();
-
-
-}

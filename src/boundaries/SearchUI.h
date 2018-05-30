@@ -14,12 +14,20 @@ class SearchUI : public AbstractBoundary {
 GENERATE_DEFAULT_BOUNDARY_INTERFACE_DECLARE(SearchControl)
 
 public:
-    void listSearchResult(string basic_string, string basicString);
-    void onReservateButtonClick(string hostid,string guestid,string accommoname);
     /**
-     * 등록한 숙소 조회
+     * 검색 요청
+     * @param basic_string
+     * @param basicString
      */
-    void getAllAccommodations();
+    void listSearchResult(string basic_string, string basicString);
+
+    /**
+     * 예약 시도
+     * @param hostid
+     * @param guestid
+     * @param accommoname
+     */
+    void onReservateButtonClick(string hostid,string guestid,string accommoname);
 };
 
 #endif //SW_ENGINEERING_HW3_SEARCHUI_H

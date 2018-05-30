@@ -22,11 +22,6 @@ public:
     void searchAccommodations(string address, string date);
 
     void addReservation(string hostid,string guestid, string accommoname);
-
-    /**
-     * 등록한 숙소 list
-     */
-    void getAllAccommodations();
 };
 
 #endif //SW_ENGINEERING_HW3_SEARCHCONTROL_H

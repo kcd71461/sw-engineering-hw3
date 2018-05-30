@@ -11,4 +11,4 @@ add_executable(sw_engineering_hw3 main.cpp Member.h Member.cpp Host.h Host.cpp G
         boundaries/WithdrawalUI.h
         controls/WithdrawalControl.cpp
         controls/WithdrawalControl.h
-        boundaries/SearchReservationUI.cpp boundaries/SearchReservationUI.h controls/SearchReservationControl.cpp controls/SearchReservationControl.h DateTimeUtils.cpp DateTimeUtils.h)
+        boundaries/SearchReservationUI.cpp boundaries/SearchReservationUI.h controls/SearchReservationControl.cpp controls/SearchReservationControl.h DateTimeUtils.cpp DateTimeUtils.h boundaries/ListHostAccommodationUI.cpp boundaries/ListHostAccommodationUI.h controls/ListHostAccommodationControl.cpp controls/ListHostAccommodationControl.h)
