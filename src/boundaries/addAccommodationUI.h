@@ -1,5 +1,5 @@
 //
-// Created by simjae on 18. 5. 27.
+// Created by 심재철 on 18. 5. 27.
 //
 
 #ifndef SW_ENGINEERING_HW3_ADDACCOMMODATIONUI_H

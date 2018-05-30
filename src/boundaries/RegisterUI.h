@@ -1,5 +1,5 @@
 //
-// Created by kimch on 5/27/2018.
+// Created by 김창덕 on 5/27/2018.
 //
 
 #ifndef SW_ENGINEERING_HW3_REGISTERUI_H

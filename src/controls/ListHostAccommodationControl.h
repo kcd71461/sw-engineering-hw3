@@ -1,5 +1,5 @@
 //
-// Created by kimch on 2018-05-30.
+// Created by 김창덕 on 2018-05-30.
 //
 
 #ifndef SW_ENGINEERING_HW3_HOSTACCOMMODATIONLISTCONTROL_H
